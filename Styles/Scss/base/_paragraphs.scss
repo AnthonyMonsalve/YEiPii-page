@@ -1,0 +1,25 @@
+/*---------------------------*\
+	$PARAGRAPHS
+\*---------------------------*/
+
+p{
+	margin-bottom: $paragraphs-mb;
+	margin-top: $paragraphs-mt; 
+}
+
+//parrafo YEiPii
+
+%parrafo_YEiPii{
+	font-size: map-get($font-size, big);
+	max-width: 500px;
+}
+
+.parrafo_YEiPii_gray{
+	@extend %parrafo_YEiPii;
+	color: $YEiPii-color-gray;
+}
+
+.parrafo_YEiPii_white{
+	@extend %parrafo_YEiPii;
+	color: $YEiPii-color-white;
+}

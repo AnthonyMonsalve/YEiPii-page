@@ -1,0 +1,49 @@
+/*---------------------------*\
+	$LAYOUTS
+\*---------------------------*/
+
+body{
+	margin: 0;
+}
+
+//Complete View
+.section-complete-viewport{
+	height: 100vh;
+	background: $YEiPii-color-lightgray;
+}
+
+
+// Sections 
+.section-first{
+	@extend %flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../../images/backgrounds/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.sections-YEiPii{
+	@include max-width;
+	background-color: $YEiPii-color-white;
+	padding: $padding-section;
+	transition: $transition-responsive;
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-Laptop){
+		background-color: $YEiPii-color-white;
+	}
+
+	@include respond-to($max-width-Tablet){
+		background-color: $YEiPii-color-lightgray;
+	}
+
+}
+
+//Contents
+.content-buttons-app-download{
+	@extend %flex;
+	justify-content: center;
+	align-items: center;
+}

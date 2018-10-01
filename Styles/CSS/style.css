@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/*---------------------------*\
+	$COLORS
+\*---------------------------*/
+/*---------------------------*\
+	$FUNCTIONS
+\*---------------------------*/
+/*---------------------------*\
+    $MIXINS
+\*---------------------------*/
+/*---------------------------*\
+	$TYPOGRAPHY
+\*---------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+  color: #616161;
+  font-family: "Roboto", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.right {
+  text-align: right;
+}
+
+.color-YEiPii {
+  color: #050d9e;
+}
+
+.color-YEiPii-w {
+  color: white;
+}
+
+/*---------------------------*\
+		$PARAGRAPHS
+\*---------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.3em;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/*---------------------------*\
+	$PARAGRAPHS
+\*---------------------------*/
+p {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.parrafo_YEiPii_gray, .parrafo_YEiPii_white {
+  font-size: 30px;
+  max-width: 500px;
+}
+
+.parrafo_YEiPii_gray {
+  color: #616161;
+}
+
+.parrafo_YEiPii_white {
+  color: white;
+}
+
+/*---------------------------*\
+	$BUTTONS
+\*---------------------------*/
+.button-YEiPii, .button-YEiPii-secondary {
+  background-color: #050d9e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 11px 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-YEiPii-secondary {
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.button-YEiPii:hover, .button-YEiPii-secondary:hover {
+  cursor: pointer;
+  background-color: #0C0B80;
+}
+
+.button-app-download {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 50px;
+  margin: 10px;
+  border: solid 1px #c7c7c7;
+  border-radius: 3px;
+}
+
+.button-app-download:hover {
+  cursor: pointer;
+}
+
+/*---------------------------*\
+    $LINKS
+\*---------------------------*/
+a {
+  text-decoration: none;
+}
+
+.nav a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #050d9e;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #0C0B80;
+}
+
+/*---------------------------*\
+	$LAYOUTS
+\*---------------------------*/
+body {
+  margin: 0;
+}
+
+.section-complete-viewport {
+  height: 100vh;
+  background: #EBEBEB;
+}
+
+.section-first {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../../images/backgrounds/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sections-YEiPii {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .sections-YEiPii {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sections-YEiPii {
+    background-color: #EBEBEB;
+  }
+}
+
+.content-buttons-app-download {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*-----------------------------------*\
+	$HEADER & NAV BAR 
+\*-----------------------------------*/
+/* DISPLAY FLEX PLACE HOLDER*/
+.section-first, .content-buttons-app-download, .header, .content-header, .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.content-header {
+  width: 1024px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-header {
+  height: 25px;
+}
+
+.nav {
+  background-color: white;
+  color: #0C0B80;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.item-nav {
+  margin: 0;
+  padding: 2px 10px;
+  border-right: solid 2px #EBEBEB;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-nav:last-of-type {
+  border-right: none;
+}
+
+/* último import */
+/*---------------------------*\
+    $UTILITIES
+
+    Aquí va align left, align rigth...
+\*---------------------------*/
+.m-auto {
+  margin: 5px auto 10px;
+}
+
+/*---------------------------*\
+  $SCROLL
+\*---------------------------*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #acacf8;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #050d9e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #050d9e;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+/*---------------------------*\
+	$BUTTONS
+\*---------------------------*/
+
+//Place Holder Button's
+%button{
+	background-color: $YEiPii-color;
+	color: $YEiPii-color-white;
+	text-transform: $button-capitalize-text;
+	font-weight: $button-font-weight;
+	font-size: 11px;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: $button-border-radius;
+	outline: none;
+	padding: 11px 50px;
+	transition: $button-transition;
+}
+
+%button-secondary{
+	border-radius: 3px;
+	padding: 15px;
+}
+//END Place Holder Button
+
+// Buttons YEiPii
+.button-YEiPii{
+	@extend %button;
+}
+.button-YEiPii-secondary{
+	@extend %button;
+	@extend %button-secondary;
+}
+.button-YEiPii:hover,.button-YEiPii-secondary:hover{
+	cursor: pointer;
+	background-color: $YEiPii-color-secondary;	
+}
+
+//Buttons APP Download
+.button-app-download{
+	background: $YEiPii-color-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 50px;
+	margin: 10px;
+	border: solid 1px lighten($YEiPii-color-gray, 40);
+	border-radius: 3px;
+}
+.button-app-download:hover{
+	cursor: pointer;
+}
