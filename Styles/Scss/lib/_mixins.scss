@@ -2,7 +2,7 @@
     $MIXINS
 \*---------------------------*/
 
-@mixin max-width($maxwidth: $max-width-LaptopL) {
+@mixin max-width($maxwidth: $max-width-Laptop) {
   max-width: $maxwidth;
   margin-left: auto;
   margin-right: auto;

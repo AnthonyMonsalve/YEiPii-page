@@ -1,0 +1,53 @@
+/*---------------------------*\
+	$FOOTER
+\*---------------------------*/
+
+#footer{
+  background-color: $YEiPii-color-lightgray;
+}
+
+.footer-container{
+	@include max-width;
+	padding: $padding;
+}
+
+.footer-content-info{
+  @extend %flex;
+  padding: 0 35px;
+}
+
+.footer-logo{
+  width: $footer-logo;
+  text-align:left;
+}
+
+.footer-logo img{
+  width: 140px;
+}
+
+.footer-info{
+  @extend %flex;
+  width: 100 -  $footer-logo;
+  justify-content: flex-end;
+}
+
+.f-info{
+ margin: 0 35px;
+ min-width: 60px;
+}
+
+.f-info:last-of-type{
+  margin-right: 0;
+}
+
+.title-info-footer{
+  color: $YEiPii-color;
+  font-weight: map-get($font-weight, medium);
+  margin-bottom: 12px !important;
+}
+
+.footer-copy{
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+}

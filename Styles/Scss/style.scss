@@ -11,8 +11,10 @@
 @import'base/links';
 
 //Layout
-@import'layouts/layouts';
+@import'layouts/section-content';
 @import'layouts/nav';
+@import'layouts/footer';
+
 
 //Components
 /* último import */ @import'components/utilities';

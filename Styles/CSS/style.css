@@ -164,6 +164,13 @@ body {
   margin: 0;
 }
 
+/* DISPLAY FLEX PLACE HOLDER*/
+.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section-complete-viewport {
   height: 100vh;
   background: #EBEBEB;
@@ -182,11 +189,11 @@ body {
 }
 
 .sections-YEiPii {
-  max-width: 1440px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 15px;
+  padding: 40px 15px 25px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -215,13 +222,6 @@ body {
 /*-----------------------------------*\
 	$HEADER & NAV BAR 
 \*-----------------------------------*/
-/* DISPLAY FLEX PLACE HOLDER*/
-.section-first, .content-buttons-app-download, .header, .content-header, .nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header {
   position: absolute;
   left: 0;
@@ -269,6 +269,61 @@ body {
   border-right: none;
 }
 
+/*---------------------------*\
+	$FOOTER
+\*---------------------------*/
+#footer {
+  background-color: #EBEBEB;
+}
+
+.footer-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 15px 25px;
+}
+
+.footer-content-info {
+  padding: 0 35px;
+}
+
+.footer-logo {
+  width: 20%;
+  text-align: left;
+}
+
+.footer-logo img {
+  width: 140px;
+}
+
+.footer-info {
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.f-info {
+  margin: 0 35px;
+  min-width: 60px;
+}
+
+.f-info:last-of-type {
+  margin-right: 0;
+}
+
+.title-info-footer {
+  color: #050d9e;
+  font-weight: 500;
+  margin-bottom: 12px !important;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
 /* último import */
 /*---------------------------*\
     $UTILITIES
@@ -279,17 +334,28 @@ body {
   margin: 5px auto 10px;
 }
 
+.m-cero {
+  margin: 0;
+}
+
+.p-cero {
+  padding: 0;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
 /*---------------------------*\
   $SCROLL
 \*---------------------------*/
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #acacf8;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
-  background-color: #050d9e;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

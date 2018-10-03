@@ -6,6 +6,12 @@ body{
 	margin: 0;
 }
 
+/* DISPLAY FLEX PLACE HOLDER*/
+%flex{
+	display: flex;
+}
+
+
 //Complete View
 .section-complete-viewport{
 	height: 100vh;
@@ -27,14 +33,14 @@ body{
 .sections-YEiPii{
 	@include max-width;
 	background-color: $YEiPii-color-white;
-	padding: $padding-section;
+	padding: $padding;
 	transition: $transition-responsive;
 
 	//nos permite gestionar los break-points dentro del mismo selector
 	@include respond-to($max-width-Laptop){
 		background-color: $YEiPii-color-white;
 	}
-
+ 
 	@include respond-to($max-width-Tablet){
 		background-color: $YEiPii-color-lightgray;
 	}
