@@ -76,7 +76,7 @@ p {
 }
 
 .parrafo_YEiPii_gray, .parrafo_YEiPii_white {
-  font-size: 33px;
+  font-size: 31px;
   max-width: 500px;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 /* DISPLAY FLEX PLACE HOLDER*/
-.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-logo, .footer-info {
+.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-logo, .footer-info, .content-buttons-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +248,7 @@ body {
 }
 
 .logo-header {
-  height: 23px;
+  height: 35px;
 }
 
 .nav {
@@ -320,10 +320,33 @@ body {
   margin-right: 0;
 }
 
+.f-info a {
+  color: #616161;
+  margin-bottom: 5px;
+}
+
 .title-info-footer {
   color: #050d9e;
   font-weight: 500;
   margin-bottom: 12px !important;
+}
+
+.content-buttons-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download-footer-btn-img {
+  width: 30px;
+  height: 30px;
+  margin: 0 4px 0 4px;
+}
+
+.redes-footer-btn-img {
+  width: 24px;
+  height: 24px;
+  margin: 0 2px 0 2px;
 }
 
 .footer-copy {
@@ -350,6 +373,11 @@ body {
 
 .p-cero {
   padding: 0;
+}
+
+.center {
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .list-style-none {

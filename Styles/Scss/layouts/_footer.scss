@@ -43,11 +43,30 @@
   margin-right: 0;
 }
 
+.f-info a{color:$YEiPii-color-gray; margin-bottom: 5px;}
+
 .title-info-footer{
   color: $YEiPii-color;
   font-weight: map-get($font-weight, medium);
   margin-bottom: 12px !important;
 }
+
+.content-buttons-footer{
+  @extend %flex;
+  justify-content: center;
+}
+
+.download-footer-btn-img{
+  width: $download-footer-btn-img;
+  height: $download-footer-btn-img;
+  margin: 0 4px 0 4px;
+}
+
+.redes-footer-btn-img{
+  width: $redes-footer-btn-img;
+  height: $redes-footer-btn-img;
+  margin: 0 2px 0 2px;
+ }
 
 .footer-copy{
   margin-top: 12px;
