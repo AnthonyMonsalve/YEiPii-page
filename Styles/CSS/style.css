@@ -61,9 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.3em;
+  font-size: 3.4em;
   margin-bottom: 5px;
   margin-top: 10px;
+  letter-spacing: 2.5px;
 }
 
 /*---------------------------*\
@@ -75,7 +76,7 @@ p {
 }
 
 .parrafo_YEiPii_gray, .parrafo_YEiPii_white {
-  font-size: 30px;
+  font-size: 33px;
   max-width: 500px;
 }
 
@@ -126,8 +127,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
-  height: 50px;
+  width: 155px;
+  height: 60px;
   margin: 10px;
   border: solid 1px #c7c7c7;
   border-radius: 3px;
@@ -165,7 +166,7 @@ body {
 }
 
 /* DISPLAY FLEX PLACE HOLDER*/
-.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-info {
+.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-logo, .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +194,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 40px 15px 25px;
+  padding: 25px 15px 15px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -245,6 +246,7 @@ body {
 
 .logo-header {
   height: 25px;
+  margin-top: 2px;
 }
 
 .nav {
@@ -280,7 +282,7 @@ body {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 15px 25px;
+  padding: 25px 15px 15px;
 }
 
 .footer-content-info {
@@ -290,10 +292,13 @@ body {
 .footer-logo {
   width: 20%;
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-logo img {
-  width: 140px;
+  width: 160px;
 }
 
 .footer-info {
@@ -319,10 +324,11 @@ body {
 }
 
 .footer-copy {
-  margin-top: 30px;
-  padding: 10px;
+  margin-top: 12px;
+  padding: 15px 0 0 0;
   text-align: center;
   border-top: solid 1px #050d9e;
+  font-size: 14px;
 }
 
 /* último import */
