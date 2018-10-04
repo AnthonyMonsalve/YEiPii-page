@@ -143,6 +143,9 @@ p {
 \*---------------------------*/
 a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav a {
@@ -245,8 +248,7 @@ body {
 }
 
 .logo-header {
-  height: 25px;
-  margin-top: 2px;
+  height: 23px;
 }
 
 .nav {
@@ -287,6 +289,7 @@ body {
 
 .footer-content-info {
   padding: 0 35px;
+  font-size: 14px;
 }
 
 .footer-logo {
@@ -328,7 +331,7 @@ body {
   padding: 15px 0 0 0;
   text-align: center;
   border-top: solid 1px #050d9e;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* último import */
