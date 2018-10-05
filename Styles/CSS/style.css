@@ -65,6 +65,15 @@ h1 {
   margin-bottom: 5px;
   margin-top: 10px;
   letter-spacing: 2.5px;
+  line-height: .9;
+}
+
+.title-big {
+  font-size: 4em;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  letter-spacing: 2.5px;
+  line-height: .82;
 }
 
 /*---------------------------*\
@@ -169,7 +178,7 @@ body {
 }
 
 /* DISPLAY FLEX PLACE HOLDER*/
-.section-first, .content-buttons-app-download, .header, .content-header, .nav ul, .footer-content-info, .footer-logo, .footer-info, .content-buttons-footer {
+.section-complete-viewport, .section-first, .sections-YEiPii, .content-buttons-app-download, .content-buttons-app-download-other-page, .header, .content-header, .nav ul, .footer-content-info, .footer-logo, .footer-info, .content-buttons-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +186,11 @@ body {
 
 .section-complete-viewport {
   height: 100vh;
-  background: #EBEBEB;
+  min-height: 400px;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-first {
@@ -192,17 +205,33 @@ body {
   background-size: cover;
 }
 
+.bg2 {
+  background-image: url("../../images/backgrounds/bg-como-funciona.jpg");
+}
+
+.content-first-other-page {
+  width: 90%;
+  max-width: 1124px;
+}
+
 .sections-YEiPii {
-  max-width: 1024px;
+  width: 95%;
+  max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   padding: 25px 15px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   .sections-YEiPii {
     background-color: white;
   }
@@ -214,6 +243,13 @@ body {
   }
 }
 
+.inverse {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+}
+
 .content-buttons-app-download {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -221,6 +257,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.content-buttons-app-download-other-page {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -10px;
 }
 
 /*-----------------------------------*\
@@ -238,7 +281,7 @@ body {
 }
 
 .content-header {
-  width: 1024px;
+  width: 1124px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -281,7 +324,7 @@ body {
 }
 
 .footer-container {
-  max-width: 1024px;
+  max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 15px 15px;
@@ -378,6 +421,10 @@ body {
 .center {
   text-align: center;
   letter-spacing: 1px;
+}
+
+.bggray {
+  background-color: #EBEBEB !important;
 }
 
 .list-style-none {
