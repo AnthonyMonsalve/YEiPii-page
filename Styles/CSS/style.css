@@ -225,28 +225,62 @@ body {
           box-sizing: border-box;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 @media screen and (max-width: 1124px) {
   .sections-YEiPii {
     background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .sections-YEiPii {
-    background-color: #EBEBEB;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.telefono {
+  background-image: url("../../images/phones/iphone.fw.png");
+  height: 495px;
+  width: 240px;
+  background-size: 100% 100%;
+  margin-right: 50px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1124px) {
+  .telefono {
+    margin-right: 0;
+  }
+}
+
+.telefono-black {
+  background-image: url("../../images/phones/iphone-black.fw.png");
+  height: 495px;
+  width: 240px;
+  background-size: 100% 100%;
+  margin-left: 50px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1124px) {
+  .telefono-black {
+    margin-right: 0;
   }
 }
 
 .inverse {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   text-align: right;
 }
 

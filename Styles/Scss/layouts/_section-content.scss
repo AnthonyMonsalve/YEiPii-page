@@ -49,23 +49,56 @@ body{
 	padding: $padding;
 	box-sizing: border-box;
 	transition: $transition-responsive;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 100px;
 
 	//nos permite gestionar los break-points dentro del mismo selector
 	@include respond-to($max-width-Laptop){
 		background-color: $YEiPii-color-white;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
  
 	@include respond-to($max-width-Tablet){
-		background-color: $YEiPii-color-lightgray;
+		padding-left:20px;
+		padding-right:20px;
 	}
 
 }
 
-	.inverse{
-		align-items: flex-end;
-		text-align: right;
+.telefono{
+	background-image: url('../../images/phones/iphone.fw.png');
+	height: 495px;
+	width: 240px;
+	background-size: 100% 100%;
+	margin-right: 50px;
+	background-repeat: no-repeat; 
+
+	@include respond-to($max-width-Laptop){
+		margin-right: 0;
 	}
+
+}
+
+.telefono-black{
+	background-image: url('../../images/phones/iphone-black.fw.png');
+	height: 495px;
+	width: 240px;
+	background-size: 100% 100%;
+	margin-left: 50px;
+	background-repeat: no-repeat; 
+
+	@include respond-to($max-width-Laptop){
+		margin-right: 0;
+	}
+
+}
+
+.inverse{
+	text-align: right;
+}
 
 //Contents
 .content-buttons-app-download{
