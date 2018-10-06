@@ -82,6 +82,12 @@ body{
 
 }
 
+.telefono .gif-right, .telefono-black .gif-left{width: 220px; position: relative; top: 55px}
+
+.gif-right{left:10px}
+.gif-left{right:10px}
+
+
 .telefono-black{
 	background-image: url('../../images/phones/iphone-black.fw.png');
 	height: 495px;
@@ -111,4 +117,13 @@ body{
 	@extend %flex;
 	align-items: center;
 	margin-left: -10px;
+}
+
+//content donde estamos banner
+.donde-estamos-banner{
+	background-image: url('../../images/backgrounds/bg_busca-nuestro-logo.fw.png');
+}
+
+.sections-YEiPii.bg-YEiPii-color{
+	background: rgba(5,13,158,.8)
 }

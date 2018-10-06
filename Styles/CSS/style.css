@@ -15,6 +15,7 @@
 body {
   color: #616161;
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 
 .bold {
@@ -68,12 +69,30 @@ h1 {
   line-height: .9;
 }
 
+h2 {
+  font-size: 2.38em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.496em;
+}
+
 .title-big {
   font-size: 4em;
   margin-bottom: 5px;
   margin-top: 10px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   line-height: .82;
+}
+
+.title_banner-donde-estamos {
+  font-size: 3.4em;
+  letter-spacing: 2px;
+}
+
+.donde-estamos-banner h3 {
+  color: #e1e1e1;
 }
 
 /*---------------------------*\
@@ -95,6 +114,14 @@ p {
 
 .parrafo_YEiPii_white {
   color: white;
+}
+
+.parrafo_banner-donde-estamos {
+  font-size: 22px;
+  max-width: 340px;
+  text-align: right;
+  color: #e1e1e1;
+  letter-spacing: 1px;
 }
 
 /*---------------------------*\
@@ -220,7 +247,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 25px 15px 15px;
+  padding: 25px 15px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.3s ease-in-out;
@@ -265,6 +292,20 @@ body {
   }
 }
 
+.telefono .gif-right, .telefono-black .gif-left {
+  width: 220px;
+  position: relative;
+  top: 55px;
+}
+
+.gif-right {
+  left: 10px;
+}
+
+.gif-left {
+  right: 10px;
+}
+
 .telefono-black {
   background-image: url("../../images/phones/iphone-black.fw.png");
   height: 495px;
@@ -298,6 +339,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: -10px;
+}
+
+.donde-estamos-banner {
+  background-image: url("../../images/backgrounds/bg_busca-nuestro-logo.fw.png");
+}
+
+.sections-YEiPii.bg-YEiPii-color {
+  background: rgba(5, 13, 158, 0.8);
 }
 
 /*-----------------------------------*\
@@ -361,7 +410,7 @@ body {
   max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px 15px 15px;
+  padding: 25px 15px 25px;
 }
 
 .footer-content-info {

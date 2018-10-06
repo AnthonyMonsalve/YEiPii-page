@@ -23,3 +23,11 @@ p{
 	@extend %parrafo_YEiPii;
 	color: $YEiPii-color-white;
 }
+
+.parrafo_banner-donde-estamos{
+	font-size: $base-font-size + 6;
+	max-width: 340px;
+	text-align: right;
+	color: lighten($YEiPii-color-gray, 50);
+	letter-spacing: 1px;
+}
