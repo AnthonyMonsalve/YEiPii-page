@@ -3,6 +3,7 @@
 \*---------------------------*/
 
 h1,h2,h3,h4,h5,h6{
+	font-family: 'Bold';
 	text-transform: uppercase;
 }
 
@@ -20,7 +21,7 @@ h2{
 
 h3{
 	margin: 0;
-	font-size: $base-size-title-YEiPii  * .44;
+	font-size: $base-size-title-YEiPii  * .42;
 }
 
 .title-big{

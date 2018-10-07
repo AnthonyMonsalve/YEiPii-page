@@ -12,9 +12,30 @@
 	$TYPOGRAPHY
 \*---------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@font-face {
+  font-family: 'Lighter';
+  font-style: normal;
+  font-weight: lighter;
+  src: local("Lighter"), url("/fonts/AvenirLTStd-Light.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Normal"), url("/fonts/AvenirLTStd-Roman.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Bold"), url("/fonts/AvenirLTStd-Black.otf") format("woff");
+}
+
 body {
   color: #616161;
-  font-family: "Roboto", sans-serif;
+  font-family: "Normal", "Roboto", sans-serif;
   font-size: 15px;
 }
 
@@ -58,6 +79,7 @@ body {
 		$PARAGRAPHS
 \*---------------------------*/
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bold';
   text-transform: uppercase;
 }
 
@@ -75,7 +97,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 1.496em;
+  font-size: 1.428em;
 }
 
 .title-big {
@@ -104,7 +126,7 @@ p {
 }
 
 .parrafo_YEiPii_gray, .parrafo_YEiPii_white {
-  font-size: 31px;
+  font-size: 30px;
   max-width: 500px;
 }
 
@@ -118,7 +140,7 @@ p {
 
 .parrafo_banner-donde-estamos {
   font-size: 22px;
-  max-width: 380px;
+  max-width: 350px;
   text-align: right;
   color: #e1e1e1;
   letter-spacing: 1px;
@@ -292,7 +314,7 @@ body {
   }
 }
 
-.telefono .gif-right, .telefono-black .gif-left {
+.gif-right, .gif-left {
   width: 220px;
   position: relative;
   top: 55px;

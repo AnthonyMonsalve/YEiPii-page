@@ -2,12 +2,40 @@
 	$TYPOGRAPHY
 \*---------------------------*/
 
-// Import Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@font-face {
+	font-family: 'Lighter';
+	font-style: normal;
+	font-weight: lighter;
+	src:  local('Lighter'),
+				url('/fonts/AvenirLTStd-Light.otf')
+				format('woff');
+}
+
+@font-face {
+	font-family: 'Normal';
+	font-style: normal;
+	font-weight: normal;
+	src:  local('Normal'),
+				url('/fonts/AvenirLTStd-Roman.otf')
+				format('woff');
+}
+
+
+@font-face {
+	font-family: 'Bold';
+	font-style: normal;
+	font-weight: bold;
+	src:  local('Bold'),
+				url('/fonts/AvenirLTStd-Black.otf')
+				format('woff');
+}
+
 
 body{
 	color: $color-body; 
-	font-family: $base-font-family;
+	font-family: 'Normal', $base-font-family;
 	font-size: map-get($font-size, normal)
 }
 
