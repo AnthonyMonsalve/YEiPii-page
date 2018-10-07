@@ -16,21 +16,21 @@
   font-family: 'Lighter';
   font-style: normal;
   font-weight: lighter;
-  src: local("Lighter"), url("/fonts/AvenirLTStd-Light.otf") format("woff");
+  src: local("Lighter"), url("../../fonts/AvenirLTStd-Light.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Normal';
   font-style: normal;
   font-weight: normal;
-  src: local("Normal"), url("/fonts/AvenirLTStd-Roman.otf") format("woff");
+  src: local("Normal"), url("../../fonts/AvenirLTStd-Roman.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Bold';
   font-style: normal;
   font-weight: bold;
-  src: local("Bold"), url("/fonts/AvenirLTStd-Black.otf") format("woff");
+  src: local("Bold"), url("../../fonts/AvenirLTStd-Black.otf") format("woff");
 }
 
 body {

@@ -9,7 +9,7 @@
 	font-style: normal;
 	font-weight: lighter;
 	src:  local('Lighter'),
-				url('/fonts/AvenirLTStd-Light.otf')
+				url('../../fonts/AvenirLTStd-Light.otf')
 				format('woff');
 }
 
@@ -18,7 +18,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src:  local('Normal'),
-				url('/fonts/AvenirLTStd-Roman.otf')
+				url('../../fonts/AvenirLTStd-Roman.otf')
 				format('woff');
 }
 
@@ -28,7 +28,7 @@
 	font-style: normal;
 	font-weight: bold;
 	src:  local('Bold'),
-				url('/fonts/AvenirLTStd-Black.otf')
+				url('../../fonts/AvenirLTStd-Black.otf')
 				format('woff');
 }
 
