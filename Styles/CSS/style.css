@@ -304,7 +304,7 @@ body {
 }
 
 .telefono {
-  background-image: url("../../images/phones/iphone.fw.png");
+  background-image: url("../../images/phones/phone-white.png");
   height: 495px;
   width: 240px;
   background-size: 100% 100%;
@@ -319,21 +319,21 @@ body {
 }
 
 .gif-right, .gif-left {
-  width: 220px;
+  width: 210px;
   position: relative;
-  top: 55px;
+  top: 65px;
 }
 
 .gif-right {
-  left: 10px;
+  left: 15px;
 }
 
 .gif-left {
-  right: 10px;
+  right: 15px;
 }
 
 .telefono-black {
-  background-image: url("../../images/phones/iphone-black.fw.png");
+  background-image: url("../../images/phones/phone-black.png");
   height: 495px;
   width: 240px;
   background-size: 100% 100%;
