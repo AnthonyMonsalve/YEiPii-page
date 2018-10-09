@@ -175,7 +175,6 @@ p {
 }
 
 .button-app-download {
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,15 +184,20 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 155px;
-  height: 60px;
   margin: 10px;
-  border: solid 1px #c7c7c7;
-  border-radius: 3px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .button-app-download:hover {
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.button-app-download .android {
+  width: 170px;
+  height: 100%;
 }
 
 /*---------------------------*\
@@ -492,8 +496,8 @@ body {
 }
 
 .redes-footer-btn-img {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   margin: 0 2px 0 2px;
 }
 
