@@ -14,6 +14,12 @@ p{
 	max-width: 500px;
 }
 
+
+.parrafo_YEiPii-calcomania{
+	@extend %parrafo_YEiPii;
+	max-width: 580px;
+}
+
 .parrafo_YEiPii_gray{
 	@extend %parrafo_YEiPii;
 	color: $YEiPii-color-gray;

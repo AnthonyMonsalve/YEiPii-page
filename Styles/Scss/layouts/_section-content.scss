@@ -69,6 +69,7 @@ body{
 
 }
 
+
 .telefono{
 	background-image: url('../../images/phones/phone-white.png');
 	height: 495px;
@@ -127,4 +128,29 @@ body{
 
 .sections-YEiPii.bg-YEiPii-color{
 	background: rgba(5,13,158,.8)
+}
+
+//SECTION DONDE ESTAMOS BUTTONS
+
+.section-category{
+	width: 80%;
+	@include max-width;
+	background-color: $YEiPii-color-white;
+	box-sizing: border-box;
+	transition: $transition-responsive;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.title-category{
+	border-bottom: 1px solid $YEiPii-color;
+	color: $YEiPii-color;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+}
+
+.content-buttons-category{
+	@extend %flex;
+	justify-content: space-around;
+	padding: 0 50px 0 50px;
 }

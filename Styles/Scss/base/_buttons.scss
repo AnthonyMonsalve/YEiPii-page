@@ -8,7 +8,7 @@
 	color: $YEiPii-color-white;
 	text-transform: $button-capitalize-text;
 	font-weight: $button-font-weight;
-	font-size: 11px;
+	font-size: 10px;
 	letter-spacing: 2px;
 	border: none;
 	border-radius: $button-border-radius;
@@ -18,8 +18,14 @@
 }
 
 %button-secondary{
-	border-radius: 3px;
-	padding: 15px;
+	border-radius: 15px;
+	padding: 15px 5px 15px 5px;
+	min-width: 130px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 //END Place Holder Button
 
@@ -53,4 +59,9 @@
 .button-app-download .android{
 	width: 170px;
 	height: 100%;
+}
+
+.button-YEiPii-secondary span{
+	display: block;
+	font-family: 'normal';
 }
