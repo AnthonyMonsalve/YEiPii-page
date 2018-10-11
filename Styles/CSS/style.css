@@ -159,7 +159,7 @@ p {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
   border: none;
   border-radius: 30px;
@@ -172,7 +172,8 @@ p {
 .button-YEiPii-secondary {
   border-radius: 15px;
   padding: 15px 5px 15px 5px;
-  min-width: 130px;
+  min-width: 150px;
+  min-height: 150px;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,6 +224,7 @@ p {
 .button-YEiPii-secondary span {
   display: block;
   font-family: 'normal';
+  margin-top: 10px;
 }
 
 /*---------------------------*\
