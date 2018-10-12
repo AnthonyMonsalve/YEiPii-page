@@ -154,3 +154,28 @@ body{
 	justify-content: space-around;
 	padding: 0 50px 0 50px;
 }
+
+.content-category-locales{
+	width: 80%;
+	margin: 15px auto;
+	border: solid 1px $YEiPii-color-lightgray;
+	transition: $transition-responsive;
+}
+
+.row-establecimientos{display: flex; align-items: center; justify-content: center}
+
+.active-bg, .active-bg:hover{
+	background: darken($YEiPii-color-secondary, 5);
+	transition: $transition-responsive;
+}
+
+
+.establecimiento{
+	transition: $transition-responsive;
+	width: 120px;
+	margin: 10px 4%;
+}
+
+
+//PANA YEiPii
+.Pana-YEiPii{width:150px; height: 150px; margin: 10px; border-radius: 50%;}
