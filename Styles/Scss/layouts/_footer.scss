@@ -8,7 +8,8 @@
 
 .footer-container{
 	@include max-width;
-	padding: $padding;
+  padding: 40px 15px;
+  position: relative;
 }
 
 .footer-content-info{
@@ -43,7 +44,12 @@
   margin-right: 0;
 }
 
-.f-info a{color:$YEiPii-color-gray; margin-bottom: 5px;}
+.f-info a{color:$YEiPii-color-gray; margin-bottom: 5px;transition: $button-transition}
+
+.f-info a:hover{
+  text-decoration: underline;
+}
+
 
 .title-info-footer{
   color: $YEiPii-color;
@@ -66,6 +72,8 @@
   width: $redes-footer-btn-img;
   height: $redes-footer-btn-img;
   margin: 0 2px 0 2px;
+  border-radius: 50%;
+  transition: $button-transition;
  }
 
 .footer-copy{
@@ -73,5 +81,16 @@
   padding: 15px 0 0 0;
   text-align: center;
   border-top: solid 1px $YEiPii-color;
-  font-size: map-get($font-size, x-small);
+  font-size: map-get($font-size, small);
+}
+
+.YEiPii-CA{
+  font-size: .55em; 
+  position: absolute; 
+  top: 92px; 
+  right: -75px;
+  transform: rotate(90deg);
+  color: $YEiPii-color;
+  background: $YEiPii-color-lightgray;
+  padding: 5px;
 }
