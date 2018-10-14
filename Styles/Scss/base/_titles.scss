@@ -12,8 +12,8 @@ h1{
 	font-size: $base-size-title-YEiPii;
 	margin-bottom: 5px;
 	margin-top: 10px;
-	letter-spacing: 2.5px;
-	line-height: .9;
+	letter-spacing: 1px;
+	line-height: 1;
 }
 
 h2{
@@ -27,11 +27,10 @@ h3{
 }
 
 .title-big{
-	font-size: $base-size-title-YEiPii + .6;
+	font-size: $base-size-title-YEiPii + .3;
 	margin-bottom: 5px;
 	margin-top: 10px;
-	letter-spacing: 2px;
-	line-height: 1;
+	letter-spacing: 1px;
 }
 
 .title_banner-donde-estamos{

@@ -6,6 +6,7 @@
 //  Branding Colors 
 $YEiPii-color : rgb(5,13,158);
 $YEiPii-color-secondary : #0C0B80;
+$YEiPii-color-orange : rgb(247, 147, 30);
 //  Gray Scale
 $YEiPii-color-black: rgb(0,0,0);
 $YEiPii-color-gray: #616161;
@@ -24,6 +25,8 @@ $base-size-title-YEiPii: 3.4em;
 
 // Sections
 $padding: 25px 15px 25px;
+$padding-left: 25px;
+$padding-right: 25px;
 
 
 //FOOTER
@@ -42,7 +45,7 @@ $paragraphs-mt: 10px;
 //  Buttons
 $button-capitalize-text: uppercase;
 $button-font-weight: bold;
-$button-transition: all .3s ease-in-out;
+$button-transition: all .2s ease-in-out;
 $button-border-radius: 30px;
 
 // Constants

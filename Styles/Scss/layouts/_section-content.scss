@@ -43,7 +43,7 @@ body{
 }
 
 .sections-YEiPii{
-	width: 95%;
+	width: 100%;
 	@include max-width;
 	@extend %flex;
 	background-color: $YEiPii-color-white;
@@ -52,14 +52,15 @@ body{
 	transition: $transition-responsive;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: $padding-left;
+	padding-right: $padding-right;
+
 
 	//nos permite gestionar los break-points dentro del mismo selector
 	@include respond-to($max-width-Laptop){
 		background-color: $YEiPii-color-white;
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: $padding-left;
+		padding-right: $padding-right;
 	}
  
 	@include respond-to($max-width-Tablet){
@@ -70,16 +71,16 @@ body{
 }
 
 
-.telefono{
-	background-image: url('../../images/phones/phone-white.png');
+.telefono-right{
+	background-image: url('../../images/phones/phone-black.png');
 	height: 495px;
 	width: 240px;
 	background-size: 100% 100%;
-	margin-right: 50px;
+	margin-right: 100px;
 	background-repeat: no-repeat; 
 
 	@include respond-to($max-width-Laptop){
-		margin-right: 0;
+		//margin-right: 0;
 	}
 
 }
@@ -90,16 +91,16 @@ body{
 .gif-left{right:15px}
 
 
-.telefono-black{
+.telefono-left{
 	background-image: url('../../images/phones/phone-black.png');
 	height: 495px;
 	width: 240px;
 	background-size: 100% 100%;
-	margin-left: 50px;
+	margin-left: 100px;
 	background-repeat: no-repeat; 
 
 	@include respond-to($max-width-Laptop){
-		margin-right: 0;
+		//margin-right: 0;
 	}
 
 }
