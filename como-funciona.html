@@ -42,8 +42,8 @@
 	<!--FIN HEADER Y NAV-->
 	<section class="section-complete-viewport section-first bg2">
 		<div class='content-first-other-page'>
-			<h1 class="title-big color-YEiPii-w">Pagar nunca <br> ha sido tan fácil</h1>
-			<div class="content-buttons-app-download-other-page">
+			<h1 class="title-big color-YEiPii-w op animate">Pagar nunca <br> ha sido tan fácil</h1>
+			<div class="content-buttons-app-download-other-page op animate slow">
 				<div class="button-app-download">
 					<a href="#">
 						<img class="android" src="images/download/google-play.png" alt="Descarga YEiPii en Google Play">
@@ -61,8 +61,8 @@
 	<section class="section-complete-viewport">
 		<div class="sections-YEiPii">
 			<div>
-				<h2 class="title-big color-YEiPii">Recarga <br> tu usuario</h2>
-				 <p class="parrafo_YEiPii_gray">Haz una transferencia a nuestras cuentas y regístrala para obtener Puntos en la aplicación.</p>
+				<h2 class="title-big color-YEiPii op animate">Recarga <br> tu usuario</h2>
+				 <p class="parrafo_YEiPii_gray op animate slow">Haz una transferencia a nuestras cuentas y regístrala para obtener Puntos en la aplicación.</p>
 			</div>
 			 <div class="telefono-right">
 				<img src="images/phones/telefono1.gif" alt="Recarga tu usuario" class="gif-right">
@@ -75,16 +75,16 @@
 				<img src="images/phones/telefono1.gif" alt="Recarga tu usuario" class="gif-left">
 			</div>
 			<div>
-				<h2 class="title-big color-YEiPii">Transfiere<br> de inmediato</h2>
-				<p class="parrafo_YEiPii_gray">¿No tienes tiempo para esperar en la cola? Tan solo con el usuario y el monto podrás transferir.</p>
+				<h2 class="title-big color-YEiPii op animate">Transfiere<br> de inmediato</h2>
+				<p class="parrafo_YEiPii_gray op animate slow">¿No tienes tiempo para esperar en la cola? Tan solo con el usuario y el monto podrás transferir.</p>
 			</div>
 		</div>
 	</section>
 	<section class="section-complete-viewport">
 		<div class="sections-YEiPii">
 			<div>
-				<h2 class="title-big color-YEiPii">De nuevo <br> a tu cuenta</h2>
-				<p class="parrafo_YEiPii_gray">Si un pana te debe, ¡qué te lo pague por <strong>YEiPii</strong>! Luego podrás canjear los puntos a bolívares a tu cuenta.</p>
+				<h2 class="title-big color-YEiPii op animate">De nuevo <br> a tu cuenta</h2>
+				<p class="parrafo_YEiPii_gray op animate slow">Si un pana te debe, ¡qué te lo pague por <strong>YEiPii</strong>! Luego podrás canjear los puntos a bolívares a tu cuenta.</p>
 			</div>
 			<div class="telefono-right">
 					<img src="images/phones/telefono1.gif" alt="Recarga tu usuario" class="gif-right">
@@ -153,34 +153,11 @@
 			</div>
 	</footer>
 	<!-- FIN FOOTER -->	
-	<!-- ANIMACION DE LA BARRA DE NAVEGACION FIXED TOP-->
-	<script type="text/javascript">
 
-		window.onscroll = function(){
-			AddOrRemove()
-		};
+<!-- ANIMACION DE SCROLL EMBED -->
+	 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!-- Codigo de el nav y reveal js -->
+	 <script src="Js/actions.js"></script>
 
-		var Header = document.getElementById("header");
-		Logo = document.getElementById("logo");
-		/*var BurguerButton = document.getElementById("burguerButton");*/
-		var Nav = document.getElementById("Nav");
-		
-		var HeaderPosition = Header.offsetTop;
-
-		function AddOrRemove(){
-			if(window.pageYOffset >= HeaderPosition){
-				Header.classList.add("header-down");
-				Logo.src="images/logo/YEiPii-inverse.fw.png";/*
-				BurguerButton.classList.add("burguer-blue");*/
-				Nav.classList.add("nav-down");
-			}
-			else{
-				Header.classList.remove("header-down");
-				Logo.src="images/logo/YEiPii.png";/*
-				BurguerButton.classList.remove("burguer-blue");*/
-				Nav.classList.remove("nav-down");
-			}
-		}
-	</script>
 </body>
 </html>

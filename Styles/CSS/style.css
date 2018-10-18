@@ -6477,6 +6477,48 @@ a.text-dark:hover, a.text-dark:focus {
 /*---------------------------*\
     $MIXINS
 \*---------------------------*/
+/* .op{
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 0.33s linear;
+  }
+
+  .op.animate {
+    -webkit-animation : fly-in .5s .7s ease both;
+    -moz-animation    : fly-in .5s .7s ease both;
+    -o-animation      : fly-in .5s .7s ease both;
+    animation         : fly-in .5s .7s ease both;
+  }
+
+  .op.animate.slow {
+    -webkit-animation : fly-in .5s .7s + .5 ease both;
+    -moz-animation    : fly-in .5s .7s + .5 ease both;
+    -o-animation      : fly-in .5s .7s + .5 ease both;
+    animation         : fly-in .5s .7s + .5 ease both;
+  }
+
+  @-webkit-keyframes fly-in {
+    from {
+      -webkit-transform :translateY(10rem); //rotate(150deg);
+      transform         :translateY(10rem); //rotate(150deg);
+      opacity:0;
+    }
+  }
+  @-moz-keyframes fly-in {
+    from {
+      -moz-transform :translateY(10rem);// rotate(150deg);
+      transform      :translateY(10rem);// rotate(150deg);
+      opacity:0;
+    }
+  }
+  @keyframes fly-in {
+    from {
+      transform:translateY(10rem);// rotate(150deg);
+      opacity:0;
+    }
+  }
+
+  */
 /*---------------------------*\
 	$TYPOGRAPHY
 \*---------------------------*/
@@ -6824,6 +6866,8 @@ body {
   background-size: 100% 100%;
   margin-right: 100px;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+          box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
 }
 
 .gif-right, .gif-left {
@@ -6847,6 +6891,8 @@ body {
   background-size: 100% 100%;
   margin-left: 100px;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+          box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
 }
 
 .inverse {
