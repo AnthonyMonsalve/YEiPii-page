@@ -52,10 +52,30 @@
 				<h3>Categorías</h3>
 			</div>
 			<div class="content-buttons-category">
-				<button class="button-YEiPii-secondary">
+				<button id="myBtn" class="modal-trigger no-select button-YEiPii-secondary">
 					<img src="images/categorias/colegios.png" width="80" alt="">
 					<span class="center">Colegios <br> Universidades </span>
 				</button>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span id="modalClose" class="close no-select">&times;</span>
+						<div class="flex" style="justify-content: space-around">
+								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
+							</div>
+							<div class="flex" style="justify-content: space-around">
+								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
+								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
+							</div>
+					</div>
+				</div>
+				<!-- The Modal -->			
 				<button class="button-YEiPii-secondary collapsible" type="button" data-toggle="modal" data-target="#contentRestaurantes">
 					<img src="images/categorias/restaurantes.png" width="80" alt="">
 					<span class="center">Restaurantes</span>
@@ -65,39 +85,6 @@
 					<span class="center">Estacionamientos</span>
 				</button>
 			</div>
-
-
-<!-- Button trigger modal -->
-    
-	    <!-- Modal -->
-	    <div class="modal fade" id="contentRestaurantes" tabindex="-1" role="dialog" aria-labelledby="contentRestaurantes" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h3 class="modal-title color-YEiPii center" id="exampleModalCenterTitle">Modal title</h3>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row-establecimientos">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-						</div>
-						<div class="row-establecimientos">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-							<img class="establecimiento" src="images/logo/CYEiPii.png" alt="Local de Comida">
-						</div>
-					</div>
-				</div>
-			</div>
-	    </div>
-
-			
 			<div class="content-buttons-category">
 				<button class="button-YEiPii-secondary">
 					<img src="images/categorias/discotecas.png" width="80" alt="">
@@ -191,13 +178,14 @@
 		</div>
 	</footer>
 	<!-- FIN FOOTER -->	
-	<!-- BOOTSTRAP -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <!-- ANIMACION DE SCROLL EMBED -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!-- MODAL SIN BOOTSTRAP -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://use.fontawesome.com/45c73aaa68.js"></script>
 <!-- Codigo de el nav y reveal js -->
-	 <script src="Js/actions.js"></script>
+	<script src="Js/actions.js"></script>
+
+
 </body>
 </html>
