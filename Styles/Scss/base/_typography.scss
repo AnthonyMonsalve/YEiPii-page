@@ -1,0 +1,62 @@
+/*---------------------------*\
+	$TYPOGRAPHY
+\*---------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@font-face {
+	font-family: 'Lighter';
+	font-style: normal;
+	font-weight: lighter;
+	src:  local('Lighter'),
+				url('../../fonts/AvenirLTStd-Light.otf')
+				format('woff');
+}
+
+@font-face {
+	font-family: 'Normal';
+	font-style: normal;
+	font-weight: normal;
+	src:  local('Normal'),
+				url('../../fonts/AvenirLTStd-Roman.otf')
+				format('woff');
+}
+
+
+@font-face {
+	font-family: 'Bold';
+	font-style: normal;
+	font-weight: bold;
+	src:  local('Bold'),
+				url('../../fonts/AvenirLTStd-Black.otf')
+				format('woff');
+}
+
+
+body{
+	color: $color-body; 
+	font-family: 'Normal', $base-font-family;
+	font-size: map-get($font-size, normal)
+}
+
+// Lista de valores
+$font-weights: bold normal italic;
+$text-align: center left justify right;
+
+// Directiva each para no repetir el código (LOOP) -  DRY
+@each $font in ($font-weights) {
+	.#{$font} { font-weight: $font;}
+}
+
+@each $align in ($text-align) {
+	.#{ $align} { text-align: $align;}
+}
+
+
+//clases de colores 
+.color-YEiPii{
+	color: $YEiPii-color;
+}
+.color-YEiPii-w{
+	color: $YEiPii-color-white;
+}

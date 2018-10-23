@@ -1,0 +1,152 @@
+/*-----------------------------------*\
+	$HEADER & NAV BAR 
+\*-----------------------------------*/
+
+// Header & Nav
+.header {
+	position: absolute;
+	height: 50px;
+	left: 0;
+    right: 0;
+	top: 1px;
+	@extend %flex;
+    justify-content: center;
+    padding: 0 25px;
+	background-color: $YEiPii-color-white;
+	box-shadow: 0px -2px 0px 0px rgba(255,255,255,1);
+}
+
+.content-header{
+	@extend %flex;
+	width: $max-width-Laptop;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-header{
+	height: 35px;
+}
+
+.content-nav{
+	@extend %flex;
+}
+
+.nav{
+	@extend %flex;
+	height: 100%;
+    align-items: center;
+	background-color: $YEiPii-color-white;
+	color: $YEiPii-color-secondary;
+}
+
+.nav ul{
+	@extend %flex;
+	list-style: none;
+	margin: 0;
+}
+
+.item-nav{
+	@extend %flex;
+	height: 50px;
+    align-items: center;
+	margin: 0;
+	padding: 0px 10px;
+	transition: $button-transition;
+	font-family: 'normal';
+}
+
+.item-nav.normal:hover{
+	box-shadow: inset 10px 0px 0px -9px rgba($YEiPii-color, $alpha: 0.05), inset -10px 0px 0px -9px rgba($YEiPii-color, $alpha: 0.05) 
+}
+
+.item-nav .active{
+	box-shadow: inset 0 -19px 0px -15px $YEiPii-color;
+}
+
+/*{
+    background: #ebebeb36;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}*/
+
+.item-nav a {
+    height: 44px;
+    align-items: center;
+	font-size: .84em;
+    padding: 3px 0;
+}
+
+#registrate{
+	border-right: solid 1px $YEiPii-color-lightgray
+}
+
+#iniciar-sesion:hover a, #registrate:hover a{
+	color: darken($YEiPii-color-orange, 8);
+}
+#iniciar-sesion a, #registrate a{
+	color: $YEiPii-color-orange;
+	font-family: 'bold'
+}
+
+.item-nav a:hover{
+	padding: 3px 0;
+}
+
+.item-nav span{
+	padding: 16px 0
+}
+
+.header-down{
+	position: fixed;
+	top: 0;
+	background: $YEiPii-color;
+	box-shadow: 0px -3px 29px 0px rgba(0,0,0,0.58);
+	animation-duration: 1s;
+	z-index: 1000;
+	animation-name: aparecer-navdown;
+	animation-iteration-count: 1;
+}
+
+@keyframes aparecer-navdown{
+	from {
+		opacity: 0;
+		top: -20px;
+	}
+
+	to {
+		opacity: 1;
+		top:0;
+	}
+}
+
+.nav-down{
+	margin: 5px 0;
+	background-color: transparent;
+}
+.nav-down a{
+	color: $YEiPii-color-white
+}
+.nav-down a:hover{
+	color: $YEiPii-color-lightgray
+}
+
+.nav-down .item-nav .active{
+	box-shadow: inset 0 -19px 0px -15px $YEiPii-color-white;
+}
+
+.nav-down #registrate{
+	border-right: solid 1px rgba($YEiPii-color-lightgray, $alpha: .2)
+}
+
+#iniciar-sesion:hover a, #registrate:hover a{
+	color: darken($YEiPii-color-orange, 8);
+}
+
+.nav-down #iniciar-sesion a, .nav-down #registrate a{
+	color: $YEiPii-color-white;
+	font-family: 'bold'
+}
+
+.nav-down .item-nav.normal:hover{
+	box-shadow: inset 10px 0px 0px -9px rgba($YEiPii-color-white, $alpha: 0.15), inset -10px 0px 0px -9px rgba($YEiPii-color-white, $alpha: 0.15) 
+}

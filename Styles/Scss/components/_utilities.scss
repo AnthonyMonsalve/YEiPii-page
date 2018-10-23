@@ -1,0 +1,28 @@
+/*---------------------------*\
+    $UTILITIES
+
+    Aquí va align left, align rigth...
+\*---------------------------*/
+
+//MARGIN
+.m-auto{margin: 5px auto 10px;}
+.m-cero{margin: 0}
+//PADDING
+.p-cero{padding: 0}
+//ALIGN
+.center{text-align: center;letter-spacing: 1px}
+//FLEX
+.flex{display: flex}
+//FLEX CENTER TOTAL
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+//BACKGROUND
+.bggray{background-color: $YEiPii-color-lightgray !important}
+//TRANSPARENT
+.transparent{background-color: transparent}
+//UL
+.list-style-none{list-style: none;}

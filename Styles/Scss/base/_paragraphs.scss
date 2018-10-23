@@ -1,0 +1,39 @@
+/*---------------------------*\
+	$PARAGRAPHS
+\*---------------------------*/
+
+p{
+	margin-bottom: $paragraphs-mb;
+	margin-top: $paragraphs-mt; 
+}
+
+//parrafo YEiPii
+
+%parrafo_YEiPii{
+	font-size: map-get($font-size, big);
+	max-width: 500px;
+}
+
+
+.parrafo_YEiPii-calcomania{
+	@extend %parrafo_YEiPii;
+	max-width: 580px;
+}
+
+.parrafo_YEiPii_gray{
+	@extend %parrafo_YEiPii;
+	color: $YEiPii-color-gray;
+}
+
+.parrafo_YEiPii_white{
+	@extend %parrafo_YEiPii;
+	color: $YEiPii-color-white;
+}
+
+.parrafo_banner-donde-estamos{
+	font-size: $base-font-size + 6;
+	max-width: 350px;
+	text-align: right;
+	color: lighten($YEiPii-color-gray, 50);
+	letter-spacing: 1px;
+}

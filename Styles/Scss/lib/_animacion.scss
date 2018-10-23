@@ -1,0 +1,44 @@
+//animations effects
+  //operations options effect
+ /* .op{
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 0.33s linear;
+  }
+
+  .op.animate {
+    -webkit-animation : fly-in .5s .7s ease both;
+    -moz-animation    : fly-in .5s .7s ease both;
+    -o-animation      : fly-in .5s .7s ease both;
+    animation         : fly-in .5s .7s ease both;
+  }
+
+  .op.animate.slow {
+    -webkit-animation : fly-in .5s .7s + .5 ease both;
+    -moz-animation    : fly-in .5s .7s + .5 ease both;
+    -o-animation      : fly-in .5s .7s + .5 ease both;
+    animation         : fly-in .5s .7s + .5 ease both;
+  }
+
+  @-webkit-keyframes fly-in {
+    from {
+      -webkit-transform :translateY(10rem); //rotate(150deg);
+      transform         :translateY(10rem); //rotate(150deg);
+      opacity:0;
+    }
+  }
+  @-moz-keyframes fly-in {
+    from {
+      -moz-transform :translateY(10rem);// rotate(150deg);
+      transform      :translateY(10rem);// rotate(150deg);
+      opacity:0;
+    }
+  }
+  @keyframes fly-in {
+    from {
+      transform:translateY(10rem);// rotate(150deg);
+      opacity:0;
+    }
+  }
+
+  */

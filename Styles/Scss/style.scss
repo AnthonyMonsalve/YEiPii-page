@@ -1,0 +1,24 @@
+//Librerías, settings & variables
+@import'COLLAPSE/bootstrap';
+@import'lib/variables';
+@import'lib/functions';
+@import'lib/mixins';
+@import'lib/animacion';
+
+//Elementos Base
+@import'base/typography';
+@import'base/titles';
+@import'base/paragraphs';
+@import'base/buttons';
+@import'base/links';
+
+//Layout
+@import'layouts/section-content';
+@import'layouts/nav';
+@import'layouts/footer';
+
+
+//Components
+/* último import */ @import'components/utilities';
+@import'components/scroll';
+

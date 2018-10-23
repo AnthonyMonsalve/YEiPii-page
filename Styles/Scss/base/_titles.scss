@@ -1,0 +1,43 @@
+/*---------------------------*\
+		$PARAGRAPHS
+\*---------------------------*/
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Bold';
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+h1{
+	font-size: $base-size-title-YEiPii;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+h2{
+	font-size: $base-size-title-YEiPii  * .7;
+}
+
+h3{
+	margin: 0;
+	font-size: $base-size-title-YEiPii  * .42;
+	font-family: 'Normal';
+}
+
+.title-big{
+	font-size: $base-size-title-YEiPii + .3;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+
+.title_banner-donde-estamos{
+	font-size: $base-size-title-YEiPii;
+	letter-spacing: 2px;
+}
+
+.donde-estamos-banner h3{
+	color: lighten($YEiPii-color-gray, 50);
+}

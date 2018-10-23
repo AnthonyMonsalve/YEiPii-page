@@ -1,0 +1,21 @@
+/*---------------------------*\
+    $LINKS
+\*---------------------------*/
+
+a{
+    text-decoration: none;
+    display: flex;
+}
+
+// Links de la barra de navegación
+header a{
+    text-transform: uppercase;
+    font-size: map-get($font-size, small);
+    color: $YEiPii-color;
+    transition: $button-transition;
+    font-weight: map-get($font-weight, medium);
+}
+
+.nav a:hover{
+    color: $YEiPii-color-secondary;
+}

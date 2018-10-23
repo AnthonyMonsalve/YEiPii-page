@@ -1,0 +1,185 @@
+/*---------------------------*\
+	$LAYOUTS
+\*---------------------------*/
+
+body{
+	margin: 0;
+}
+
+/* DISPLAY FLEX PLACE HOLDER*/
+%flex{
+	display: flex;
+}
+
+
+//Complete View
+.section-complete-viewport{
+	@extend %flex;
+	height: 100vh;
+	min-height: 400px;
+	background: $YEiPii-color-white;
+	align-items: center;
+}
+
+
+// Sections 
+.section-first{
+	@extend %flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../../images/backgrounds/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 25px;
+}
+
+.bg2{
+	background-image: url('../../images/backgrounds/bg-como-funciona.jpg');
+}
+
+.content-first-other-page{
+	width: 90%;
+	max-width: $max-width-Laptop;
+}
+
+.sections-YEiPii{
+	width: 100%;
+	@include max-width;
+	@extend %flex;
+	background-color: $YEiPii-color-white;
+	padding: $padding;
+	box-sizing: border-box;
+	transition: $transition-responsive;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: $padding-left;
+	padding-right: $padding-right;
+
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-Laptop){
+		background-color: $YEiPii-color-white;
+		padding-left: $padding-left;
+		padding-right: $padding-right;
+	}
+ 
+	@include respond-to($max-width-Tablet){
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+}
+
+
+.telefono-right{
+	background-image: url('../../images/phones/phone-black.png');
+	height: 495px;
+	width: 240px;
+	background-size: 100% 100%;
+	margin-right: 100px;
+	background-repeat: no-repeat; 
+	box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+
+	@include respond-to($max-width-Laptop){
+		//margin-right: 0;
+	}
+
+}
+
+.gif-right, .gif-left{width: 210px; position: relative; top: 65px}
+
+.gif-right{left:15px}
+.gif-left{right:15px}
+
+
+.telefono-left{
+	background-image: url('../../images/phones/phone-black.png');
+	height: 495px;
+	width: 240px;
+	background-size: 100% 100%;
+	margin-left: 100px;
+	background-repeat: no-repeat; 
+	box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+
+	@include respond-to($max-width-Laptop){
+		//margin-right: 0;
+	}
+
+}
+
+.inverse{
+	text-align: right;
+}
+
+//Contents
+.content-buttons-app-download{
+	@extend %flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-buttons-app-download-other-page{
+	@extend %flex;
+	align-items: center;
+	margin-left: -10px;
+}
+
+//content donde estamos banner
+.donde-estamos-banner{
+	background: linear-gradient(to bottom,#001196,#001196 50%,#00108f 50%,#00108f);
+	background-size: 100% 13px;
+}
+
+.sections-YEiPii.bg-YEiPii-color{
+	background: rgba(5,13,158,.8)
+}
+
+//SECTION DONDE ESTAMOS BUTTONS
+
+.section-category{
+	width: 80%;
+	@include max-width;
+	background-color: $YEiPii-color-white;
+	box-sizing: border-box;
+	transition: $transition-responsive;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.title-category{
+	border-bottom: 1px solid $YEiPii-color;
+	color: $YEiPii-color;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+}
+
+.content-buttons-category{
+	@extend %flex;
+	justify-content: space-around;
+	padding: 0 50px 0 50px;
+}
+
+.content-category-locales{
+	width: 80%;
+	margin: 15px auto;
+	border: solid 1px $YEiPii-color-lightgray;
+	transition: $transition-responsive;
+}
+
+.row-establecimientos{display: flex; align-items: center; justify-content: center}
+
+.active-bg, .active-bg:hover{
+	background: darken($YEiPii-color-secondary, 5);
+	transition: $transition-responsive;
+}
+
+
+.establecimiento{
+	transition: $transition-responsive;
+	width: 120px;
+	margin: 10px 4%;
+}
+
+
+//PANA YEiPii
+.Pana-YEiPii{width:150px; height: 150px; margin: 10px; border-radius: 50%;}

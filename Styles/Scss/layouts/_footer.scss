@@ -1,0 +1,95 @@
+/*---------------------------*\
+	$FOOTER
+\*---------------------------*/
+
+#footer{
+  background-color: $YEiPii-color-lightgray;
+}
+
+.footer-container{
+	@include max-width;
+  padding: 35px;
+  position: relative;
+  padding-left: $padding-left;
+	padding-right: $padding-right;
+}
+
+.footer-content-info{
+  @extend %flex;
+  padding-left: $padding-left;
+	padding-right: $padding-right;
+  font-size: map-get($font-size, small);
+}
+
+.footer-logo{
+  width: $footer-logo;
+  text-align:left;
+  @extend %flex;
+  align-items: center;
+}
+
+.footer-logo img{
+  width: 160px;
+}
+
+.footer-info{
+  @extend %flex;
+  width: 100 -  $footer-logo;
+  justify-content: flex-end;
+}
+
+.f-info{
+ margin: 0 35px;
+ min-width: 60px;
+}
+
+.f-info:last-of-type{
+  margin-right: 0;
+}
+
+.f-info a{color:$YEiPii-color-gray; margin-bottom: 5px;transition: $button-transition}
+
+.f-info a:hover{
+  text-decoration: underline;
+}
+
+
+.title-info-footer{
+  color: $YEiPii-color;
+  font-weight: map-get($font-weight, medium);
+  margin-bottom: 12px !important;
+}
+
+.content-buttons-footer{
+  @extend %flex;
+  justify-content: center;
+}
+
+.redes-footer-btn-img{
+  width: $redes-footer-btn-img;
+  height: $redes-footer-btn-img;
+  margin: 0 2px 0 2px;
+  border-radius: 50%;
+  transition: $button-transition;
+ }
+
+.footer-copy{
+  margin-top: 12px;
+  padding: 15px;
+  text-align: center;
+  border-top: solid 1px $YEiPii-color;
+  font-size: map-get($font-size, small);
+  margin-left: $padding-left;
+	margin-right: $padding-right;
+}
+
+.YEiPii-CA{
+  font-size: .57em; 
+  position: absolute; 
+  top: 95px;
+  right: -70px;
+  transform: rotate(90deg);
+  color: $YEiPii-color;
+  background: $YEiPii-color-lightgray;
+  padding: 5px;
+}
