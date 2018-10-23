@@ -6578,7 +6578,7 @@ body {
 }
 
 .color-YEiPii {
-  color: red;
+  color: #050d9e;
 }
 
 .color-YEiPii-w {
@@ -6665,7 +6665,7 @@ p {
 	$BUTTONS
 \*---------------------------*/
 .button-YEiPii, .button-YEiPii-secondary {
-  background-color: red;
+  background-color: #050d9e;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -6721,7 +6721,7 @@ p {
 
 .button-app-download:hover {
   cursor: pointer;
-  background: red;
+  background: #050d9e;
 }
 
 .download-footer-btn-img {
@@ -6734,14 +6734,14 @@ p {
 }
 
 .download-footer-btn-img:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
-          box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(5, 13, 158, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(5, 13, 158, 0.5);
 }
 
 .redes-footer-btn-img:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
-          box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(5, 13, 158, 0.5);
+          box-shadow: 0px 0px 0px 1px rgba(5, 13, 158, 0.5);
 }
 
 .button-app-download .android {
@@ -6827,7 +6827,7 @@ a {
 header a {
   text-transform: uppercase;
   font-size: 13px;
-  color: red;
+  color: #050d9e;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
@@ -6999,8 +6999,8 @@ body {
 }
 
 .title-category {
-  border-bottom: 1px solid red;
-  color: red;
+  border-bottom: 1px solid #050d9e;
+  color: #050d9e;
   margin-bottom: 50px;
   padding-bottom: 10px;
 }
@@ -7110,13 +7110,13 @@ body {
 }
 
 .item-nav.normal:hover {
-  -webkit-box-shadow: inset 10px 0px 0px -9px rgba(255, 0, 0, 0.05), inset -10px 0px 0px -9px rgba(255, 0, 0, 0.05);
-          box-shadow: inset 10px 0px 0px -9px rgba(255, 0, 0, 0.05), inset -10px 0px 0px -9px rgba(255, 0, 0, 0.05);
+  -webkit-box-shadow: inset 10px 0px 0px -9px rgba(5, 13, 158, 0.05), inset -10px 0px 0px -9px rgba(5, 13, 158, 0.05);
+          box-shadow: inset 10px 0px 0px -9px rgba(5, 13, 158, 0.05), inset -10px 0px 0px -9px rgba(5, 13, 158, 0.05);
 }
 
 .item-nav .active {
-  -webkit-box-shadow: inset 0 -19px 0px -15px red;
-          box-shadow: inset 0 -19px 0px -15px red;
+  -webkit-box-shadow: inset 0 -19px 0px -15px #050d9e;
+          box-shadow: inset 0 -19px 0px -15px #050d9e;
 }
 
 /*{
@@ -7157,7 +7157,7 @@ body {
 .header-down {
   position: fixed;
   top: 0;
-  background: red;
+  background: #050d9e;
   -webkit-box-shadow: 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
           box-shadow: 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
   -webkit-animation-duration: 1s;
@@ -7290,7 +7290,7 @@ body {
 }
 
 .title-info-footer {
-  color: red;
+  color: #050d9e;
   font-weight: 500;
   margin-bottom: 12px !important;
 }
@@ -7314,7 +7314,7 @@ body {
   margin-top: 12px;
   padding: 15px;
   text-align: center;
-  border-top: solid 1px red;
+  border-top: solid 1px #050d9e;
   font-size: 13px;
   margin-left: 25px;
   margin-right: 25px;
@@ -7327,7 +7327,7 @@ body {
   right: -70px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  color: red;
+  color: #050d9e;
   background: #EBEBEB;
   padding: 5px;
 }
@@ -7402,6 +7402,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: #050d9e;
 }
 /*# sourceMappingURL=style.css.map */
