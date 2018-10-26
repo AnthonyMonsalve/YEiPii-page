@@ -7171,8 +7171,8 @@ body {
 
 @-webkit-keyframes aparecer-navdown {
   from {
-    opacity: 0;
-    top: -20px;
+    opacity: 0.2;
+    top: 0px;
   }
   to {
     opacity: 1;
@@ -7182,8 +7182,8 @@ body {
 
 @keyframes aparecer-navdown {
   from {
-    opacity: 0;
-    top: -20px;
+    opacity: 0.2;
+    top: 0px;
   }
   to {
     opacity: 1;
