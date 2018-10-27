@@ -6984,6 +6984,13 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#001196), color-stop(50%, #001196), color-stop(50%, #00108f), to(#00108f));
   background: linear-gradient(to bottom, #001196, #001196 50%, #00108f 50%, #00108f);
   background-size: 100% 13px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.donde-estamos-banner:hover {
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 
 .sections-YEiPii.bg-YEiPii-color {

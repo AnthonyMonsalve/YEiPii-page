@@ -131,6 +131,11 @@ body{
 .donde-estamos-banner{
 	background: linear-gradient(to bottom,#001196,#001196 50%,#00108f 50%,#00108f);
 	background-size: 100% 13px;
+	transition: $button-transition;
+}
+
+.donde-estamos-banner:hover{
+	filter: grayscale(30%) ; 
 }
 
 .sections-YEiPii.bg-YEiPii-color{
