@@ -6716,7 +6716,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 0px 0px 1px white;
           box-shadow: 0px 0px 0px 1px white;
 }
