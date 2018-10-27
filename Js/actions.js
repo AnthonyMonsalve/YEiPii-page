@@ -26,13 +26,45 @@
 		}
 
 
+/*CAMBIAR IMAGEN DE DOWNLOAD 'GET IT ON'*/
+
+window.onload = function(){
+    var imagenAndroid = document.getElementById("getiton-android");
+    imagenAndroid.addEventListener('mouseover',cambiarImagenAndroid);
+    imagenAndroid.addEventListener('mouseout',imagenAndroidIniciar);
+    
+    function cambiarImagenAndroid(){
+        this.setAttribute('src','images/download/store_an_blue.svg');    
+    }
+    
+    function imagenAndroidIniciar(){
+        this.setAttribute('src',"images/download/store_an_white.svg");
+    }
+
+	var imagenIos = document.getElementById("getiton-ios");
+    imagenIos.addEventListener('mouseover',cambiarImagenIos);
+    imagenIos.addEventListener('mouseout',imagenIosIniciar);
+    
+    function cambiarImagenIos(){
+        this.setAttribute('src','images/download/store_ap_blue.svg');    
+    }
+    
+    function imagenIosIniciar(){
+        this.setAttribute('src',"images/download/store_ap_white.svg");
+    }
+}   
+
 /*SCROLL REVEAL*/
 		// Changing the defaults
 		window.sr = ScrollReveal({ reset: false });
 
 		// Customizing a reveal set
-		sr.reveal('.animate', { duration: 750, distance: '10rem', origin: 'bottom', delay: 250 });
-        sr.reveal('.animate.slow', { duration: 750, distance: '10rem', origin: 'bottom', delay: 600 });
+		sr.reveal('.animate', { duration: 750, distance: '60px', origin: 'left', delay: 250 });
+		sr.reveal('.animate.slow', { duration: 750, distance: '60px', origin: 'left', delay: 600 });
+		
+		sr.reveal('.animate-right', { duration: 750, distance: '60px', origin: 'right', delay: 250 });
+		sr.reveal('.animate-right.slow', { duration: 750, distance: '60px', origin: 'right', delay: 600 });
+		
         
 
 /*MODALLLLLL*/

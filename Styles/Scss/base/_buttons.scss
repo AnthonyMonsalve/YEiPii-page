@@ -18,8 +18,8 @@
 }
 
 %button-secondary{
-	border-radius: 15px;
-	padding: 15px 5px 15px 5px;
+	border-radius: 12px;
+	padding: 5px 10px 5px 10px;
 	min-width: 150px;
 	min-height: 150px;
 	margin: 10px;
@@ -49,12 +49,14 @@
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
-	border-radius: 10px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 0px 1px $YEiPii-color-white;
 	//transition: $button-transition;
 }
+
 .button-app-download:hover{
 	cursor: pointer;
-	background: $YEiPii-color;
+	background: $YEiPii-color-white;
 }
 
 //FOOTER

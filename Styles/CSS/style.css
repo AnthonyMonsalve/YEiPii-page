@@ -6680,8 +6680,8 @@ p {
 }
 
 .button-YEiPii-secondary {
-  border-radius: 15px;
-  padding: 15px 5px 15px 5px;
+  border-radius: 12px;
+  padding: 5px 10px 5px 10px;
   min-width: 150px;
   min-height: 150px;
   margin: 10px;
@@ -6716,12 +6716,14 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 0px 1px white;
+          box-shadow: 0px 0px 0px 1px white;
 }
 
 .button-app-download:hover {
   cursor: pointer;
-  background: #050d9e;
+  background: white;
 }
 
 .download-footer-btn-img {
@@ -6878,8 +6880,12 @@ body {
 }
 
 .content-first-other-page {
-  width: 90%;
+  width: 100%;
   max-width: 1124px;
+  padding-left: 25px;
+  padding-right: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sections-YEiPii {
@@ -7070,6 +7076,8 @@ body {
 }
 
 .content-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1124px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -7077,6 +7085,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .logo-header {
@@ -7137,6 +7147,10 @@ body {
   border-right: solid 1px #EBEBEB;
 }
 
+#iniciar-sesion {
+  padding-right: 1px;
+}
+
 #iniciar-sesion:hover a, #registrate:hover a {
   color: #e47f08;
 }
@@ -7160,8 +7174,8 @@ body {
   background: #050d9e;
   -webkit-box-shadow: 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
           box-shadow: 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
   z-index: 1000;
   -webkit-animation-name: aparecer-navdown;
           animation-name: aparecer-navdown;

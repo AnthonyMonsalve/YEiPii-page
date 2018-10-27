@@ -38,8 +38,11 @@ body{
 }
 
 .content-first-other-page{
-	width: 90%;
+	width: 100%;
 	max-width: $max-width-Laptop;
+	padding-left: $padding-left;
+	padding-right: $padding-right;
+    box-sizing: border-box;
 }
 
 .sections-YEiPii{
