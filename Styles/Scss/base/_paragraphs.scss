@@ -12,6 +12,12 @@ p{
 %parrafo_YEiPii{
 	font-size: map-get($font-size, big);
 	max-width: 500px;
+	transition: $transition-responsive;
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-1000){
+		font-size: map-get($font-size, big-low);
+	}
 }
 
 

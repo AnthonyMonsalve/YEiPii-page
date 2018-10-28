@@ -6619,9 +6619,27 @@ h3 {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1000px) {
+  .title-big {
+    font-size: 3.4em;
+  }
+}
+
 .title_banner-donde-estamos {
   font-size: 3.4em;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .title_banner-donde-estamos {
+    font-size: 3.2em;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .title_banner-donde-estamos {
+    font-size: 3em;
+  }
 }
 
 .donde-estamos-banner h3 {
@@ -6639,6 +6657,14 @@ p {
 .parrafo_YEiPii-calcomania, .parrafo_YEiPii_gray, .parrafo_YEiPii_white {
   font-size: 30px;
   max-width: 500px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .parrafo_YEiPii-calcomania, .parrafo_YEiPii_gray, .parrafo_YEiPii_white {
+    font-size: 26px;
+  }
 }
 
 .parrafo_YEiPii-calcomania {
@@ -6715,7 +6741,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 9px 13px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 0px 1px white;
           box-shadow: 0px 0px 0px 1px white;
@@ -6844,6 +6870,7 @@ header a {
 \*---------------------------*/
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* DISPLAY FLEX PLACE HOLDER*/
@@ -6880,16 +6907,18 @@ body {
 }
 
 .content-first-other-page {
-  width: 100%;
+  width: 95%;
   max-width: 1124px;
   padding-left: 25px;
   padding-right: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .sections-YEiPii {
-  width: 100%;
+  width: 95%;
   max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
@@ -6909,14 +6938,6 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 1124px) {
-  .sections-YEiPii {
-    background-color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .sections-YEiPii {
     padding-left: 20px;
@@ -6933,6 +6954,18 @@ body {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
           box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+}
+
+@media screen and (max-width: 1000px) {
+  .telefono-right {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .telefono-right {
+    margin-right: 0px;
+  }
 }
 
 .gif-right, .gif-left {
@@ -6958,6 +6991,18 @@ body {
   background-repeat: no-repeat;
   -webkit-box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
           box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
+}
+
+@media screen and (max-width: 1000px) {
+  .telefono-left {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .telefono-left {
+    margin-right: 0px;
+  }
 }
 
 .inverse {

@@ -4,6 +4,7 @@
 
 body{
 	margin: 0;
+	overflow-x:hidden;
 }
 
 /* DISPLAY FLEX PLACE HOLDER*/
@@ -38,15 +39,22 @@ body{
 }
 
 .content-first-other-page{
-	width: 100%;
+	width: 95%;
 	max-width: $max-width-Laptop;
 	padding-left: $padding-left;
 	padding-right: $padding-right;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	transition: $transition-responsive;
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-1000){
+		//width: 95%;
+	}	
+
 }
 
 .sections-YEiPii{
-	width: 100%;
+	width: 95%;
 	@include max-width;
 	@extend %flex;
 	background-color: $YEiPii-color-white;
@@ -60,10 +68,8 @@ body{
 
 
 	//nos permite gestionar los break-points dentro del mismo selector
-	@include respond-to($max-width-Laptop){
-		background-color: $YEiPii-color-white;
-		padding-left: $padding-left;
-		padding-right: $padding-right;
+	@include respond-to($max-width-1000){
+		//: 95%;
 	}
  
 	@include respond-to($max-width-Tablet){
@@ -83,8 +89,12 @@ body{
 	background-repeat: no-repeat; 
 	box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
 
-	@include respond-to($max-width-Laptop){
-		//margin-right: 0;
+	@include respond-to($max-width-1000){
+		margin-right: 50px;
+	}
+
+	@include respond-to($max-width-930){
+		margin-right: 0px;
 	}
 
 }
@@ -104,8 +114,12 @@ body{
 	background-repeat: no-repeat; 
 	box-shadow: 0px 39px 42px -41px rgba(0, 0, 0, 0.73);
 
-	@include respond-to($max-width-Laptop){
-		//margin-right: 0;
+	@include respond-to($max-width-1000){
+		margin-left: 50px;
+	}
+
+	@include respond-to($max-width-930){
+		margin-right: 0px;
 	}
 
 }
@@ -153,6 +167,8 @@ body{
 	padding-left: 50px;
 	padding-right: 50px;
 }
+
+
 
 .title-category{
 	border-bottom: 1px solid $YEiPii-color;

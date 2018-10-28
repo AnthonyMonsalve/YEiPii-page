@@ -31,11 +31,27 @@ h3{
 	margin-bottom: 5px;
 	margin-top: 10px;
 	letter-spacing: 1px;
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-1000){
+		font-size: $base-size-title-YEiPii;
+	}
+
 }
 
 .title_banner-donde-estamos{
 	font-size: $base-size-title-YEiPii;
 	letter-spacing: 2px;
+
+	//nos permite gestionar los break-points dentro del mismo selector
+	@include respond-to($max-width-1000){
+		font-size: $base-size-title-YEiPii - .2;
+	}
+
+	@include respond-to($max-width-930){
+		font-size: $base-size-title-YEiPii - .4;
+	}
+
 }
 
 .donde-estamos-banner h3{
