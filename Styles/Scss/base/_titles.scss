@@ -39,6 +39,15 @@ h3{
 
 }
 
+.sections-YEiPii .title-big{
+	@include respond-to($max-width-Tablet){
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 0px;
+	}
+}
+
+
 .title_banner-donde-estamos{
 	font-size: $base-size-title-YEiPii;
 	letter-spacing: 2px;

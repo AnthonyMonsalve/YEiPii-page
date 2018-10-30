@@ -29,6 +29,14 @@ p{
 .parrafo_YEiPii_gray{
 	@extend %parrafo_YEiPii;
 	color: $YEiPii-color-gray;
+
+	@include respond-to($max-width-Tablet){
+		max-width: 100%;
+		margin: auto;
+		margin-bottom: 25px;
+		text-align: center;
+		font-size: map-get($font-size, normal-big);
+	}
 }
 
 .parrafo_YEiPii_white{
