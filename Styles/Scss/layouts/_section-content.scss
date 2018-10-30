@@ -59,11 +59,18 @@ body{
 
 }
 
+.content-first{
+	max-width: 540px;
+
+	@include respond-to($max-width-MobileL){
+		max-width: 400px;
+	}
+}
+
 .sections-YEiPii{
 	width: 95%;
 	@include max-width;
 	@extend %flex;
-	background-color: $YEiPii-color-white;
 	padding: $padding;
 	box-sizing: border-box;
 	transition: $transition-responsive;
@@ -169,6 +176,10 @@ body{
 	@extend %flex;
 	justify-content: center;
 	align-items: center;
+
+	@include respond-to($max-width-MobileL){
+		flex-direction: column;
+	}
 }
 
 .content-buttons-app-download-other-page{
@@ -203,7 +214,6 @@ body{
 .section-category{
 	width: 80%;
 	@include max-width;
-	background-color: $YEiPii-color-white;
 	box-sizing: border-box;
 	transition: $transition-responsive;
 	padding-left: 50px;

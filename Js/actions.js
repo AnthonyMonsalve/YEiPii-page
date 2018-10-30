@@ -13,7 +13,7 @@
 		function AddOrRemove(){
 			if(window.pageYOffset >= HeaderPosition){
 				Header.classList.add("header-down");
-				Logo.src="images/logo/YEiPii-inverse.fw.png";/*
+				Logo.src="images/logo/YEiPii.png";/*
 				BurguerButton.classList.add("burguer-blue");*/
 				Nav.classList.add("nav-down");
 			}
