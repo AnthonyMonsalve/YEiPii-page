@@ -80,6 +80,8 @@
 
 #button-menu:hover{
 	cursor: pointer;
+}
+#button-menu.active{
 	filter: opacity(1) brightness(1);
 }
 
