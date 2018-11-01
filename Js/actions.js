@@ -105,3 +105,10 @@ $(document).on("click", function () {
     //click outside of ".nav__dropdown" class itself and menu will be hidden
 	hideModal();
 });
+
+
+/* ACCIONES DEL MENU RESPONSIVE */
+
+function menuResponsive (){
+	document.getElementById('contentNav').classList.toggle('active');
+}

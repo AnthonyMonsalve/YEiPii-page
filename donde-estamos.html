@@ -9,21 +9,22 @@
 	<title>YEiPii - Dónde estamos</title>
 </head>
 <body>
-	<header class="header fixed-top" id="header">
+		<header class="header fixed-top" id="header">
 				<div class="content-header">
+					<div class="mask"></div>
 					<div class="content-logo">
 						<a href="index.html">
 							<img id="logo" class="logo-header" src="images/logo/YEiPii.png" alt="YEiPii">
 						</a>
 					</div>
-					<div class="content-nav">
+					<div class="content-nav" id="contentNav">
 						<nav class="nav" id="Nav">
 							<ul>
 								<li class="item-nav normal">
 									<a href="como-funciona.html"><span>¿Cómo Funciona?</span></a>
 								</li>
 								<li class="item-nav normal">
-									<a class="active" href="donde-estamos.html"><span>¿Dónde Estamos?</span></a>
+									<a href="donde-estamos.html"><span>¿Dónde Estamos?</span></a>
 								</li>
 								<li class="item-nav normal">
 									<a href="contactanos.html"><span>Contáctanos</span></a>
@@ -36,6 +37,9 @@
 								</li>
 							</ul>
 						</nav>
+					</div>
+					<div class="content-button-menu-responsive">
+						<button id="button-menu" onclick="menuResponsive()"></button>
 					</div>
 				</div>    
 	</header>

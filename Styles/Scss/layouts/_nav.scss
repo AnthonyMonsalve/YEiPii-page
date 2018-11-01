@@ -32,6 +32,67 @@
 
 .content-nav{
 	@extend %flex;
+	transition: $transition-responsive;
+
+	@include respond-to($max-width-870){
+		font-size: 14px;
+	}
+
+	@include respond-to($max-width-830){
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -300px;
+		border-bottom: 4px solid $YEiPii-color;
+		z-index: -1;
+	}
+}
+
+.active{
+	top: 50px;
+}
+
+.content-logo{
+	z-index: 1;
+}
+
+.content-button-menu-responsive{
+	z-index: 1;
+	display: none;
+
+	@include respond-to($max-width-830){
+		display: block;
+	}
+}
+
+#button-menu{
+	background: $YEiPii-color;
+	border: none;
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	font-weight: bold;
+	outline: none;
+	filter: opacity(.60) brightness(.85);
+	transition: $button-transition;
+}
+
+#button-menu:hover{
+	cursor: pointer;
+	filter: opacity(1) brightness(1);
+}
+
+.mask{
+	display: none;
+	position: absolute;	
+	background: $YEiPii-color-white;
+	left: 0;
+	right: 0; 
+	height: 50px;
+
+	@include respond-to($max-width-830){
+		display: block;
+	}
 }
 
 .nav{
@@ -40,12 +101,22 @@
     align-items: center;
 	background-color: $YEiPii-color-white;
 	color: $YEiPii-color-secondary;
+
+	@include respond-to($max-width-830){
+		width: 100%;
+	}
+
 }
 
 .nav ul{
 	@extend %flex;
 	list-style: none;
 	margin: 0;
+
+	@include respond-to($max-width-830){
+		flex-direction: column;
+		width: 100%;
+	}
 }
 
 .item-nav{

@@ -6545,7 +6545,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   color: #616161;
-  font-family: "Normal", "Roboto", sans-serif;
+  font-family: "Normal", Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -7253,6 +7253,82 @@ body {
   height: 25px;
 }
 
+.content-nav {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 870px) {
+  .content-nav {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .content-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -300px;
+    border-bottom: 4px solid #050d9e;
+    z-index: -1;
+  }
+}
+
+.active {
+  top: 50px;
+}
+
+.content-logo {
+  z-index: 1;
+}
+
+.content-button-menu-responsive {
+  z-index: 1;
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .content-button-menu-responsive {
+    display: block;
+  }
+}
+
+#button-menu {
+  background: #050d9e;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+  -webkit-filter: opacity(0.6) brightness(0.85);
+          filter: opacity(0.6) brightness(0.85);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#button-menu:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(1) brightness(1);
+          filter: opacity(1) brightness(1);
+}
+
+.mask {
+  display: none;
+  position: absolute;
+  background: white;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+@media screen and (max-width: 830px) {
+  .mask {
+    display: block;
+  }
+}
+
 .nav {
   height: 100%;
   -webkit-box-align: center;
@@ -7262,9 +7338,25 @@ body {
   color: #0C0B80;
 }
 
+@media screen and (max-width: 830px) {
+  .nav {
+    width: 100%;
+  }
+}
+
 .nav ul {
   list-style: none;
   margin: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .item-nav {
