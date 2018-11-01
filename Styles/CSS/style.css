@@ -6896,7 +6896,6 @@ header a {
 \*---------------------------*/
 body {
   margin: 0;
-  max-width: 100vh;
   overflow-x: hidden;
 }
 
