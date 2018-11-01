@@ -7266,6 +7266,7 @@ body {
 
 @media screen and (max-width: 830px) {
   .content-nav {
+    font-size: 15px;
     position: absolute;
     left: 0;
     right: 0;

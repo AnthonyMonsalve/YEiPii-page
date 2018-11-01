@@ -39,6 +39,7 @@
 	}
 
 	@include respond-to($max-width-830){
+		font-size: 15px;
 		position: absolute;
 		left: 0;
 		right: 0;
