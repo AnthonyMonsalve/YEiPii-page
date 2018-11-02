@@ -8,9 +8,19 @@
   margin-right: auto;
 }
 
- @mixin respond-to($width) {
-   @media screen and (max-width: $width){
-     @content;
-   }
- }
+@mixin respond-to($width) {
+  @media screen and (max-width: $width){
+    @content;
+  }
+}
+
+
+@mixin padding-responsive($width-resp: $max-width-830) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  @media screen and (max-width: $width-resp){
+    padding-left: $padding-left / 2;
+    padding-right: $padding-right / 2;
+  }
+}
  

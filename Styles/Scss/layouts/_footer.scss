@@ -11,14 +11,12 @@
   padding: 15px;
   padding-bottom: 10px;
   position: relative;
-  padding-left: $padding-left;
-	padding-right: $padding-right;
+	@include padding-responsive;
 }
 
 .footer-content-info{
   @extend %flex;
-  padding-left: $padding-left;
-	padding-right: $padding-right;
+	@include padding-responsive;
   font-size: map-get($font-size, small);
 }
 
@@ -88,8 +86,7 @@
   text-align: center;
   border-top: solid 1px $YEiPii-color;
   font-size: 12px;
-  margin-left: $padding-left;
-	margin-right: $padding-right;
+	@include padding-responsive;
 }
 
 .footer-copy a{

@@ -47,8 +47,7 @@ body{
 .content-first-other-page{
 	width: 95%;
 	max-width: $max-width-Laptop;
-	padding-left: $padding-left;
-	padding-right: $padding-right;
+	@include padding-responsive;
 	box-sizing: border-box;
 	transition: $transition-responsive;
 
@@ -76,18 +75,9 @@ body{
 	transition: $transition-responsive;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: $padding-left;
-	padding-right: $padding-right;
-
-
-	//nos permite gestionar los break-points dentro del mismo selector
-	@include respond-to($max-width-1000){
-		//: 95%;
-	}
+	@include padding-responsive;
  
 	@include respond-to($max-width-830){
-		padding-left:20px;
-		padding-right:20px;
 		flex-direction: column;
 	}
 

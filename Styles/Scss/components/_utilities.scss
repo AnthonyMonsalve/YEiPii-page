@@ -4,6 +4,10 @@
     Aquí va align left, align rigth...
 \*---------------------------*/
 
+
+a:focus, div:focus, button:focus, img:focus { outline: none; }
+
+
 //MARGIN
 .m-auto{margin: 5px auto 10px;}
 .m-cero{margin: 0}
