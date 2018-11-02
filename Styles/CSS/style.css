@@ -7296,11 +7296,7 @@ body {
 }
 
 #button-menu {
-  background: #050d9e;
   border: none;
-  height: 25px;
-  width: 35px;
-  border-radius: 5px;
   margin-top: 3px;
   font-weight: bold;
   outline: none;

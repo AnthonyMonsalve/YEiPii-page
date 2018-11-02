@@ -112,4 +112,5 @@ $(document).on("click", function () {
 function menuResponsive (){
 	document.getElementById('contentNav').classList.toggle('active');
 	document.getElementById('button-menu').classList.toggle('active');
+	document.getElementById('button-menu').classList.toggle('is-active');
 }
