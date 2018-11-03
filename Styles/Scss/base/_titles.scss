@@ -14,13 +14,20 @@ h1{
 	margin-top: 10px;
 	letter-spacing: 1px;
 	line-height: 1;
+	@include padding-responsive;
+	transition: $transition-responsive;
 
 	@include respond-to($max-width-Tablet){
-		font-size: $base-size-title-YEiPii - .4;
+		font-size: $base-size-title-YEiPii - .5;
+
 	}
 
 	@include respond-to($max-width-MobileL){
-		font-size: $base-size-title-YEiPii - .8;
+		font-size: $base-size-title-YEiPii - 1;
+	}
+
+	@include respond-to($max-width-MobileM){
+		font-size: $base-size-title-YEiPii - 1.25;
 	}
 }
 

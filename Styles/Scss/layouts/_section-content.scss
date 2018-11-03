@@ -59,10 +59,10 @@ body{
 }
 
 .content-first{
-	max-width: 540px;
+	max-width: 570px;
 
 	@include respond-to($max-width-MobileL){
-		max-width: 400px;
+		max-width: 420px;
 	}
 }
 
