@@ -198,6 +198,18 @@ body{
 	@include respond-to($max-width-830){
 	flex-direction: row;
 	}
+
+	@include respond-to(720px){
+		flex-direction: column;
+	}
+}
+
+.title-content-dondeestamos{
+	@include respond-to(720px){
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
 }
 
 .sections-YEiPii.bg-YEiPii-color{

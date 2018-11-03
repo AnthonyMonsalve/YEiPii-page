@@ -80,6 +80,7 @@ h3{
 .title_banner-donde-estamos{
 	font-size: $base-size-title-YEiPii;
 	letter-spacing: 2px;
+	padding: 0;
 
 	//nos permite gestionar los break-points dentro del mismo selector
 	@include respond-to($max-width-1000){
@@ -88,6 +89,10 @@ h3{
 
 	@include respond-to($max-width-930){
 		font-size: $base-size-title-YEiPii - .4;
+	}
+
+	@include respond-to($max-width-830){
+		font-size: $base-size-title-YEiPii - .8;
 	}
 
 }

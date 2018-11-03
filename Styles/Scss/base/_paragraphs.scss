@@ -60,4 +60,25 @@ p{
 	text-align: right;
 	color: lighten($YEiPii-color-gray, 50);
 	letter-spacing: 1px;
+	transition: $transition-responsive;
+
+	@include respond-to($max-width-930){
+		font-size: $base-font-size + 4;
+    	max-width: 325px;
+	}
+
+	@include respond-to($max-width-Tablet){
+		font-size: $base-font-size + 2;
+		max-width: 320px;
+	}
+
+	@include respond-to(720px){
+		max-width: 85%;
+		margin: auto !important;
+		text-align: center
+	}
+
+	@include respond-to($max-width-MobileL){
+		max-width: 100%;
+	}
 }

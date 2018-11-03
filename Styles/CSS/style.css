@@ -6606,7 +6606,7 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   h1 {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -6685,6 +6685,7 @@ h3 {
 .title_banner-donde-estamos {
   font-size: 3.4em;
   letter-spacing: 2px;
+  padding: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -6696,6 +6697,12 @@ h3 {
 @media screen and (max-width: 930px) {
   .title_banner-donde-estamos {
     font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .title_banner-donde-estamos {
+    font-size: 2.6em;
   }
 }
 
@@ -6766,6 +6773,36 @@ p {
   text-align: right;
   color: #e1e1e1;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 930px) {
+  .parrafo_banner-donde-estamos {
+    font-size: 20px;
+    max-width: 325px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .parrafo_banner-donde-estamos {
+    font-size: 18px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .parrafo_banner-donde-estamos {
+    max-width: 85%;
+    margin: auto !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .parrafo_banner-donde-estamos {
+    max-width: 100%;
+  }
 }
 
 /*---------------------------*\
@@ -6968,7 +7005,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .section-complete-viewport {
     height: auto;
   }
@@ -7003,7 +7040,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .content-first-other-page {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7040,14 +7077,14 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .sections-YEiPii {
     padding-left: 12.5px;
     padding-right: 12.5px;
   }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .sections-YEiPii {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7081,7 +7118,7 @@ body {
   }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .telefono-right {
     height: 407px;
     width: 200px;
@@ -7098,7 +7135,7 @@ body {
   left: 15px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .gif-right {
     left: 13px;
     width: 174px;
@@ -7110,7 +7147,7 @@ body {
   right: 15px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .gif-left {
     right: 13px;
     width: 174px;
@@ -7143,7 +7180,7 @@ body {
   }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .telefono-left {
     height: 407px;
     width: 200px;
@@ -7154,7 +7191,7 @@ body {
   text-align: right;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .inverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -7190,7 +7227,7 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .content-buttons-app-download-other-page {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7219,12 +7256,29 @@ body {
           filter: grayscale(30%);
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .donde-estamos-banner .sections-YEiPii {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .donde-estamos-banner .sections-YEiPii {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .title-content-dondeestamos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -7317,7 +7371,7 @@ body {
           box-shadow: 0px -2px 0px 0px white;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .header {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7338,7 +7392,7 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .content-header {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7360,7 +7414,7 @@ body {
   }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .content-nav {
     font-size: 15px;
     position: absolute;
@@ -7385,7 +7439,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .content-button-menu-responsive {
     display: block;
   }
@@ -7420,7 +7474,7 @@ body {
           box-shadow: 0px -8px 0px 8px white;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .mask {
     display: block;
   }
@@ -7435,7 +7489,7 @@ body {
   color: #0C0B80;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .nav {
     width: 100%;
   }
@@ -7446,7 +7500,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7469,7 +7523,7 @@ body {
   font-family: 'normal';
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .item-nav {
     padding: 0;
   }
@@ -7558,7 +7612,7 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .footer-container {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7571,7 +7625,7 @@ body {
   font-size: 13px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .footer-content-info {
     padding-left: 12.5px;
     padding-right: 12.5px;
@@ -7662,7 +7716,7 @@ body {
   padding-right: 25px;
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 840px) {
   .footer-copy {
     padding-left: 12.5px;
     padding-right: 12.5px;
