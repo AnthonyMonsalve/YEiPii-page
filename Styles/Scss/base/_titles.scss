@@ -47,9 +47,23 @@ h3{
 	margin-top: 10px;
 	letter-spacing: 1px;
 
-	//nos permite gestionar los break-points dentro del mismo selector
-	@include respond-to($max-width-1000){
-		font-size: $base-size-title-YEiPii;
+	@include respond-to($max-width-Tablet){
+		font-size: $base-size-title-YEiPii - .5;
+
+	}
+
+	@include respond-to($max-width-MobileL){
+		font-size: $base-size-title-YEiPii - 1;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	@include respond-to($max-width-MobileM){
+		font-size: $base-size-title-YEiPii - 1.2;
+	}
+
+	@include respond-to($max-width-MobileS){
+		font-size: $base-size-title-YEiPii - 1.4;
 	}
 
 }

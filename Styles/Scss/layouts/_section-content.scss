@@ -176,6 +176,11 @@ body{
 	@extend %flex;
 	align-items: center;
 	margin-left: -10px;
+	@include padding-responsive;
+
+	@include respond-to($max-width-MobileL){
+		flex-direction: column;
+	}
 }
 
 //content donde estamos banner
