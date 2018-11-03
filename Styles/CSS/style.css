@@ -6706,6 +6706,18 @@ h3 {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .title_banner-donde-estamos {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title_banner-donde-estamos {
+    font-size: 2em;
+  }
+}
+
 .donde-estamos-banner h3 {
   color: #e1e1e1;
 }

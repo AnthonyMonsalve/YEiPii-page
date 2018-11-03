@@ -95,6 +95,14 @@ h3{
 		font-size: $base-size-title-YEiPii - .8;
 	}
 
+	@include respond-to($max-width-MobileM){
+		font-size: $base-size-title-YEiPii - 1.2;
+	}
+
+	@include respond-to($max-width-MobileS){
+		font-size: $base-size-title-YEiPii - 1.4;
+	}
+
 }
 
 .donde-estamos-banner h3{
