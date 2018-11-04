@@ -114,3 +114,28 @@ function menuResponsive (){
 	//document.getElementById('button-menu').classList.toggle('active');
 	document.getElementById('button-menu').classList.toggle('is-active');
 }
+
+function footerRedesDown (){
+	let redes = document.getElementById('acordeon-redes');
+	let app = document.getElementById('acordeon-app');
+
+	redes.classList.toggle('fa-chevron-down');
+
+	if(app.classList.contains("fa-chevron-down")){
+		app.classList.remove('fa-chevron-down');
+		app.classList.add('fa-chevron-right');
+	}
+}
+
+
+function footerAppDown (){
+	let redes = document.getElementById('acordeon-redes');
+	let app = document.getElementById('acordeon-app');
+	
+	app.classList.toggle('fa-chevron-down');
+
+	if(redes.classList.contains("fa-chevron-down")){
+		redes.classList.remove('fa-chevron-down');
+		redes.classList.add('fa-chevron-right');
+	}
+}
