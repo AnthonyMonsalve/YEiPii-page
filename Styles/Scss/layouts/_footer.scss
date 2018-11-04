@@ -18,6 +18,10 @@
   @extend %flex;
 	@include padding-responsive;
   font-size: map-get($font-size, small);
+
+  @include respond-to(550px){
+    padding-bottom: $padding-left / 2;
+  }
 }
 
 .footer-logo{
@@ -27,16 +31,29 @@
   align-items: center;
   display: flex;
   align-items: flex-start;
+
+  @include respond-to(550px){
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .footer-logo img{
   width: 160px;
+
+  @include respond-to(550px){
+    width: 125px;
+  }
 }
 
 .footer-info{
   @extend %flex;
   width: 100 -  $footer-logo;
   justify-content: flex-end;
+
+  @include respond-to(550px){
+    display: none;
+  }
 }
 
 .f-info{
@@ -65,6 +82,15 @@
   @extend %flex;
   justify-content: center;
   margin-bottom: 6px;
+  @include respond-to(550px){
+    margin-bottom: 0;
+  }
+}
+
+.content-buttons-footer a{
+  @include respond-to(550px){
+    margin: 5px;
+  }
 }
 
 .redes-footer-btn-img{
@@ -74,6 +100,9 @@
   border-radius: 50%;
   transition: $button-transition;
   filter: opacity(.60) brightness(.85);
+  @include respond-to(550px){
+    filter: opacity(1) brightness(1);
+  }
  }
 
 .redes-footer-btn-img:hover{
@@ -103,4 +132,62 @@
   color: $YEiPii-color;
   padding: 5px;
   text-align: center;
+}
+
+
+// FOOTER RESPONVIDE ACCORDEON
+
+.contenedor-acordeon {
+  width: 100%;
+  overflow: hidden;
+  display: none;
+
+  @include respond-to(550px){
+    display: block;
+  }
+}
+
+.acordeon {
+  width: 100%;
+  overflow: hidden;
+}
+.acordeon__head {
+  background: $YEiPii-color-white;
+  padding: .90em;
+  border-bottom: 2px solid $YEiPii-color-lightgray;
+  border-top: 2px solid $YEiPii-color-lightgray;
+}
+
+.acordeon__head:nth-of-type(1){
+  border-bottom: none;
+}
+
+.acordeon__head:hover {
+  cursor: pointer;
+}
+.acordeon__head--logo, .acordeon__head--title, .acordeon__head .icon {
+  pointer-events: none;
+}
+.acordeon__head--logo {
+  width: 8%;
+}
+.acordeon__head--title {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 10px;
+  color: $YEiPii-color;
+  font-size: 16px;
+}
+.acordeon__head .icon {
+  font-size: 1.3em;
+  color: $YEiPii-color;
+}
+.acordeon__body {
+  background: lighten($YEiPii-color-lightgray, 4);
+  height: 0;
+  transition: height .4s ease-in-out;
+}
+.acordeon__body__menu {
+  list-style: none;
+  padding: 15px;
 }

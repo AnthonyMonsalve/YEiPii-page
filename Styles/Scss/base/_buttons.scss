@@ -68,6 +68,9 @@
 	border-radius: 5px;
 	margin: 0 4px 0 4px;
 	filter: opacity(.60) brightness(.85);
+	@include respond-to(550px){
+		filter: opacity(1) brightness(1);
+	  }
   }
   
   .download-footer-btn-img:hover{
