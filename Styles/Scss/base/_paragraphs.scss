@@ -30,7 +30,7 @@ p{
 	@extend %parrafo_YEiPii;
 	color: $YEiPii-color-gray;
 
-	@include respond-to($max-width-Tablet){
+	@include respond-to($max-width-830){
 		max-width: 80%;
 		margin: auto;
 		margin-bottom: 25px;

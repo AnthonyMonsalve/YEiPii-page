@@ -6646,6 +6646,14 @@ h3 {
   margin-bottom: 5px;
   margin-top: 10px;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 840px) {
+  .title-big {
+    font-size: 3.2em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -6674,7 +6682,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .sections-YEiPii .title-big {
     text-align: center;
     margin-bottom: 10px;
@@ -6751,7 +6759,7 @@ p {
   color: #616161;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .parrafo_YEiPii_gray {
     max-width: 80%;
     margin: auto;
@@ -6825,7 +6833,7 @@ p {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 2px;
   border: none;
   border-radius: 30px;
@@ -6837,10 +6845,10 @@ p {
 
 .button-YEiPii-secondary {
   border-radius: 12px;
-  padding: 5px 10px 5px 10px;
-  min-width: 150px;
-  min-height: 150px;
-  margin: 10px;
+  padding: 0;
+  min-width: 140px;
+  min-height: 140px;
+  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7570,6 +7578,12 @@ body {
           align-items: center;
   font-size: .84em;
   padding: 3px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .item-nav a {
+    width: 100%;
+  }
 }
 
 #registrate {

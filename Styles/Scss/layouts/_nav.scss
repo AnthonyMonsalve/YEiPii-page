@@ -152,7 +152,11 @@
     height: 44px;
     align-items: center;
 	font-size: .84em;
-    padding: 3px 0;
+	padding: 3px 0;
+	
+	@include respond-to($max-width-830){
+	width: 100%;
+	}
 }
 
 #registrate{
