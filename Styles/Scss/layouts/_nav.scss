@@ -116,7 +116,7 @@
 	@include respond-to($max-width-830){
 		flex-direction: column;
 		width: 100%;
-		padding-left: $padding-left;
+		padding-left: 0;
 	}
 }
 
@@ -140,6 +140,10 @@
 
 .item-nav .active{
 	box-shadow: inset 0 -19px 0px -15px $YEiPii-color;
+	@include respond-to($max-width-830){
+		box-shadow: none;
+		background: $YEiPii-color-lightgray;
+	}
 }
 
 /*{
@@ -156,6 +160,7 @@
 	
 	@include respond-to($max-width-830){
 	width: 100%;
+	padding-left: 25px;
 	}
 }
 
@@ -177,6 +182,9 @@
 
 .item-nav a:hover{
 	padding: 3px 0;
+	@include respond-to($max-width-830){
+		padding-left: 28px;
+	}
 }
 
 .item-nav span{

@@ -40,6 +40,7 @@
 			// Customizing a reveal set
 			sr.reveal('.animate', { duration: 750, distance: '60px', origin: 'left', delay: 250 });
 			sr.reveal('.animate.slow', { duration: 750, distance: '60px', origin: 'left', delay: 600 });
+			sr.reveal('.animate.btn-slider', { duration: 800, distance: '60px', origin: 'bottom', delay: 450 });
 			
 			sr.reveal('.animate-right', { duration: 750, distance: '60px', origin: 'right', delay: 250 });
 			sr.reveal('.animate-right.slow', { duration: 750, distance: '60px', origin: 'right', delay: 600 });			
