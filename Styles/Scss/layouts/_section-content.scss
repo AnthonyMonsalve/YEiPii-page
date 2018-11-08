@@ -227,13 +227,15 @@ body{
 	padding-right: 50px;
 }
 
-
-
 .title-category{
 	border-bottom: 1px solid $YEiPii-color;
 	color: $YEiPii-color;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	padding-bottom: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .content-buttons-category{
@@ -256,13 +258,11 @@ body{
 	transition: $transition-responsive;
 }
 
-
 .establecimiento{
 	transition: $transition-responsive;
 	width: 120px;
 	margin: 10px 4%;
 }
-
 
 //PANA YEiPii
 .Pana-YEiPii{width:150px; height: 150px; margin: 10px; border-radius: 50%;}

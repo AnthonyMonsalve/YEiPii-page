@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="Styles/CSS/style.css">
 	<link rel="stylesheet" href="Styles/CSS/hamburgers.css">
 	<link rel="shortcut icon" href="images/ico/YEiPii.ico" type="image/x-icon">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>YEiPii</title>
 </head>
 <body>
@@ -49,60 +50,65 @@
 				</div>    
 	</header>
 	<!--FIN HEADER Y NAV-->
-	<section class="section-complete-viewport bggray">
+	<section class="bggray" style="flex-direction: column; padding: 0 0 3em 0;">
 		<div class="sections-YEiPii" style="justify-content: center; background: transparent">
-				<h2 class="color-YEiPii center">Aqui va el slider <br> de los mejores establecimientos</h2>
+			<div id="product-carousel-container">
+				<ul id="product-carousel">
+				  <li class="item-1">
+					<img src="images/slider/fotos/3.png">
+				  </li>
+				  <li class="item-2">
+					<img src="images/slider/fotos/1.fw.png">
+				  </li>
+				  <li class="item-3">
+					<img src="images/slider/fotos/3.png">
+				  </li>
+				  <li class="item-4">
+					<img src="images/slider/fotos/1.fw.png">
+				  </li>
+				  <li class="item-5">
+					<img src="images/slider/fotos/2.png">
+				  </li>
+				  <img id="telefono" src="images/phones/phone-black.png">
+				</ul>
+			  
+				<div id="product-carousel-nav">
+				  <button class="carousel-nav prev">
+					  <img src="images/slider/flechas/izquierda.svg">
+				  </button>
+				  <button class="carousel-nav next">
+					<img src="images/slider/flechas/derecha.svg">
+				  </button>
+				</div>
+			</div>
 		</div>
-	</section>
-	<!--FIN SECTION  BUTTONS APP -->
-	<section class="section-complete-viewport bggray"">
 		<div class="section-category">
 			<div class="title-category">
 				<h3>Categorías</h3>
 			</div>
 			<div class="content-buttons-category">
 				<button id="myBtn" class="modal-trigger no-select button-YEiPii-secondary">
-					<img src="images/categorias/colegios.png" width="80" alt="">
+					<img src="images/categorias/colegios.png" alt="">
 					<span class="center">Colegios <br> Universidades </span>
-				</button>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-					<!-- Modal content -->
-					<div class="modal-content">
-						<span id="modalClose" class="close no-select">&times;</span>
-						<div class="flex" style="justify-content: space-around">
-								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
-							</div>
-							<div class="flex" style="justify-content: space-around">
-								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana.jpg"  alt="Pana YEiPii">
-								<img class="Pana-YEiPii" src="images/panas/pana1.jpg"  alt="Pana YEiPii">
-							</div>
-					</div>
-				</div>
-				<!-- The Modal -->			
+				</button>	
 				<button class="button-YEiPii-secondary collapsible" type="button" data-toggle="modal" data-target="#contentRestaurantes">
-					<img src="images/categorias/restaurantes.png" width="80" alt="">
+					<img src="images/categorias/restaurantes.png" alt="">
 					<span class="center">Restaurantes</span>
 				</button>
 				<button class="button-YEiPii-secondary">
-					<img src="images/categorias/estacionamientos.png" width="80" alt="">
+					<img src="images/categorias/estacionamientos.png" alt="">
 					<span class="center">Estacionamientos</span>
 				</button>
 				<button class="button-YEiPii-secondary">
-					<img src="images/categorias/discotecas.png" width="80" alt="">
+					<img src="images/categorias/discotecas.png" alt="">
 					<span class="center">Discotecas / bar</span>
 				</button>
 				<button class="button-YEiPii-secondary">
-					<img src="images/categorias/licorerias.png" width="80" alt="">
+					<img src="images/categorias/licorerias.png" alt="">
 					<span class="center">Licorerias</span>
 				</button>
 				<button class="button-YEiPii-secondary">
-					<img src="images/categorias/club-privado.png" width="80" alt="">
+					<img src="images/categorias/club-privado.png" alt="">
 					<span class="center">Clubes privados</span>
 				</button>
 			</div>
@@ -224,8 +230,7 @@
 	<script src="Js/footermenu.js"></script>
 <!-- Codigo de el nav y reveal js -->
 	 <script src="Js/actions.js"></script>
-<!-- MODAL SIN BOOTSTRAP -->
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	 <script src="https://use.fontawesome.com/45c73aaa68.js"></script>
+<!-- Codigo de el nav y reveal js -->
+	<script src="Js/slider.js"></script>
 </body>
 </html>

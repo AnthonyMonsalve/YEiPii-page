@@ -20,8 +20,8 @@
 %button-secondary{
 	border-radius: 12px;
     padding: 0;
-    min-width: 140px;
-    min-height: 140px;
+    min-width: 135px;
+    min-height: 135px;
     margin: 5px;
 	display: flex;
 	flex-direction: column;
@@ -81,6 +81,10 @@
 .button-app-download .android{
 	width: 170px;
 	height: 100%;
+}
+
+.button-YEiPii-secondary img{
+	width: 70px;
 }
 
 .button-YEiPii-secondary span{

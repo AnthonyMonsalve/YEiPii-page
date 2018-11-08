@@ -11,7 +11,11 @@
   padding: 15px;
   padding-bottom: 10px;
   position: relative;
-	@include padding-responsive;
+  @include padding-responsive;
+  
+  @include respond-to(550px){
+    padding: 0 0 12.5px 0;
+  }
 }
 
 .footer-content-info{
@@ -20,7 +24,7 @@
   font-size: map-get($font-size, small);
 
   @include respond-to(550px){
-    padding-bottom: $padding-left / 2;
+    display: none;
   }
 }
 
@@ -51,9 +55,6 @@
   width: 100 -  $footer-logo;
   justify-content: flex-end;
 
-  @include respond-to(550px){
-    display: none;
-  }
 }
 
 .f-info{
@@ -153,7 +154,9 @@
 }
 .acordeon__head {
   background: $YEiPii-color-white;
-  padding: .90em;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  @include padding-responsive;
   border-bottom: 2px solid $YEiPii-color-lightgray;
   border-top: 2px solid $YEiPii-color-lightgray;
 }
