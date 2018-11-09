@@ -1,166 +1,69 @@
-#product-carousel-container {
+.container-slider {
+  margin: 80px auto 0;
+  max-width: 800px;
+  width: 100%;
+  transition: .5s all;
+}
+
+.clip>.section-slider {
+  height: auto;
+  margin: 10px 15px;
+  padding: 2%;
   position: relative;
-  width: 50%;
-  margin: auto;
-  margin-top: 25px;
-  @include respond-to(1440px){
-    margin-top: 10px;
-  }
+  text-align: center;
+  transition: .5s all;
+  border: none;
 }
 
-#product-carousel {
-  height: 35vw;
-  max-height: 450px;
-  list-style: none;
-  position: relative;
+.section-slider .top img{
+  margin: 0 auto;
+  transition: .5s all;
 }
-#product-carousel li {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 35%;
-  height: 100%;
-  padding: 0;
-  cursor: pointer;
-  transition: -webkit-transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 1;
-}
-#product-carousel li.item-1 {
-  z-index: 2;
-  -webkit-transform: translateX(-50%) scale(1) translate3d(0, 0, 0);
-          transform: translateX(-50%) scale(1) translate3d(0, 0, 0);
-  transition: .7s all;
-}
-#product-carousel li.item-2 {
-  z-index: 1;
-  -webkit-transform: translateX(-50%) scale(0.7) translate3d(200%, -10%, 0);
-          transform: translateX(-50%) scale(0.7) translate3d(200%, -10%, 0);
-  transition: .7s all;
-}
-#product-carousel li.item-3 {
-  z-index: 0;
-  -webkit-transform: translateX(-50%) scale(0.5) translate3d(180%, -31%, 0);
-          transform: translateX(-50%) scale(0.5) translate3d(180%, -31%, 0);
-  opacity: 0;
-  transition: all .4s;
-}
-#product-carousel li.item-4 {
-  z-index: 0;
-  -webkit-transform: translateX(-50%) scale(0.5) translate3d(-180%, -31%, 0);
-          transform: translateX(-50%) scale(0.5) translate3d(-180%, -31%, 0);
-  opacity: 0;
-  transition: all .4s;
-}
-#product-carousel li.item-5 {
-  z-index: 1;
-  -webkit-transform: translateX(-50%) scale(0.7) translate3d(-200%, -10%, 0);
-          transform: translateX(-50%) scale(0.7) translate3d(-200%, -10%, 0);
-  transition: .7s all;
+.section-slider .bottom {
+  font-size: 70%;
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  transition: .5s all;
 }
 
-#telefono{
-  position: absolute;
-  left: 50%;
-  top: 30px;
-  width: 34%;
-  height: 85%;
-  padding: 0;
-  z-index: 2;
-  -webkit-transform: translateX(-50%) scale(1) translate3d(0, 0, 0);
-  transform: translateX(-50%) scale(1) translate3d(0, 0, 0);
-  display: none;
+.clip {
+  overflow: hidden;
+  bottom: 0;
+  transition: .5s all;
+  outline: none;
 }
 
-#telefono img{
-  margin: 0 !important;
+.center-slider .slick-slide {
+  height: auto;
+  transition: .5s all;
 }
 
-#product-carousel li:after {
-  content: '';
-  position: absolute;
-  top: 12%;
-  left: 0;
+.center-slider .slick-center .section-slider {
+  opacity: 1;
+  transform: scale(1.08);
+  transition: .5s all;
+}
+
+.center-slider .slick-center .section-slider img{
+  box-shadow: none;
+}
+
+.center-slider .section-slider {
+  opacity: 0.7;
+  bottom: 0;
+  transition: .5s all;
+}
+  
+a:focus,
+a:hover {
+  text-decoration: none;
+  transition: .5s all;
+}
+.slick-slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  background: url(https://www.7up.com/images/bottle-shadow.png) no-repeat 50% 85%;
-  background-size: 100% auto;
-
-  @include respond-to(1250px){
-    top: 15%;
-  }
-}
-
-@for $num from 1 to 6 {
-  .item-#{$num}:after{
-    opacity: .3;
-    transition: $transition-responsive;
-  }
-  @if $num == 1 {
-    .item-#{$num}:after{
-      opacity: 1;
-      transition: $transition-responsive;
-    }
-  }
-}
-
-#product-carousel li:hover img {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-}
-
-#product-carousel .item-1:hover img {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-#product-carousel li:not(:hover) img {
-  transition: -webkit-transform .075s ease-out;
-  transition: transform .075s ease-out;
-  transition: transform .075s ease-out, -webkit-transform .075s ease-out;
-}
-#product-carousel li img {
-  width: 100%;
   height: auto;
-  margin-top: 40px;
-  transition: -webkit-transform .25s ease-in;
-  transition: transform .25s ease-in;
-  transition: transform .25s ease-in, -webkit-transform .25s ease-in;
-}
-
-#product-carousel-nav .carousel-nav {
-  position: absolute;
-  top: 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  background-color: darken($YEiPii-color-lightgray, 20);
-  outline: none;
-  cursor: pointer;
-  font-size: 1.5em;
-  color: $YEiPii-color-white;
-  transition: $button-transition;
-}
-
-#product-carousel-nav .carousel-nav:hover {
-  background-color: darken($YEiPii-color-lightgray, 40);
-}
-
-#product-carousel-nav .carousel-nav.prev {
-  left: -35%;
-}
-.carousel-nav.prev img{
-  width: 80%;
-}
-#product-carousel-nav .carousel-nav.next {
-  right: -35%;
-}
-.carousel-nav.next img{
-  width: 80%;
+  transition: .5s all;
+  box-shadow: 0px 0px 50px -18px rgba(0,0,0,1);
 }

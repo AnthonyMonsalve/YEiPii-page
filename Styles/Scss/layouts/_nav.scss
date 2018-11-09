@@ -5,7 +5,7 @@
 // Header & Nav
 .header {
 	position: absolute;
-	height: 50px;
+	height: $hnav;
 	left: 0;
     right: 0;
 	top: 1px;
@@ -26,7 +26,7 @@
 }
 
 .logo-header{
-	height: 28px;
+	height: 24px;
 }
 
 .content-nav{
@@ -49,7 +49,7 @@
 }
 
 .active{
-	top: 50px;
+	top: $hnav;
 }
 
 .content-logo{
@@ -67,9 +67,9 @@
 
 #button-menu{
 	border: none;
-	margin-top: 3px;
 	font-weight: bold;
 	outline: none;
+	padding: 0 0 0 44px;
 	filter: opacity(1) brightness(1);
 	transition: $button-transition;
 }
@@ -87,7 +87,7 @@
 	background: $YEiPii-color-white;
 	left: 0;
 	right: 0; 
-	height: 50px;
+	height: $hnav;
 	box-shadow: 0px -8px 0px 8px white;
 
 	@include respond-to($max-width-830){
@@ -122,7 +122,7 @@
 
 .item-nav{
 	@extend %flex;
-	height: 50px;
+	height: $hnav;
     align-items: center;
 	margin: 0;
 	padding: 0px 10px;
@@ -153,7 +153,7 @@
 }*/
 
 .item-nav a {
-    height: 44px;
+    height: $hnav - 6;
     align-items: center;
 	font-size: .84em;
 	padding: 3px 0;
