@@ -7114,15 +7114,15 @@ header a {
 
 .container-slider {
   margin: 80px auto 0;
-  max-width: 800px;
   width: 100%;
+  max-width: 1000px;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
 
 .clip > .section-slider {
   height: auto;
-  margin: 10px 15px;
+  margin: 10px 8px;
   padding: 2%;
   position: relative;
   text-align: center;
@@ -7162,10 +7162,9 @@ header a {
 
 .center-slider .slick-center .section-slider {
   opacity: 1;
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
   -webkit-transition: .5s all;
   transition: .5s all;
+  position: relative;
 }
 
 .center-slider .slick-center .section-slider img {
@@ -7174,7 +7173,7 @@ header a {
 }
 
 .center-slider .section-slider {
-  opacity: 0.7;
+  opacity: 0.8;
   bottom: 0;
   -webkit-transition: .5s all;
   transition: .5s all;
@@ -7195,6 +7194,29 @@ a:hover {
   transition: .5s all;
   -webkit-box-shadow: 0px 0px 50px -18px black;
           box-shadow: 0px 0px 50px -18px black;
+}
+
+.slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider:after {
+  content: '';
+  display: block;
+  background: url("../../images/phones/phone-black.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 202px;
+  position: absolute;
+  top: -36px;
+  bottom: -36px;
+  margin: auto;
 }
 
 /*---------------------------*\
