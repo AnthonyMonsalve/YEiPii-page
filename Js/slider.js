@@ -6,7 +6,7 @@ $('.center-slider').slick({
   speed: 500,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 5500,
+  autoplaySpeed: 4500,
   variableWidth: false,
   responsive: [{
       breakpoint: 480,
