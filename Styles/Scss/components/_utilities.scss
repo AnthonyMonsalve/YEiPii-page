@@ -13,7 +13,14 @@ a:focus, div:focus, button:focus, img:focus { outline: none; }
 .m-cero{margin: 0}
 //PADDING
 .p-cero{padding: 0}
-.p-b-cero{padding: 0}
+.p-top-cero{padding: 0}
+.p-b-cero{
+    padding-bottom: 0;
+    @include respond-to(595px){
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 //ALIGN
 .center{text-align: center;letter-spacing: 1px}
 //FLEX

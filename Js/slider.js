@@ -4,14 +4,14 @@ $('.center-slider').slick({
   centerPadding: '0px',
   slidesToShow: 5,
   speed: 500,
-  arrows: true,
+  arrows: false,
   autoplay: true,
   autoplaySpeed: 4500,
   variableWidth: false,
   responsive: [{
     breakpoint: 1024,
     settings: {
-      arrows: true,
+      arrows: false,
       centerMode: true,
       centerPadding: '0px',
       slidesToShow: 4,
@@ -20,7 +20,7 @@ $('.center-slider').slick({
   {
     breakpoint: 768,
     settings: {
-      arrows: true,
+      arrows: false,
       centerMode: true,
       centerPadding: '0px',
       slidesToShow: 3,
