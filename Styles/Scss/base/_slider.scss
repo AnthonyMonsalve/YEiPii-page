@@ -199,6 +199,7 @@ a:hover {
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 0 35px;
 }
 
 
@@ -213,4 +214,21 @@ a:hover {
     top: -36px;
     bottom: -36px;
     margin: auto;
+}
+
+
+
+//ANIMACION SLIDER
+
+.animate-slider{
+    opacity: 1;
+    animation-name: sliderAparecer;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes sliderAparecer{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    to{opacity: 1;}
 }

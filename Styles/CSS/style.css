@@ -6862,11 +6862,20 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1085px) {
   .button-YEiPii-secondary {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-YEiPii-secondary {
+    min-width: 120px;
+    min-height: 120px;
   }
 }
 
@@ -6930,12 +6939,28 @@ p {
 
 .button-YEiPii-secondary img {
   width: 75px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .button-YEiPii-secondary img {
+    width: 65px;
+  }
 }
 
 .button-YEiPii-secondary span {
   display: block;
   font-family: 'normal';
   margin-top: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .button-YEiPii-secondary span {
+    font-size: 9px;
+  }
 }
 
 /* The Modal (background) */
@@ -7220,6 +7245,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 35px;
 }
 
 .slick-track:after {
@@ -7233,6 +7259,40 @@ a:hover {
   top: -36px;
   bottom: -36px;
   margin: auto;
+}
+
+.animate-slider {
+  opacity: 1;
+  -webkit-animation-name: sliderAparecer;
+          animation-name: sliderAparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes sliderAparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sliderAparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*---------------------------*\

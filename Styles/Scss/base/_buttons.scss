@@ -27,6 +27,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: $button-transition;
 }
 
 //END Place Holder Button
@@ -40,6 +41,10 @@
 	@extend %button-secondary;
 	@include respond-to(1085px){
 		margin-bottom: 10px;
+	}
+	@include respond-to(768px){
+		min-width: 120px;
+		min-height: 120px;
 	}
 }
 
@@ -93,12 +98,20 @@
 
 .button-YEiPii-secondary img{
 	width: 75px;
+	transition: $button-transition;
+	@include respond-to(768px){
+		width: 65px;
+	}
 }
 
 .button-YEiPii-secondary span{
 	display: block;
 	font-family: 'normal';
 	margin-top: 10px;
+	transition: $button-transition;
+	@include respond-to(768px){
+		font-size: 9px;
+	}
 }
 
 
