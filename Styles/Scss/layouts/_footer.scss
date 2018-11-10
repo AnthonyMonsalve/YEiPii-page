@@ -8,28 +8,29 @@
 
 .footer-container{
 	@include max-width;
-  padding: 15px;
-  padding-bottom: 10px;
+  padding: 0 15px 10px 15px;
   position: relative;
   @include padding-responsive;
   
-  @include respond-to(550px){
+  @include respond-to(630px){
     padding: 0 0 12.5px 0;
   }
 }
 
 .footer-content-info{
   @extend %flex;
+  align-items: center;
 	@include padding-responsive;
   font-size: map-get($font-size, small);
+  padding-top: 12px;
+  padding-bottom: 12px;
 
-  @include respond-to(550px){
+  @include respond-to(630px){
     display: none;
   }
 }
 
 .footer-logo{
-  width: $footer-logo;
   text-align:left;
   @extend %flex;
   align-items: center;
@@ -43,7 +44,7 @@
 }
 
 .footer-logo img{
-  width: 160px;
+  width: 140px;
 
   @include respond-to(550px){
     width: 125px;
@@ -66,7 +67,7 @@
   margin-right: 5px;
 }
 
-.f-info a{color:$YEiPii-color-gray; margin-bottom: 5px;transition: $button-transition}
+.f-info a{color:$YEiPii-color-gray;transition: $button-transition}
 
 .f-info a:hover{
   text-decoration: underline;
@@ -77,15 +78,32 @@
   color: $YEiPii-color;
   font-weight: map-get($font-weight, medium);
   margin-bottom: 8px !important;
+  text-align: center;
 }
 
 .content-buttons-footer{
   @extend %flex;
   justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   @include respond-to(550px){
     margin-bottom: 0;
   }
+}
+
+.acordeon:nth-of-type(1) .content-buttons-footer,
+.acordeon:nth-of-type(2) .content-buttons-footer{
+  @include respond-to(630px){
+    justify-content: flex-start
+  }
+}
+
+.acordeon:nth-of-type(1) .content-buttons-footer a,
+.acordeon:nth-of-type(2) .content-buttons-footer a{
+  margin-left: 26px;
+}
+
+.acordeon:nth-of-type(1) .content-buttons-footer a:nth-of-type(2){
+  margin-left: 0;
 }
 
 .content-buttons-footer a{
@@ -143,7 +161,7 @@
   overflow: hidden;
   display: none;
 
-  @include respond-to(550px){
+  @include respond-to(630px){
     display: block;
   }
 }
@@ -193,4 +211,5 @@
 .acordeon__body__menu {
   list-style: none;
   padding: 15px;
+  padding-top: 0;
 }

@@ -7889,8 +7889,7 @@ body {
   max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px;
-  padding-bottom: 10px;
+  padding: 0 15px 10px 15px;
   position: relative;
   padding-left: 25px;
   padding-right: 25px;
@@ -7903,16 +7902,21 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 630px) {
   .footer-container {
     padding: 0 0 12.5px 0;
   }
 }
 
 .footer-content-info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 25px;
   padding-right: 25px;
   font-size: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 @media screen and (max-width: 840px) {
@@ -7922,14 +7926,13 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 630px) {
   .footer-content-info {
     display: none;
   }
 }
 
 .footer-logo {
-  width: 20%;
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -7952,7 +7955,7 @@ body {
 }
 
 .footer-logo img {
-  width: 160px;
+  width: 140px;
 }
 
 @media screen and (max-width: 550px) {
@@ -7979,7 +7982,6 @@ body {
 
 .f-info a {
   color: #616161;
-  margin-bottom: 5px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -7992,19 +7994,38 @@ body {
   color: #050d9e;
   font-weight: 500;
   margin-bottom: 8px !important;
+  text-align: center;
 }
 
 .content-buttons-footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 550px) {
   .content-buttons-footer {
     margin-bottom: 0;
   }
+}
+
+@media screen and (max-width: 630px) {
+  .acordeon:nth-of-type(1) .content-buttons-footer,
+  .acordeon:nth-of-type(2) .content-buttons-footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.acordeon:nth-of-type(1) .content-buttons-footer a,
+.acordeon:nth-of-type(2) .content-buttons-footer a {
+  margin-left: 26px;
+}
+
+.acordeon:nth-of-type(1) .content-buttons-footer a:nth-of-type(2) {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 550px) {
@@ -8077,7 +8098,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 630px) {
   .contenedor-acordeon {
     display: block;
   }
@@ -8144,6 +8165,7 @@ body {
 .acordeon__body__menu {
   list-style: none;
   padding: 15px;
+  padding-top: 0;
 }
 
 /* último import */

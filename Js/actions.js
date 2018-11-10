@@ -58,12 +58,30 @@ function menuResponsive (){
 function footerRedesDown (){
 	let redes = document.getElementById('acordeon-redes');
 	let app = document.getElementById('acordeon-app');
+	let ayuda = document.getElementById('acordeon-ayuda');
 
 	redes.classList.toggle('fa-chevron-down');
 
-	if(app.classList.contains("fa-chevron-down")){
+	if(app.classList.contains("fa-chevron-down") || redes.classList.contains("fa-chevron-down")){
 		app.classList.remove('fa-chevron-down');
 		app.classList.add('fa-chevron-right');
+		ayuda.classList.remove('fa-chevron-down');
+		ayuda.classList.add('fa-chevron-right');
+	}
+}
+
+function footerAyudaDown (){
+	let redes = document.getElementById('acordeon-redes');
+	let app = document.getElementById('acordeon-app');
+	let ayuda = document.getElementById('acordeon-ayuda');
+
+	ayuda.classList.toggle('fa-chevron-down');
+
+	if(app.classList.contains("fa-chevron-down") || redes.classList.contains("fa-chevron-down")){
+		app.classList.remove('fa-chevron-down');
+		app.classList.add('fa-chevron-right');
+		redes.classList.remove('fa-chevron-down');
+		redes.classList.add('fa-chevron-right');
 	}
 }
 
@@ -71,12 +89,15 @@ function footerRedesDown (){
 function footerAppDown (){
 	let redes = document.getElementById('acordeon-redes');
 	let app = document.getElementById('acordeon-app');
+	let ayuda = document.getElementById('acordeon-ayuda');
 	
 	app.classList.toggle('fa-chevron-down');
 
-	if(redes.classList.contains("fa-chevron-down")){
+	if(redes.classList.contains("fa-chevron-down") || ayuda.classList.contains("fa-chevron-down")){
 		redes.classList.remove('fa-chevron-down');
 		redes.classList.add('fa-chevron-right');
+		ayuda.classList.remove('fa-chevron-down');
+		ayuda.classList.add('fa-chevron-right');
 	}
 }
 
