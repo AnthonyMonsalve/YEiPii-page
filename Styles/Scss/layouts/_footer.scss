@@ -186,7 +186,7 @@
   color: $YEiPii-color;
 }
 .acordeon__body {
-  background: lighten($YEiPii-color-lightgray, 4);
+  background: $YEiPii-color-white;
   height: 0;
   transition: height .4s ease-in-out;
 }

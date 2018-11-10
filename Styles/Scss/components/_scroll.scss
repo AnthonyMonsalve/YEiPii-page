@@ -20,7 +20,7 @@
 	overflow-x: scroll;
 
 	&::-webkit-scrollbar-thumb {
-		background-color: darken($YEiPii-color-lightgray, 15);
+		background-color: darken($YEiPii-color-lightgray, 10);
 	}
 	&::-webkit-scrollbar {
 		height: 5px;

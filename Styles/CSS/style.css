@@ -8189,7 +8189,7 @@ body {
 }
 
 .acordeon__body {
-  background: whitesmoke;
+  background: white;
   height: 0;
   -webkit-transition: height .4s ease-in-out;
   transition: height .4s ease-in-out;
@@ -8287,7 +8287,7 @@ a:focus, div:focus, button:focus, img:focus {
 }
 
 .content-buttons-category::-webkit-scrollbar-thumb {
-  background-color: #c5c5c5;
+  background-color: #d2d2d2;
 }
 
 .content-buttons-category::-webkit-scrollbar {
