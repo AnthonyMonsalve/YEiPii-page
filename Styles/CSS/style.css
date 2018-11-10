@@ -8162,6 +8162,10 @@ a:focus, div:focus, button:focus, img:focus {
   padding: 0;
 }
 
+.p-b-cero {
+  padding: 0;
+}
+
 .center {
   text-align: center;
   letter-spacing: 1px;
