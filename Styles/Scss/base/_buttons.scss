@@ -38,7 +38,15 @@
 .button-YEiPii-secondary{
 	@extend %button;
 	@extend %button-secondary;
+	@include respond-to(1085px){
+		margin-bottom: 10px;
+	}
 }
+
+.button-YEiPii-secondary:nth-of-type(1){
+	margin-left: 0;
+}
+
 .button-YEiPii:hover,.button-YEiPii-secondary:hover{
 	cursor: pointer;
 	background-color: $YEiPii-color-secondary;	

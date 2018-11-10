@@ -1,27 +1,25 @@
 /* Slider */
-.slick-slider
-{
+.slick-slider {
     position: relative;
 
     display: block;
 
     -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
 
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
+.slick-list {
     position: relative;
 
     display: block;
@@ -30,90 +28,94 @@
     margin: 0;
     padding: 0;
 }
-.slick-list:focus
-{
+
+.slick-list:focus {
     outline: none;
 }
-.slick-list.dragging
-{
+
+.slick-list.dragging {
     cursor: pointer;
     cursor: hand;
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list
-{
+.slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
+.slick-track {
     position: relative;
     top: 0;
     left: 0;
 
     display: block;
 }
+
 .slick-track:before,
-.slick-track:after
-{
+.slick-track:after {
     display: table;
 
     content: '';
 }
-.slick-track:after
-{
+
+.slick-track:after {
     clear: both;
 }
-.slick-loading .slick-track
-{
+
+.slick-loading .slick-track {
     visibility: hidden;
 }
 
-.slick-slide
-{
+.slick-slide {
     display: none;
     float: left;
 
     height: 100%;
     min-height: 1px;
 }
-[dir='rtl'] .slick-slide
-{
+
+.slick-slide:active{
+ cursor: -webkit-grab;
+ cursor: grab;
+ cursor: -moz-grab;
+}
+
+[dir='rtl'] .slick-slide {
     float: right;
 }
-.slick-slide img
-{
+
+.slick-slide img {
     display: block;
 }
-.slick-slide.slick-loading img
-{
+
+.slick-slide.slick-loading img {
     display: none;
 }
-.slick-slide.dragging img
-{
+
+.slick-slide.dragging img {
     pointer-events: none;
 }
-.slick-initialized .slick-slide
-{
+
+.slick-initialized .slick-slide {
     display: block;
 }
-.slick-loading .slick-slide
-{
+
+.slick-loading .slick-slide {
     visibility: hidden;
 }
-.slick-vertical .slick-slide
-{
+
+.slick-vertical .slick-slide {
     display: block;
 
     height: auto;
 
     border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
     display: none;
 }
@@ -121,73 +123,75 @@
 
 //LOCURA
 .container-slider {
-  margin: 80px auto 0;
-  width: 100%;
-  max-width: 1000px;
-  transition: .5s all;
+    margin: 80px auto 0;
+    width: 100%;
+    max-width: 1000px;
+    transition: .5s all;
 }
 
 .clip>.section-slider {
-  height: auto;
-  margin: 10px 8px;
-  padding: 2%;
-  position: relative;
-  text-align: center;
-  transition: .5s all;
-  border: none;
+    height: auto;
+    margin: 10px 8px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+    transition: .5s all;
+    border: none;
 }
 
-.section-slider .top img{
-  margin: 0 auto;
-  transition: .5s all;
+.section-slider .top img {
+    margin: 0 auto;
+    transition: .5s all;
 }
+
 .section-slider .bottom {
-  font-size: 70%;
-  width: 70%;
-  margin: 0 auto;
-  background-color: white;
-  transition: .5s all;
+    font-size: 70%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    transition: .5s all;
 }
 
 .clip {
-  overflow: hidden;
-  bottom: 0;
-  transition: .5s all;
-  outline: none;
+    overflow: hidden;
+    bottom: 0;
+    transition: .5s all;
+    outline: none;
 }
 
 .center-slider .slick-slide {
-  height: auto;
-  transition: .5s all;
+    height: auto;
+    transition: .5s all;
 }
 
 .center-slider .slick-center .section-slider {
-  opacity: 1;
-  transition: .5s all;
-  position: relative;
+    opacity: 1;
+    transition: .5s all;
+    position: relative;
 }
 
-.center-slider .slick-center .section-slider img{
-  box-shadow: none;
+.center-slider .slick-center .section-slider img {
+    box-shadow: none;
 }
 
 .center-slider .section-slider {
-  opacity: 0.8;
-  bottom: 0;
-  transition: .5s all;
+    opacity: 0.8;
+    bottom: 0;
+    transition: .5s all;
 }
-  
+
 a:focus,
 a:hover {
-  text-decoration: none;
-  transition: .5s all;
+    text-decoration: none;
+    transition: .5s all;
 }
+
 .slick-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s all;
-  box-shadow: 0px 0px 50px -18px rgba(0,0,0,1);
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s all;
+    box-shadow: 0px 0px 50px -18px rgba(0, 0, 0, 1);
 }
 
 
@@ -198,7 +202,7 @@ a:hover {
 }
 
 
-.slider:after{
+.slick-track:after {
     content: '';
     display: block;
     background: url('../../images/phones/phone-black.png');

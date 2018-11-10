@@ -224,26 +224,16 @@ body{
 	@include max-width;
 	box-sizing: border-box;
 	transition: $transition-responsive;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-.title-category{
-	border-bottom: 1px solid $YEiPii-color;
-	color: $YEiPii-color;
-	margin-bottom: 30px;
-	padding-bottom: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: center;
-	display: none;
 }
 
 .content-buttons-category{
 	@extend %flex;
 	justify-content: space-around;
 	padding: 0 50px 0 50px;
+	@include respond-to(1085px){
+		padding: 0;
+		justify-content: flex-start;
+	}
 }
 
 .content-category-locales{

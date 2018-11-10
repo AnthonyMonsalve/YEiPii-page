@@ -14,3 +14,15 @@
 ::-webkit-scrollbar-thumb {
 	background-color: $YEiPii-color;
 }
+
+.content-buttons-category {
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+
+	&::-webkit-scrollbar-thumb {
+		background-color: darken($YEiPii-color-lightgray, 15);
+	}
+	&::-webkit-scrollbar {
+		height: 5px;
+	}
+}

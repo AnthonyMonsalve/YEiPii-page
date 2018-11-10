@@ -6864,6 +6864,16 @@ p {
           justify-content: center;
 }
 
+@media screen and (max-width: 1085px) {
+  .button-YEiPii-secondary {
+    margin-bottom: 10px;
+  }
+}
+
+.button-YEiPii-secondary:nth-of-type(1) {
+  margin-left: 0;
+}
+
 .button-YEiPii:hover, .button-YEiPii-secondary:hover {
   cursor: pointer;
   background-color: #0C0B80;
@@ -7078,6 +7088,12 @@ header a {
   min-height: 1px;
 }
 
+.slick-slide:active {
+  cursor: -webkit-grab;
+  cursor: grab;
+  cursor: -moz-grab;
+}
+
 [dir='rtl'] .slick-slide {
   float: right;
 }
@@ -7206,7 +7222,7 @@ a:hover {
           justify-content: center;
 }
 
-.slider:after {
+.slick-track:after {
   content: '';
   display: block;
   background: url("../../images/phones/phone-black.png");
@@ -7536,26 +7552,21 @@ body {
           box-sizing: border-box;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.title-category {
-  border-bottom: 1px solid #050d9e;
-  color: #050d9e;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: none;
 }
 
 .content-buttons-category {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 50px 0 50px;
+}
+
+@media screen and (max-width: 1085px) {
+  .content-buttons-category {
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .content-category-locales {
@@ -8204,5 +8215,18 @@ a:focus, div:focus, button:focus, img:focus {
 
 ::-webkit-scrollbar-thumb {
   background-color: #050d9e;
+}
+
+.content-buttons-category {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.content-buttons-category::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+}
+
+.content-buttons-category::-webkit-scrollbar {
+  height: 5px;
 }
 /*# sourceMappingURL=style.css.map */
