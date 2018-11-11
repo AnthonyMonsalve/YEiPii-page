@@ -72,6 +72,7 @@
 	padding: 0 0 0 44px;
 	filter: opacity(1) brightness(1);
 	transition: $button-transition;
+	height: $hnav / 1.2;
 }
 
 #button-menu:hover{

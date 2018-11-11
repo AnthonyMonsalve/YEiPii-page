@@ -24,6 +24,23 @@ p{
 .parrafo_YEiPii-calcomania{
 	@extend %parrafo_YEiPii;
 	max-width: 580px;
+	@include respond-to($max-width-830){
+		max-width: 80%;
+		margin: auto;
+		margin-bottom: 25px;
+		text-align: center;
+		font-size: map-get($font-size, normal-big);
+	}
+
+	@include respond-to($max-width-MobileL){
+		max-width: 100%;
+		font-size: 20px;
+	}
+
+	@include respond-to($max-width-MobileS){
+		max-width: 100%;
+		font-size: 16px;
+	}
 }
 
 .parrafo_YEiPii_gray{
@@ -31,7 +48,7 @@ p{
 	color: $YEiPii-color-gray;
 
 	@include respond-to($max-width-830){
-		max-width: 80%;
+		max-width: 95%;
 		margin: auto;
 		margin-bottom: 25px;
 		text-align: center;

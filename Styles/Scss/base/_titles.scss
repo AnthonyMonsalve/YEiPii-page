@@ -99,6 +99,9 @@ h3{
 
 	@include respond-to($max-width-830){
 		font-size: $base-size-title-YEiPii - .8;
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 0px;
 	}
 
 	@include respond-to($max-width-MobileM){

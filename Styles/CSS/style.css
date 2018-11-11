@@ -5,7 +5,6 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 code {
   font-size: 87.5%;
   color: #e83e8c;
@@ -6711,6 +6710,9 @@ h3 {
 @media screen and (max-width: 840px) {
   .title_banner-donde-estamos {
     font-size: 2.6em;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
   }
 }
 
@@ -6755,13 +6757,37 @@ p {
   max-width: 580px;
 }
 
+@media screen and (max-width: 840px) {
+  .parrafo_YEiPii-calcomania {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .parrafo_YEiPii-calcomania {
+    max-width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .parrafo_YEiPii-calcomania {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
+
 .parrafo_YEiPii_gray {
   color: #616161;
 }
 
 @media screen and (max-width: 840px) {
   .parrafo_YEiPii_gray {
-    max-width: 80%;
+    max-width: 95%;
     margin: auto;
     margin-bottom: 25px;
     text-align: center;
@@ -7717,6 +7743,7 @@ body {
           filter: opacity(1) brightness(1);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  height: 37.5px;
 }
 
 #button-menu:hover {
