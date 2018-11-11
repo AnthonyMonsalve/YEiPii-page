@@ -4,15 +4,24 @@ if (window.matchMedia("(min-width: 840px)").matches) {
 
     // Initialize the marker position and the active class
     current.addClass('active');
-    marker.css({
-        // Place the marker in the middle of the border
-        bottom: -(marker.height() / 2) + 1,
-        left: current.position().left + 10,
-        width: current.outerWidth() - 20,
-        display: "block",
-        borderColor: '#0f0e9f'
-    });
 
+    setTimeout(function () {
+        marker.css({
+            // Place the marker in the middle of the border
+            bottom: -(marker.height() / 2) + 1,
+            left: current.position().left + 10,
+            width: current.outerWidth() - 20,
+            display: "block",
+            borderColor: '#0f0e9f',
+            opacity: 0,
+            transition: '1s all',
+        });
+    }, 2400);
+    setTimeout(function () {
+        marker.css({
+            opacity: 1
+        });
+    }, 2500);
 
     if (Modernizr.csstransitions) {
         console.log("using css3 transitions");
