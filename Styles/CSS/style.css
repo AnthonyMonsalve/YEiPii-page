@@ -7788,6 +7788,7 @@ body {
 .nav ul {
   list-style: none;
   margin: 0;
+  position: relative;
 }
 
 @media screen and (max-width: 840px) {
@@ -7817,11 +7818,6 @@ body {
   .item-nav {
     padding: 0;
   }
-}
-
-.item-nav.normal:hover {
-  -webkit-box-shadow: inset 10px 0px 0px -9px rgba(5, 13, 158, 0.05), inset -10px 0px 0px -9px rgba(5, 13, 158, 0.05);
-          box-shadow: inset 10px 0px 0px -9px rgba(5, 13, 158, 0.05), inset -10px 0px 0px -9px rgba(5, 13, 158, 0.05);
 }
 
 .item-nav .active {
@@ -7863,7 +7859,7 @@ body {
 }
 
 #iniciar-sesion {
-  padding-right: 1px;
+  padding-right: 10px;
 }
 
 #iniciar-sesion:hover a, #registrate:hover a {
@@ -7903,6 +7899,57 @@ body {
 
 #iniciar-sesion:hover a, #registrate:hover a {
   color: #e47f08;
+}
+
+#marker {
+  position: absolute;
+  display: none;
+  border-bottom: 2px solid white;
+  height: 2px;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.csstransitions .detect:after {
+  content: "CSS3 Transitions";
+  color: green;
+  font-weight: bold;
+  background-color: white;
+}
+
+.no-js .detect:after {
+  content: "JS Disabled";
+  color: red;
+  font-weight: bold;
+  background-color: white;
+}
+
+.detect:after {
+  content: "jQuery.animate()";
+  color: red;
+  font-weight: bold;
+  background-color: white;
+}
+
+.nope {
+  width: 100%;
+  position: absolute;
 }
 
 /*---------------------------*\
