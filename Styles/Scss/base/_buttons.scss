@@ -115,8 +115,13 @@
 
 .button-YEiPii-secondary span{
 	display: block;
-	font-family: 'normal';
 	margin-top: 10px;
 	transition: $button-transition;
 	font-size: 9px;
+	@include respond-to(1085px){
+		font-size: 10px;
+	}
+	@include respond-to(358px){
+		font-size: 11px;
+	}
 }

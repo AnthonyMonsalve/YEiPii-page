@@ -129,7 +129,6 @@
 	margin: 0;
 	padding: 0px 10px;
 	transition: $button-transition;
-	font-family: 'normal';
 
 	@include respond-to($max-width-830) {
 		padding: 0;
@@ -176,7 +175,7 @@
 }
 #iniciar-sesion a, #registrate a{
 	color: $YEiPii-color-orange;
-	font-family: 'bold'
+	font-weight: bold;
 }
 
 .item-nav a:hover{

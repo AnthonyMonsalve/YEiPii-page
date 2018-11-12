@@ -14,14 +14,14 @@ if (window.matchMedia("(min-width: 840px)").matches) {
             display: "block",
             borderColor: '#0f0e9f',
             opacity: 0,
-            transition: '1s all',
+            transition: '.8s all',
         });
-    }, 2400);
+    }, 2600);
     setTimeout(function () {
         marker.css({
             opacity: 1
         });
-    }, 2500);
+    }, 2800);
 
     if (Modernizr.csstransitions) {
         console.log("using css3 transitions");

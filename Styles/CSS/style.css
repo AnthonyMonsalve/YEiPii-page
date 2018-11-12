@@ -6476,81 +6476,22 @@ a.text-dark:hover, a.text-dark:focus {
 /*---------------------------*\
     $MIXINS
 \*---------------------------*/
-/* .op{
-    visibility: visible;
-    opacity: 0.9;
-    transition: opacity 0.33s linear;
-  }
-
-  .op.animate {
-    -webkit-animation : fly-in .5s .7s ease both;
-    -moz-animation    : fly-in .5s .7s ease both;
-    -o-animation      : fly-in .5s .7s ease both;
-    animation         : fly-in .5s .7s ease both;
-  }
-
-  .op.animate.slow {
-    -webkit-animation : fly-in .5s .7s + .5 ease both;
-    -moz-animation    : fly-in .5s .7s + .5 ease both;
-    -o-animation      : fly-in .5s .7s + .5 ease both;
-    animation         : fly-in .5s .7s + .5 ease both;
-  }
-
-  @-webkit-keyframes fly-in {
-    from {
-      -webkit-transform :translateY(10rem); //rotate(150deg);
-      transform         :translateY(10rem); //rotate(150deg);
-      opacity:0;
-    }
-  }
-  @-moz-keyframes fly-in {
-    from {
-      -moz-transform :translateY(10rem);// rotate(150deg);
-      transform      :translateY(10rem);// rotate(150deg);
-      opacity:0;
-    }
-  }
-  @keyframes fly-in {
-    from {
-      transform:translateY(10rem);// rotate(150deg);
-      opacity:0;
-    }
-  }
-
-  */
-body {
-  color: #616161;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /*---------------------------*\
 	$TYPOGRAPHY
 \*---------------------------*/
-@font-face {
-  font-family: 'Lighter';
-  font-style: normal;
-  font-weight: lighter;
-  src: local("Lighter"), url("../../fonts/AvenirLTStd-Light.otf") format("woff");
-}
-
-@font-face {
-  font-family: 'Normal';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Normal"), url("../../fonts/AvenirLTStd-Roman.otf") format("woff");
-}
-
-@font-face {
-  font-family: 'Bold';
-  font-style: normal;
-  font-weight: bold;
-  src: local("Bold"), url("../../fonts/AvenirLTStd-Black.otf") format("woff");
-}
-
 body {
   color: #616161;
   font-family: "Normal", Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+
+.Avenir-Bold {
+  font-family: 'Bold', Arial, Helvetica;
+  font-weight: normal;
+}
+
+.Avenir-Normal {
+  font-family: 'Normal', Arial, Helvetica;
 }
 
 .bold {
@@ -6593,8 +6534,9 @@ body {
 		$PARAGRAPHS
 \*---------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bold';
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -6642,7 +6584,6 @@ h2 {
 h3 {
   margin: 0;
   font-size: 1.428em;
-  font-family: 'Normal';
 }
 
 .title-big {
@@ -6994,11 +6935,22 @@ p {
 
 .button-YEiPii-secondary span {
   display: block;
-  font-family: 'normal';
   margin-top: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-size: 9px;
+}
+
+@media screen and (max-width: 1085px) {
+  .button-YEiPii-secondary span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .button-YEiPii-secondary span {
+    font-size: 11px;
+  }
 }
 
 /*---------------------------*\
@@ -7816,7 +7768,6 @@ body {
   padding: 0px 10px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-family: 'normal';
 }
 
 @media screen and (max-width: 840px) {
@@ -7873,7 +7824,7 @@ body {
 
 #iniciar-sesion a, #registrate a {
   color: #f7931e;
-  font-family: 'bold';
+  font-weight: bold;
 }
 
 .item-nav a:hover {
