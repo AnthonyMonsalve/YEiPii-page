@@ -6668,7 +6668,6 @@ h3 {
 @media screen and (max-width: 840px) {
   .title_banner-donde-estamos {
     font-size: 2.6em;
-    text-align: center;
     margin-bottom: 10px;
     margin-top: 0px;
   }
@@ -6774,7 +6773,7 @@ p {
 .parrafo_banner-donde-estamos {
   font-size: 22px;
   max-width: 350px;
-  text-align: right;
+  text-align: justify;
   color: #e1e1e1;
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7783,11 +7782,6 @@ body {
   background-size: 100% 13px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.donde-estamos-banner:hover {
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
 }
 
 @media screen and (max-width: 840px) {

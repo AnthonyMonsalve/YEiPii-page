@@ -191,10 +191,6 @@ body{
 	transition: $button-transition;
 }
 
-.donde-estamos-banner:hover{
-	filter: grayscale(30%) ; 
-}
-
 .donde-estamos-banner .sections-YEiPii{
 	@include respond-to($max-width-830){
 	flex-direction: row;
