@@ -1,4 +1,4 @@
- // Simple check if the browser understands the API
+  // Simple check if the browser understands the API
  // Is there a better/more reliable way of checking support?
  if (document.fonts) {
      // Define a new FontFace
