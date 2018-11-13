@@ -1,0 +1,109 @@
+$tamaño: 390px;
+.stiker{
+    width: $tamaño;
+    height: $tamaño;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background: $YEiPii-color;
+    padding: $padding;
+    margin-right: 10px;
+    transition: $transition-responsive;
+    @include respond-to(1024px){
+        width: $tamaño - ($tamaño * 0.05);
+        height: $tamaño - ($tamaño * 0.05);
+    }
+    @include respond-to($max-width-830){
+        width: $tamaño - ($tamaño * 0.15);
+        height: $tamaño - ($tamaño * 0.15);
+        margin-right: 0;
+    }
+    @include respond-to($max-width-MobileL){
+        width: $tamaño - ($tamaño * 0.2);
+        height: $tamaño - ($tamaño * 0.2);
+        border-radius: 30px;
+    }
+    @include respond-to($max-width-MobileM){
+        width: $tamaño - ($tamaño * 0.3);
+        height: $tamaño - ($tamaño * 0.3);
+    }
+    & img{
+        width: 85%;
+        margin: 10px 0 20px;
+        @include respond-to($max-width-830){
+            width: 90%;
+        }
+    }
+    & form{
+        width: 85%;
+        @include respond-to($max-width-830){
+            width: 90%;
+        }
+    }
+    & input{
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 25px 12px;
+        margin-top: 20px;
+        /* margin: 0 0 10px 0; */
+        border-radius: 8px;
+        font-size: 2.5em;
+        color: darken($YEiPii-color-gray, 10);
+        text-transform: uppercase;
+        transition: $transition-responsive;
+        @include respond-to(1024px){
+            font-size: 2.3em;
+        }
+        @include respond-to($max-width-830){
+            font-size: 2.1em;
+        }
+        @include respond-to($max-width-MobileL){
+            font-size: 1.9em;
+        }
+        @include respond-to($max-width-MobileM){
+            font-size: 1.7em;
+        }
+    }
+
+    & input::placeholder{
+        font-size: 2rem;
+        text-align: center;
+        color: $YEiPii-color-gray;
+        transition: $transition-responsive;
+
+        @include respond-to(1024px){
+            font-size: 1.8rem;
+        }
+        @include respond-to($max-width-830){
+            font-size: 1.6rem;
+        }
+        @include respond-to($max-width-MobileL){
+            font-size: 1.4rem;
+        }
+        @include respond-to($max-width-MobileM){
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.titleStiker{
+    font-size: 3.25em;
+    transition: $transition-responsive;
+    @include respond-to(1024px){
+        font-size: 3em;
+    }
+    @include respond-to($max-width-830){
+        font-size: 2.8em;
+    }
+    @include respond-to($max-width-MobileL){
+        font-size: 2.5em;
+    }
+    @include respond-to($max-width-MobileM){
+        font-size: 2.3em;
+    }
+}
