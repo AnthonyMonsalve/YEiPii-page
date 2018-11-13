@@ -7160,11 +7160,9 @@ header a {
   position: relative;
 }
 
-.center-slider .slick-center .section-slider img {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
+/*.center-slider .slick-center .section-slider img {
+    box-shadow: none;
+}*/
 .center-slider .section-slider {
   opacity: 0.8;
   bottom: 0;
@@ -7903,8 +7901,8 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   background-color: white;
-  -webkit-box-shadow: 0px -2px 0px 0px white;
-          box-shadow: 0px -2px 0px 0px white;
+  -webkit-box-shadow: 0px -8px 0px 8px white, 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
+          box-shadow: 0px -8px 0px 8px white, 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
 }
 
 @media screen and (max-width: 840px) {
@@ -8135,8 +8133,6 @@ body {
   position: fixed;
   top: 0;
   background: white;
-  -webkit-box-shadow: 0px -8px 0px 8px white, 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
-          box-shadow: 0px -8px 0px 8px white, 0px -3px 29px 0px rgba(0, 0, 0, 0.58);
   -webkit-animation-duration: .7s;
           animation-duration: .7s;
   z-index: 1000;
