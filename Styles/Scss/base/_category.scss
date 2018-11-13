@@ -1,0 +1,23 @@
+.categoryBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    //padding: 20px;
+    overflow: hidden;
+    height: 0;
+    transition: 1s all;
+}
+
+.categoryOpen{
+    height: auto;
+    padding: 20px;
+    overflow: none;
+}
+
+
+.lugarCategory {
+    width: 120px;
+}

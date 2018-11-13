@@ -7236,6 +7236,34 @@ a:hover {
   }
 }
 
+.categoryBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.categoryOpen {
+  height: auto;
+  padding: 20px;
+  overflow: none;
+}
+
+.lugarCategory {
+  width: 120px;
+}
+
 /*---------------------------*\
 	$LAYOUTS
 \*---------------------------*/
@@ -7831,7 +7859,7 @@ body {
 }
 
 #iniciar-sesion:hover a, #registrate:hover a {
-  color: #e47f08;
+  color: #f38709;
 }
 
 #iniciar-sesion a, #registrate a {
