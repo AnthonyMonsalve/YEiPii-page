@@ -76,7 +76,7 @@
 
 .title-info-footer{
   color: $YEiPii-color;
-  font-weight: map-get($font-weight, medium);
+  font-weight: map-get($font-weight, bold);
   margin-bottom: 8px !important;
   text-align: center;
 }
@@ -129,7 +129,6 @@
 }
 
 .footer-copy{
-  font-family: 'bold';
   padding-top: 6px;
   text-align: center;
   border-top: solid 1px $YEiPii-color;
@@ -151,6 +150,7 @@
   color: $YEiPii-color;
   padding: 5px;
   text-align: center;
+  font-weight: map-get($font-weight, bold);
 }
 
 

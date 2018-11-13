@@ -1,20 +1,32 @@
 /*---------------------------*\
 	$TYPOGRAPHY
 \*---------------------------*/
+@font-face {
+    font-family: BoldAvenir;
+	src: url(../../fonts/AvenirLTStd-Black.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: NormalAvenir;
+	src: url(../../fonts/AvenirLTStd-Medium.otf);
+    font-weight: normal;
+}
+
 
 body{
 	color: $color-body; 
-	font-family: 'Normal', $base-font-family;
+	font-family: $base-font-family;
 	font-size: map-get($font-size, normal)
 }
 
 .Avenir-Bold {
-	font-family: 'Bold', Arial, Helvetica;
+	font-family: 'BoldAvenir', Arial, Helvetica;
 	font-weight: normal;
 }
 
 .Avenir-Normal {
-	font-family: 'Normal', Arial, Helvetica;
+	font-family: 'NormalAvenir', Arial, Helvetica;
 }
 
 // Lista de valores
