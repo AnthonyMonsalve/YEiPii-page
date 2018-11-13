@@ -6885,7 +6885,8 @@ p {
   margin-right: 0;
 }
 
-.button-YEiPii:hover, .button-YEiPii-secondary:hover {
+.button-YEiPii:hover,
+.button-YEiPii-secondary:hover {
   cursor: pointer;
   background-color: #0C0B80;
 }
@@ -6904,6 +6905,11 @@ p {
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 0px 1px white;
           box-shadow: 0px 0px 0px 1px white;
+}
+
+.button-app-download a {
+  width: 170px;
+  height: 58px;
 }
 
 .button-app-download:hover {
@@ -6963,6 +6969,10 @@ p {
   .button-YEiPii-secondary span {
     font-size: 11px;
   }
+}
+
+#APPLE:hover .hoverDownload, #ANDROID:hover .hoverDownload {
+  fill: #050d9e;
 }
 
 /*---------------------------*\

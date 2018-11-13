@@ -3,7 +3,7 @@
 \*---------------------------*/
 
 //Place Holder Button's
-%button{
+%button {
 	background-color: $YEiPii-color;
 	color: $YEiPii-color-white;
 	text-transform: $button-capitalize-text;
@@ -17,12 +17,12 @@
 	transition: $button-transition;
 }
 
-%button-secondary{
+%button-secondary {
 	border-radius: 12px;
-    padding: 5px;
+	padding: 5px;
 	min-width: 150px;
 	min-height: 100px;
-    margin: 5px;
+	margin: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -33,95 +33,113 @@
 //END Place Holder Button
 
 // Buttons YEiPii
-.button-YEiPii{
+.button-YEiPii {
 	@extend %button;
 }
-.button-YEiPii-secondary{
+
+.button-YEiPii-secondary {
 	@extend %button;
 	@extend %button-secondary;
-	@include respond-to(1085px){
+
+	@include respond-to(1085px) {
 		margin-bottom: 10px;
 	}
-	@include respond-to(1053px){
+
+	@include respond-to(1053px) {
 		width: 20%;
 		margin: 5px 3% !important;
 	}
-	@include respond-to(577px){
+
+	@include respond-to(577px) {
 		width: 35%;
 		margin: 5px;
 	}
-	@include respond-to(358px){
+
+	@include respond-to(358px) {
 		width: 70%;
 		margin: 5px;
 	}
 }
 
-.button-YEiPii-secondary:nth-of-type(1){
+.button-YEiPii-secondary:nth-of-type(1) {
 	margin-left: 0;
 }
 
-.button-YEiPii-secondary:nth-last-of-type(1){
+.button-YEiPii-secondary:nth-last-of-type(1) {
 	margin-right: 0;
 }
 
-.button-YEiPii:hover,.button-YEiPii-secondary:hover{
+.button-YEiPii:hover,
+.button-YEiPii-secondary:hover {
 	cursor: pointer;
-	background-color: $YEiPii-color-secondary;	
+	background-color: $YEiPii-color-secondary;
 }
 
 //Buttons APP Download
-.button-app-download{
+.button-app-download {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 9px 13px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 0px 1px $YEiPii-color-white;
+
 	//transition: $button-transition;
+	& a {
+		width: 170px;
+		height: 58px;
+	}
 }
 
-.button-app-download:hover{
+.button-app-download:hover {
 	cursor: pointer;
 	background: $YEiPii-color-white;
 }
 
 //FOOTER
 
-.download-footer-btn-img{
+.download-footer-btn-img {
 	width: $download-footer-btn-img;
 	height: $download-footer-btn-img;
 	transition: $button-transition;
 	border-radius: 5px;
 	margin: 0 4px 0 4px;
 	filter: opacity(.60) brightness(.85);
-	@include respond-to(550px){
-		filter: opacity(1) brightness(1);
-	  }
-  }
-  
-  .download-footer-btn-img:hover{
-	filter: opacity(1) brightness(1);
-  }
 
-.button-app-download .android{
+	@include respond-to(550px) {
+		filter: opacity(1) brightness(1);
+	}
+}
+
+.download-footer-btn-img:hover {
+	filter: opacity(1) brightness(1);
+}
+
+.button-app-download .android {
 	width: 170px;
 	height: 100%;
 }
 
-.button-YEiPii-secondary img{
+.button-YEiPii-secondary img {
 	width: 55px;
 	transition: $button-transition;
 }
 
-.button-YEiPii-secondary span{
+.button-YEiPii-secondary span {
 	display: block;
 	margin-top: 10px;
 	transition: $button-transition;
 	font-size: 9px;
-	@include respond-to(1085px){
+
+	@include respond-to(1085px) {
 		font-size: 10px;
 	}
-	@include respond-to(358px){
+
+	@include respond-to(358px) {
 		font-size: 11px;
 	}
+}
+
+#APPLE:hover .hoverDownload, #ANDROID:hover .hoverDownload {
+	fill: $YEiPii-color;
 }
