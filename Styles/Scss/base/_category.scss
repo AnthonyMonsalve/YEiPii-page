@@ -1,23 +1,99 @@
-.categoryBox {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 900px;
-    width: 90%;
+.contenedor-buttons-category-maxwidth{
+    max-width: 1024px;
+    width: 100%;
     margin: auto;
-    //padding: 20px;
-    overflow: hidden;
-    height: 0;
-    transition: 1s all;
+    @include respond-to(1053px){
+        max-width: 900px;
+    }
 }
 
-.categoryOpen{
-    height: auto;
-    padding: 20px;
-    overflow: none;
+.categoryBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        height: 0;
+        transition: .4s all;
+        position: relative;
+        top: -60px;
+        z-index: -9999;
+        opacity: 0;
+        @include respond-to(1053px){
+            width: 85%;
+        }
+        @include respond-to(577px){
+            justify-content: center;
+        }
 }
 
+.categoryOpen {
+    padding-top: 20px;
+    top: 0;
+}
+
+.categoryOpen-2filas {
+    position: absolute;
+    padding-top: 20px;
+    top: 105px;
+    left: 0;
+    right: 0;
+}
+
+.categoryOpen-2filas-abajo {
+    position: absolute;
+    padding-top: 20px;
+    top: 210px;
+    left: 0;
+    right: 0;
+}
+
+.categoryOpen-3filas{
+    position: absolute;
+    padding-top: 20px;
+    top: 105px;
+    left: 0;
+    right: 0;
+}
+
+.categoryOpen-3filas-2da{
+    position: absolute;
+    padding-top: 20px;
+    top: 212px;
+    left: 0;
+    right: 0;
+}
+
+.categoryOpen-3filas-3ra{
+    position: absolute;
+    padding-top: 20px;
+    top: 324px;
+    left: 0;
+    right: 0;
+}
 
 .lugarCategory {
-    width: 120px;
+    width: (80%) / 6;
+    min-width: 120px;
+    margin: 10px;
+    border-radius: 50%;
+    @include respond-to(1053px){
+        width: (85%) / 5;
+    }
+    @include respond-to(577px){
+        min-width: 100px;
+    }
+    @include respond-to(485px){
+        min-width: 90px;
+    }
+    @include respond-to(446px){
+        min-width: 85px;
+    }
+    @include respond-to(390px){
+        margin: 5px;
+    }
 }

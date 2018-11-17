@@ -6685,6 +6685,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 840px) {
+  .centerText {
+    text-align: center;
+  }
+}
+
 .donde-estamos-banner h3 {
   color: #e1e1e1;
 }
@@ -6845,8 +6851,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: .7s all;
+  transition: .7s all;
 }
 
 @media screen and (max-width: 1085px) {
@@ -6857,15 +6863,21 @@ p {
 
 @media screen and (max-width: 1053px) {
   .button-YEiPii-secondary {
-    width: 20%;
-    margin: 5px 3% !important;
+    width: 25%;
+    margin: 10px 3%;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .button-YEiPii-secondary {
+    width: 24%;
   }
 }
 
 @media screen and (max-width: 577px) {
   .button-YEiPii-secondary {
     width: 35%;
-    margin: 5px;
+    margin: 10px 10px 0 10px;
   }
 }
 
@@ -6874,14 +6886,6 @@ p {
     width: 70%;
     margin: 5px;
   }
-}
-
-.button-YEiPii-secondary:nth-of-type(1) {
-  margin-left: 0;
-}
-
-.button-YEiPii-secondary:nth-last-of-type(1) {
-  margin-right: 0;
 }
 
 .button-YEiPii:hover,
@@ -7243,10 +7247,24 @@ a:hover {
   }
 }
 
+.contenedor-buttons-category-maxwidth {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1053px) {
+  .contenedor-buttons-category-maxwidth {
+    max-width: 900px;
+  }
+}
+
 .categoryBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -7255,20 +7273,111 @@ a:hover {
   max-width: 900px;
   width: 90%;
   margin: auto;
+  padding: 0;
   overflow: hidden;
   height: 0;
-  -webkit-transition: 1s all;
-  transition: 1s all;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+  position: relative;
+  top: -60px;
+  z-index: -9999;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1053px) {
+  .categoryBox {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .categoryBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .categoryOpen {
-  height: auto;
-  padding: 20px;
-  overflow: none;
+  padding-top: 20px;
+  top: 0;
+}
+
+.categoryOpen-2filas {
+  position: absolute;
+  padding-top: 20px;
+  top: 105px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-2filas-abajo {
+  position: absolute;
+  padding-top: 20px;
+  top: 210px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-3filas {
+  position: absolute;
+  padding-top: 20px;
+  top: 105px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-3filas-2da {
+  position: absolute;
+  padding-top: 20px;
+  top: 212px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-3filas-3ra {
+  position: absolute;
+  padding-top: 20px;
+  top: 324px;
+  left: 0;
+  right: 0;
 }
 
 .lugarCategory {
-  width: 120px;
+  width: 13.33333%;
+  min-width: 120px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1053px) {
+  .lugarCategory {
+    width: 17%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .lugarCategory {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .lugarCategory {
+    min-width: 90px;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .lugarCategory {
+    min-width: 85px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .lugarCategory {
+    margin: 5px;
+  }
 }
 
 .stiker {
@@ -7658,7 +7767,8 @@ body {
   }
 }
 
-.gif-right, .gif-left {
+.gif-right,
+.gif-left {
   width: 210px;
   position: relative;
   top: 65px;
@@ -7834,9 +7944,24 @@ body {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1053px) {
+  .content-buttons-category {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 863px) {
   .content-buttons-category {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .content-buttons-category {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -7860,7 +7985,8 @@ body {
           justify-content: center;
 }
 
-.active-bg, .active-bg:hover {
+.active-bg,
+.active-bg:hover {
   background: #0a0969;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

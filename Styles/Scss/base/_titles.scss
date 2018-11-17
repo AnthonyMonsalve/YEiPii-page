@@ -113,6 +113,12 @@ h3{
 
 }
 
+@media screen and (max-width: 840px){
+	.centerText{
+		text-align: center;
+	}
+}
+
 .donde-estamos-banner h3{
 	color: lighten($YEiPii-color-gray, 50);
 }
