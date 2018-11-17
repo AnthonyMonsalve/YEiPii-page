@@ -7280,12 +7280,11 @@ a:hover {
   height: 0;
   -webkit-transition: .4s all;
   transition: .4s all;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
   position: relative;
   top: -60px;
   z-index: -9999;
   opacity: 0;
+  background: white;
 }
 
 @media screen and (max-width: 1053px) {

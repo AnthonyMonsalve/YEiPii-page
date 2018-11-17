@@ -20,11 +20,12 @@
         overflow: hidden;
         height: 0;
         transition: .4s all;
-        transition: opacity .3s ease-in-out;
+        //transition: opacity .3s ease-in-out;
         position: relative;
         top: -60px;
         z-index: -9999;
         opacity: 0;
+        background: white;
         @include respond-to(1053px){
             width: 85%;
         }
