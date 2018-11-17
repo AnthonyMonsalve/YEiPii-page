@@ -6778,7 +6778,7 @@ p {
 
 .parrafo_banner-donde-estamos {
   font-size: 22px;
-  max-width: 350px;
+  max-width: 400px;
   text-align: justify;
   color: #e1e1e1;
   letter-spacing: 1px;
@@ -6976,6 +6976,14 @@ p {
 
 #APPLE:hover .hoverDownload, #ANDROID:hover .hoverDownload {
   fill: #050d9e;
+}
+
+.button-gray-disabled {
+  background: #616161;
+}
+
+.button-gray-disabled:hover {
+  background: #484848;
 }
 
 /*---------------------------*\
@@ -7396,9 +7404,24 @@ a:hover {
 
 .lugarCategory {
   width: 13.33333%;
-  min-width: 120px;
-  margin: 10px;
+  min-width: 110px;
+  margin: 15px 10px;
   border-radius: 50%;
+  text-align: center;
+}
+
+.lugarCategory img {
+  width: 100%;
+}
+
+.lugarCategory h4 {
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+
+.lugarCategory span {
+  text-align: center;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 1053px) {
@@ -7505,6 +7528,7 @@ a:hover {
 }
 
 .stiker form {
+  position: relative;
   width: 85%;
 }
 
@@ -7514,7 +7538,7 @@ a:hover {
   }
 }
 
-.stiker input {
+.stiker input[type=text] {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7532,56 +7556,62 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .stiker input {
+  .stiker input[type=text] {
     font-size: 2.3em;
   }
 }
 
 @media screen and (max-width: 840px) {
-  .stiker input {
+  .stiker input[type=text] {
     font-size: 2.1em;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .stiker input {
+  .stiker input[type=text] {
     font-size: 1.9em;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .stiker input {
+  .stiker input[type=text] {
     font-size: 1.7em;
   }
 }
 
+.stiker input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .stiker input::-webkit-input-placeholder {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.7rem;
+  text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .stiker input:-ms-input-placeholder {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.7rem;
+  text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .stiker input::-ms-input-placeholder {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.7rem;
+  text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .stiker input::placeholder {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.7rem;
+  text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -7589,16 +7619,16 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   .stiker input::-webkit-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .stiker input:-ms-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .stiker input::-ms-input-placeholder {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .stiker input::placeholder {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 

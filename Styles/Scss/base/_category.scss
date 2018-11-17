@@ -130,9 +130,25 @@
 
 .lugarCategory {
     width: (80%) / 6;
-    min-width: 120px;
-    margin: 10px;
+    min-width: 110px;
+    margin: 15px 10px;
     border-radius: 50%;
+    text-align: center;
+
+    & img{
+        width: 100%;
+    }
+
+    & h4{
+        margin: 10px auto 0px auto;
+        text-align: center
+    }
+
+    & span{
+        text-align: center;
+        font-size: map-get($font-size, small);
+    }
+
     @include respond-to(1053px){
         width: (85%) / 5;
     }

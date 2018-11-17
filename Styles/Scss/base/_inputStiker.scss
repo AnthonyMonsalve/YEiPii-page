@@ -38,12 +38,13 @@ $tamaño: 390px;
         }
     }
     & form{
+        position: relative;
         width: 85%;
         @include respond-to($max-width-830){
             width: 90%;
         }
     }
-    & input{
+    & input[type=text]{
         width: 100%;
         box-sizing: border-box;
         outline: none;
@@ -70,14 +71,19 @@ $tamaño: 390px;
         }
     }
 
+    & input[type=submit]{
+        position: absolute; 
+        top: 0; right: 0;
+    }
+
     & input::placeholder{
-        font-size: 2rem;
-        text-align: center;
+        font-size: 1.7rem;
+        text-align: left;
         color: $YEiPii-color-gray;
         transition: $transition-responsive;
 
         @include respond-to(1024px){
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
         @include respond-to($max-width-830){
             font-size: 1.6rem;

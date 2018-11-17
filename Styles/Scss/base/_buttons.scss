@@ -139,3 +139,11 @@
 #APPLE:hover .hoverDownload, #ANDROID:hover .hoverDownload {
 	fill: $YEiPii-color;
 }
+
+
+.button-gray-disabled{
+	background: $YEiPii-color-gray;
+}
+.button-gray-disabled:hover{
+	background: darken($YEiPii-color-gray, 10);
+}
