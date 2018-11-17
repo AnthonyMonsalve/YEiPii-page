@@ -7251,6 +7251,8 @@ a:hover {
   max-width: 1024px;
   width: 100%;
   margin: auto;
+  -webkit-transition: .4s all;
+  transition: .4s all;
 }
 
 @media screen and (max-width: 1053px) {
