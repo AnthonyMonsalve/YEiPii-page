@@ -7343,6 +7343,54 @@ a:hover {
   right: 0;
 }
 
+.categoryOpen-individual {
+  position: absolute;
+  padding-top: 20px;
+  top: 105px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-individual-2 {
+  position: absolute;
+  padding-top: 20px;
+  top: 210px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-individual-3 {
+  position: absolute;
+  padding-top: 20px;
+  top: 320px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-individual-4 {
+  position: absolute;
+  padding-top: 20px;
+  top: 430px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-individual-5 {
+  position: absolute;
+  padding-top: 20px;
+  top: 540px;
+  left: 0;
+  right: 0;
+}
+
+.categoryOpen-individual-6 {
+  position: absolute;
+  padding-top: 20px;
+  top: 650px;
+  left: 0;
+  right: 0;
+}
+
 .lugarCategory {
   width: 13.33333%;
   min-width: 120px;
@@ -7377,6 +7425,12 @@ a:hover {
 @media screen and (max-width: 390px) {
   .lugarCategory {
     margin: 5px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .lugarCategory {
+    min-width: 90px;
   }
 }
 
