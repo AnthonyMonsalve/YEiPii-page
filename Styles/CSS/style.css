@@ -7544,11 +7544,12 @@ a:hover {
           box-sizing: border-box;
   outline: none;
   border: none;
-  padding: 25px 12px;
+  padding: 25px 12px 23px;
+  padding-right: 64px;
   margin-top: 20px;
   /* margin: 0 0 10px 0; */
   border-radius: 8px;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #484848;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7557,36 +7558,75 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   .stiker input[type=text] {
-    font-size: 2.3em;
+    font-size: 1.4em;
   }
 }
 
 @media screen and (max-width: 840px) {
   .stiker input[type=text] {
-    font-size: 2.1em;
+    font-size: 1.3em;
   }
 }
 
 @media screen and (max-width: 425px) {
   .stiker input[type=text] {
-    font-size: 1.9em;
+    font-size: 1.2em;
+    padding-right: 60px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .stiker input[type=text] {
-    font-size: 1.7em;
+    font-size: 1.1em;
   }
 }
 
-.stiker input[type=submit] {
+.stiker button[type=submit] {
   position: absolute;
-  top: 0;
+  top: 39px;
   right: 0;
+  margin: 0 15px;
+  font-size: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 20%;
+  border: none;
+  color: white;
+  background-color: #cccccc;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+@media screen and (max-width: 840px) {
+  .stiker button[type=submit] {
+    top: 38px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .stiker button[type=submit] {
+    font-size: 1em;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.stiker button[type=submit]:hover {
+  background-color: #aeaeae;
 }
 
 .stiker input::-webkit-input-placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7594,7 +7634,7 @@ a:hover {
 }
 
 .stiker input:-ms-input-placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7602,7 +7642,7 @@ a:hover {
 }
 
 .stiker input::-ms-input-placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7610,7 +7650,7 @@ a:hover {
 }
 
 .stiker input::placeholder {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   color: #616161;
   -webkit-transition: all 0.3s ease-in-out;
@@ -7619,61 +7659,61 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   .stiker input::-webkit-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .stiker input:-ms-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .stiker input::-ms-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .stiker input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 840px) {
   .stiker input::-webkit-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .stiker input:-ms-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .stiker input::-ms-input-placeholder {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .stiker input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 425px) {
   .stiker input::-webkit-input-placeholder {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .stiker input:-ms-input-placeholder {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .stiker input::-ms-input-placeholder {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .stiker input::placeholder {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .stiker input::-webkit-input-placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .stiker input:-ms-input-placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .stiker input::-ms-input-placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .stiker input::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 

@@ -1,5 +1,6 @@
 $tamaño: 390px;
-.stiker{
+
+.stiker {
     width: $tamaño;
     height: $tamaño;
     box-sizing: border-box;
@@ -12,104 +13,153 @@ $tamaño: 390px;
     padding: $padding;
     margin-right: 10px;
     transition: $transition-responsive;
-    @include respond-to(1024px){
+
+    @include respond-to(1024px) {
         width: $tamaño - ($tamaño * 0.05);
         height: $tamaño - ($tamaño * 0.05);
     }
-    @include respond-to($max-width-830){
+
+    @include respond-to($max-width-830) {
         width: $tamaño - ($tamaño * 0.15);
         height: $tamaño - ($tamaño * 0.15);
         margin-right: 0;
     }
-    @include respond-to($max-width-MobileL){
+
+    @include respond-to($max-width-MobileL) {
         width: $tamaño - ($tamaño * 0.2);
         height: $tamaño - ($tamaño * 0.2);
         border-radius: 30px;
     }
-    @include respond-to($max-width-MobileM){
+
+    @include respond-to($max-width-MobileM) {
         width: $tamaño - ($tamaño * 0.3);
         height: $tamaño - ($tamaño * 0.3);
     }
-    & img{
+
+    & img {
         width: 85%;
         margin: 10px 0 20px;
-        @include respond-to($max-width-830){
+
+        @include respond-to($max-width-830) {
             width: 90%;
         }
     }
-    & form{
+
+    & form {
         position: relative;
         width: 85%;
-        @include respond-to($max-width-830){
+
+        @include respond-to($max-width-830) {
             width: 90%;
         }
     }
-    & input[type=text]{
+
+    & input[type=text] {
         width: 100%;
         box-sizing: border-box;
         outline: none;
         border: none;
-        padding: 25px 12px;
+        padding: 25px 12px 23px;
+        padding-right: 64px;
         margin-top: 20px;
         /* margin: 0 0 10px 0; */
         border-radius: 8px;
-        font-size: 2.5em;
+        font-size: 1.5em;
         color: darken($YEiPii-color-gray, 10);
         text-transform: uppercase;
-        transition: $transition-responsive;
-        @include respond-to(1024px){
-            font-size: 2.3em;
+        transition: $transition-responsive;        
+
+        @include respond-to(1024px) {
+            font-size: 1.4em;
         }
+
+        @include respond-to($max-width-830) {
+            font-size: 1.3em;
+        }
+
+        @include respond-to($max-width-MobileL) {
+            font-size: 1.2em;
+            padding-right: 60px;
+        }
+
+        @include respond-to($max-width-MobileM) {
+            font-size: 1.1em;
+        }
+    }
+
+    & button[type=submit] {
+        position: absolute;
+        top: 39px;
+        right: 0;
+        margin: 0 15px;
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 20%;
+        border: none;
+        color: $YEiPii-color-white;
+        background-color: lighten($YEiPii-color-gray, 42);
+        cursor: pointer;
+        transition: .3s ease-in;
+
         @include respond-to($max-width-830){
-            font-size: 2.1em;
+            top: 38px;
         }
         @include respond-to($max-width-MobileL){
-            font-size: 1.9em;
-        }
-        @include respond-to($max-width-MobileM){
-            font-size: 1.7em;
+            font-size: 1em;
+            height: 30px;
+            width: 30px;
         }
     }
 
-    & input[type=submit]{
-        position: absolute; 
-        top: 0; right: 0;
+    & button[type=submit]:hover {
+        background-color: lighten($YEiPii-color-gray, 30);
     }
 
-    & input::placeholder{
-        font-size: 1.7rem;
+    & input::placeholder {
+        font-size: 1.5rem;
         text-align: left;
         color: $YEiPii-color-gray;
         transition: $transition-responsive;
 
-        @include respond-to(1024px){
-            font-size: 1.6rem;
-        }
-        @include respond-to($max-width-830){
-            font-size: 1.6rem;
-        }
-        @include respond-to($max-width-MobileL){
+        @include respond-to(1024px) {
             font-size: 1.4rem;
         }
-        @include respond-to($max-width-MobileM){
+
+        @include respond-to($max-width-830) {
+            font-size: 1.3rem;
+        }
+
+        @include respond-to($max-width-MobileL) {
             font-size: 1.2rem;
+        }
+
+        @include respond-to($max-width-MobileM) {
+            font-size: 1.1rem;
         }
     }
 }
 
-.titleStiker{
+.titleStiker {
     font-size: 3.25em;
     transition: $transition-responsive;
-    @include respond-to(1024px){
+
+    @include respond-to(1024px) {
         font-size: 3em;
     }
-    @include respond-to($max-width-830){
+
+    @include respond-to($max-width-830) {
         font-size: 2.8em;
     }
-    @include respond-to($max-width-MobileL){
+
+    @include respond-to($max-width-MobileL) {
         font-size: 2.5em;
     }
-    @include respond-to($max-width-MobileM){
+
+    @include respond-to($max-width-MobileM) {
         font-size: 2.3em;
     }
 }
