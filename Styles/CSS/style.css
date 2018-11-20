@@ -8126,11 +8126,55 @@ body {
   margin: 10px 4%;
 }
 
+@media screen and (max-width: 840px) {
+  .Panas-YEiPii {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .Pana-YEiPii {
   width: 150px;
   height: 150px;
   margin: 10px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 930px) {
+  .Pana-YEiPii {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .Pana-YEiPii {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Pana-YEiPii {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.otros-panas {
+  opacity: .5;
+}
+
+@media screen and (max-width: 616px) {
+  .otros-panas {
+    display: none !important;
+  }
 }
 
 /*-----------------------------------*\

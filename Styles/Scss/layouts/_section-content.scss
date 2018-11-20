@@ -236,15 +236,15 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 
-	@include respond-to(1053px){
+	@include respond-to(1053px) {
 		justify-content: space-around;
 	}
-	
+
 	@include respond-to(863px) {
 		padding: 0;
 	}
 
-	@include respond-to(577px){
+	@include respond-to(577px) {
 		justify-content: center;
 	}
 }
@@ -276,9 +276,38 @@ body {
 }
 
 //PANA YEiPii
+.Panas-YEiPii {
+	@include respond-to($max-width-830) {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
 .Pana-YEiPii {
 	width: 150px;
 	height: 150px;
 	margin: 10px;
 	border-radius: 50%;
+
+	@include respond-to($max-width-930){
+		width: 140px;
+		height: 140px;
+	}
+
+	@include respond-to($max-width-830) {
+		width: 130px;
+		height: 130px;
+	}
+	@include respond-to($max-width-Tablet) {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.otros-panas {
+	opacity: .5;
+	@include respond-to(616px){
+		display: none !important;
+	}
 }
