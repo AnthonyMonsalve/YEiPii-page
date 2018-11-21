@@ -116,7 +116,7 @@ $tamaño: 390px;
     }
 
     & button[type=submit]:hover {
-        background-color: lighten($YEiPii-color-gray, 30);
+        background-color: $YEiPii-color;
     }
 
     & input::placeholder {
