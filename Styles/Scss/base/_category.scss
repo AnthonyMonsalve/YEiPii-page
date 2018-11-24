@@ -13,7 +13,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        max-width: 900px;
+        max-width: 700px;
         width: 90%;
         margin: auto;
         padding: 0;
@@ -27,10 +27,13 @@
         opacity: 0;
         background: white;
         @include respond-to(1053px){
-            width: 85%;
+            width: 80%;
         }
         @include respond-to(577px){
             justify-content: center;
+        }
+        @include respond-to(744px){
+            max-width: 450px;
         }
 }
 
@@ -129,14 +132,17 @@
 
 
 .lugarCategory {
-    width: (80%) / 6;
+    width: (80%) / 4;
     min-width: 110px;
     margin: 15px 10px;
     border-radius: 50%;
     text-align: center;
 
     & img{
-        width: 100%;
+        width: 80%;
+        @include respond-to(1053px){
+            width: 90%;
+        }
     }
 
     & h4{
@@ -149,22 +155,11 @@
         font-size: map-get($font-size, small);
     }
 
-    @include respond-to(1053px){
-        width: (85%) / 5;
+    @include respond-to(744px){
+        width: (80%) / 3;
     }
+
     @include respond-to(577px){
         min-width: 100px;
-    }
-    @include respond-to(485px){
-        min-width: 90px;
-    }
-    @include respond-to(446px){
-        min-width: 85px;
-    }
-    @include respond-to(390px){
-        margin: 5px;
-    }
-    @include respond-to(358px){
-        min-width: 90px;
     }
 }

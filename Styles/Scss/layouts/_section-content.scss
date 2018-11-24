@@ -237,7 +237,7 @@ body {
 	flex-wrap: wrap;
 
 	@include respond-to(1053px) {
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	@include respond-to(863px) {

@@ -6835,9 +6835,9 @@ p {
 .button-YEiPii-secondary {
   border-radius: 12px;
   padding: 5px;
-  min-width: 150px;
+  min-width: 160px;
   min-height: 100px;
-  margin: 5px;
+  margin: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6863,21 +6863,23 @@ p {
 
 @media screen and (max-width: 1053px) {
   .button-YEiPii-secondary {
-    width: 25%;
-    margin: 10px 3%;
+    margin: 10px 1%;
   }
 }
 
 @media screen and (max-width: 743px) {
   .button-YEiPii-secondary {
-    width: 24%;
+    width: 30%;
+    margin: 4% 2%;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 577px) {
   .button-YEiPii-secondary {
+    min-width: 150px;
     width: 35%;
-    margin: 10px 10px 0 10px;
+    margin: 20px 10px 0 10px;
   }
 }
 
@@ -7347,7 +7349,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 900px;
+  max-width: 700px;
   width: 90%;
   margin: auto;
   padding: 0;
@@ -7364,7 +7366,7 @@ a:hover {
 
 @media screen and (max-width: 1053px) {
   .categoryBox {
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -7373,6 +7375,12 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .categoryBox {
+    max-width: 450px;
   }
 }
 
@@ -7470,7 +7478,7 @@ a:hover {
 }
 
 .lugarCategory {
-  width: 13.33333%;
+  width: 20%;
   min-width: 110px;
   margin: 15px 10px;
   border-radius: 50%;
@@ -7478,7 +7486,13 @@ a:hover {
 }
 
 .lugarCategory img {
-  width: 100%;
+  width: 80%;
+}
+
+@media screen and (max-width: 1053px) {
+  .lugarCategory img {
+    width: 90%;
+  }
 }
 
 .lugarCategory h4 {
@@ -7491,39 +7505,15 @@ a:hover {
   font-size: 13px;
 }
 
-@media screen and (max-width: 1053px) {
+@media screen and (max-width: 744px) {
   .lugarCategory {
-    width: 17%;
+    width: 26.66667%;
   }
 }
 
 @media screen and (max-width: 577px) {
   .lugarCategory {
     min-width: 100px;
-  }
-}
-
-@media screen and (max-width: 485px) {
-  .lugarCategory {
-    min-width: 90px;
-  }
-}
-
-@media screen and (max-width: 446px) {
-  .lugarCategory {
-    min-width: 85px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .lugarCategory {
-    margin: 5px;
-  }
-}
-
-@media screen and (max-width: 358px) {
-  .lugarCategory {
-    min-width: 90px;
   }
 }
 
@@ -8140,8 +8130,9 @@ body {
 
 @media screen and (max-width: 1053px) {
   .content-buttons-category {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
