@@ -314,3 +314,26 @@ body {
 		display: none !important;
 	}
 }
+
+
+
+
+@media screen and (min-width: 900px){
+	.content-first{
+		max-width: 630px;
+		position: absolute;
+		top: 25%;
+		left: 6%;
+
+		@include respond-to ($max-width-Laptop + 100){
+				max-width: 660px;
+				position: absolute;
+				top: 25%;
+				left: 0%;
+		}
+	}
+	
+	.juanpedro{
+		font-size: 3.8em;
+	}
+}

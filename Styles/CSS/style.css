@@ -8248,6 +8248,30 @@ body {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .content-first {
+    max-width: 630px;
+    position: absolute;
+    top: 25%;
+    left: 6%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1224px) {
+  .content-first {
+    max-width: 660px;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .juanpedro {
+    font-size: 3.8em;
+  }
+}
+
 /*-----------------------------------*\
 	$HEADER & NAV BAR 
 \*-----------------------------------*/
