@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="Styles/CSS/style.css">
 	<link rel="stylesheet" href="Styles/CSS/hamburgers.css">
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css'>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 	<title>YEiPii - ¿Dónde Estamos?</title>
 </head>
 
@@ -88,6 +89,11 @@
 				</div>
 			</div>
 		</div>
+		<a href="#BtnUniversidades" id="rest" data-ancla="BtnRestaurantes"></a>
+		<a href="#BtnUniversidades" id="esta" data-ancla="BtnEstacionamientos"></a>
+		<a href="#BtnRestaurantes" id="otro" data-ancla="BtnDiscotecas"></a>
+
+
 		<div class="sections-YEiPii p-top-cero" style="display: block; position: relative;">
 			<div class="contenedor-buttons-category-maxwidth">
 				<div class="content-buttons-category op animate btn-slider">
@@ -96,7 +102,7 @@
 						<span class="center">Colegios <br> Universidades </span>
 					</button>
 					<button id="BtnRestaurantes" class="button-YEiPii-secondary collapsible" type="button" data-toggle="modal"
-					 data-target="#contentRestaurantes">
+					 data-target="#contentRestaurantes" onclick="resUbicacion()">
 						<img src="images/categorias/restaurantes.png" alt="">
 						<span class="center">Restaurantes</span>
 					</button>
@@ -120,7 +126,7 @@
 
 
 				<!--COLEGIOS Y UNIVERSIDADES-->
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnUniversidades-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/universidades/UCAB.jpg" alt="UCAB">
 						<h4 style="min-height: 25px;">CATÓLICA ANDRÉS BELLO</h4>
@@ -205,7 +211,7 @@
 						<span>@mipuntogrill</span>
 					</div>
 					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
+						<img src="images/establecimientos/lugar/Parada-Inteligente.jpg" alt="circle">
 						<h4>Parada Inteligente</h4>
 						<span>@</span>
 					</div>
@@ -304,7 +310,7 @@
 					</div>
 				</div>
 				<!--RESTAURANTES-->
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnRestaurantes-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/restaurantes/franca.jpg" alt="circle">
 						<h4>Franca<span>Las Mercedes</span></h4>
@@ -367,7 +373,7 @@
 					</div>
 				</div>
 				<!--ESTACIONAMIENTOS-->
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnEstacionamientos-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
 						<h4>YEiPii LOCAL</h4>
@@ -400,7 +406,7 @@
 					</div>
 				</div>
 				<!--OTROS-->
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnDiscotecas-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
 						<h4>YEiPii LOCAL</h4>
@@ -464,7 +470,7 @@
 				</div>
 
 				<!--NO FUNCIONAN POR AHORA--><!--NO FUNCIONAN POR AHORA--><!--NO FUNCIONAN POR AHORA--><!--NO FUNCIONAN POR AHORA-->
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnUniversidades-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
 						<h4>YEiPii LOCAL</h4>
@@ -496,7 +502,7 @@
 						<span>@yeipii</span>
 					</div>
 				</div>
-				<div class="categoryBox">
+				<div class="categoryBox" id="BtnUniversidades-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
 						<h4>YEiPii LOCAL</h4>
@@ -743,6 +749,23 @@
 
 	<script src="Js/slider.js"></script>
 	<script src="Js/category.js"></script>
+
+	<script>
+			$(document).ready(function() {
+		  $('a[href^="#"]').click(function() {
+			var destino = $(this.hash);
+			if (destino.length == 0) {
+			  destino = $('a[name="' + this.hash.substr(1) + '"]');
+			}
+			if (destino.length == 0) {
+			  destino = $('html');
+			}
+			$('html, body').animate({ scrollTop: destino.offset().top }, 500);
+			return false;
+		  });
+		});
+	</script>
+
 </body>
 
 </html>
