@@ -7606,6 +7606,7 @@ a:hover {
 }
 
 .stiker input[type=text] {
+  color: #050d9e !important;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
