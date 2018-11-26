@@ -319,8 +319,8 @@ body {
 
 
 @media screen and (min-width: 900px){
-	.content-first{
-		max-width: 630px;
+	.content-first, .content-first-other-page{
+		max-width: 640px;
 		position: absolute;
 		top: 25%;
 		left: 6%;
@@ -331,10 +331,12 @@ body {
 				top: 25%;
 				left: 0%;
 		}
-	}
-	
+}
 	.juanpedro{
-		font-size: 3.8em;
+		font-size: 3.6em;
+		@include respond-to ($max-width-Laptop){
+			font-size: 3.4em;
+		}
 	}
 }
 

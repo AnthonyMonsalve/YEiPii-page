@@ -8250,8 +8250,8 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .content-first {
-    max-width: 630px;
+  .content-first, .content-first-other-page {
+    max-width: 640px;
     position: absolute;
     top: 25%;
     left: 6%;
@@ -8259,7 +8259,7 @@ body {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1224px) {
-  .content-first {
+  .content-first, .content-first-other-page {
     max-width: 660px;
     position: absolute;
     top: 25%;
@@ -8269,7 +8269,13 @@ body {
 
 @media screen and (min-width: 900px) {
   .juanpedro {
-    font-size: 3.8em;
+    font-size: 3.6em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1124px) {
+  .juanpedro {
+    font-size: 3.4em;
   }
 }
 
