@@ -337,3 +337,11 @@ body {
 		font-size: 3.8em;
 	}
 }
+
+.span-pts{
+	font-size: 1.2em; position: relative; top: -20px; width: 100%; display: block;
+	@include respond-to($max-width-830){
+		text-align: center;
+		font-size: 1.1em;
+	}
+}
