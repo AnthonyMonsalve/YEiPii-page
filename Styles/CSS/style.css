@@ -8484,10 +8484,6 @@ body {
   }
 }
 
-#registrate {
-  border-right: solid 1px #EBEBEB;
-}
-
 #iniciar-sesion {
   padding-right: 10px;
 }
@@ -8700,9 +8696,9 @@ body {
 }
 
 .content-buttons-footer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: 0px;
 }
 
@@ -8722,11 +8718,17 @@ body {
 }
 
 .acordeon:nth-of-type(1) .content-buttons-footer a,
-.acordeon:nth-of-type(2) .content-buttons-footer a {
+.acordeon:nth-of-type(2) .content-buttons-footer a,
+.acordeon:nth-of-type(3) .content-buttons-footer a {
   margin-left: 26px;
 }
 
 .acordeon:nth-of-type(1) .content-buttons-footer a:nth-of-type(2) {
+  margin-left: 0;
+}
+
+.acordeon:nth-of-type(3) .content-buttons-footer a:nth-of-type(2),
+.acordeon:nth-of-type(3) .content-buttons-footer a:nth-of-type(3) {
   margin-left: 0;
 }
 
