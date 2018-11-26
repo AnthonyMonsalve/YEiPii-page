@@ -10,6 +10,11 @@ const categoryBox = document.getElementsByClassName('categoryBox');
 
 Universidades.onclick = function () {
 
+    if(true){
+        document.getElementById('rest').click();
+    }else{
+        console.log('no pasa nada')
+    }
 
     let categoryBoxe = categoryBox[0];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
@@ -212,7 +217,7 @@ Universidades.onclick = function () {
 
 Restaurantes.onclick = function () {
 
-    if(Restaurantes.style.opacity == .6){
+    if(true){
         document.getElementById('rest').click();
     }else{
         console.log('no pasa nada')
@@ -420,7 +425,7 @@ Restaurantes.onclick = function () {
 
 Estacionamientos.onclick = function () {
 
-    if(Estacionamientos.style.opacity == .6){
+    if(true){
         document.getElementById('esta').click();
     }else{
         console.log('no pasa nada')
@@ -629,7 +634,7 @@ Estacionamientos.onclick = function () {
 
 Discotecas.onclick = function () {
 
-    if(Discotecas.style.opacity == .6){
+    if(true){
         document.getElementById('otro').click();
     }else{
         console.log('no pasa nada')
