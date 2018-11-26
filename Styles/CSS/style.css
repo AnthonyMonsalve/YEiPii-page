@@ -6779,7 +6779,7 @@ p {
 .parrafo_banner-donde-estamos {
   font-size: 22px;
   max-width: 400px;
-  text-align: justify;
+  text-align: right;
   color: #e1e1e1;
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-in-out;
