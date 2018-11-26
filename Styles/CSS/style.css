@@ -8697,9 +8697,9 @@ body {
 }
 
 .content-buttons-footer {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 0px;
 }
 
@@ -8711,7 +8711,8 @@ body {
 
 @media screen and (max-width: 630px) {
   .acordeon:nth-of-type(1) .content-buttons-footer,
-  .acordeon:nth-of-type(2) .content-buttons-footer {
+  .acordeon:nth-of-type(2) .content-buttons-footer,
+  .acordeon:nth-of-type(3) .content-buttons-footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
