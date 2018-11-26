@@ -2,761 +2,87 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="shortcut icon" href="images/ico/YEiPii.ico" type="image/x-icon">
-	<link rel="stylesheet" href="Styles/CSS/style.css">
-	<link rel="stylesheet" href="Styles/CSS/hamburgers.css">
-	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css'>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-	<title>YEiPii - ¿Dónde Estamos?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/CSS/style.css">
+    <link rel="stylesheet" href="Styles/CSS/hamburgers.css">
+    <link rel="shortcut icon" href="images/ico/YEiPii.ico" type="image/x-icon">
+    <title>YEiPii</title>
 </head>
 
 <body>
-	<header class="header fixed-top" id="header">
-		<div class="content-header">
-			<div class="mask"></div>
-			<div class="content-logo">
-				<a href="index.html">
-					<img id="logo" class="logo-header" src="images/logo/YEiPii.png" alt="YEiPii">
-				</a>
-			</div>
-			<div class="cerrar content-nav" id="contentNav">
-				<nav class="cerrar nav" id="Nav">
-					<ul class="cerrar clearfix">
-						<li id="li" class="cerrar"></li>
-						<li class="cerrar item-nav normal">
-							<a class="cerrar" href="como-funciona.html"><span class="cerrar">¿Cómo Funciona?</span></a>
-						</li>
-						<li class="cerrar item-nav normal current">
-							<a class="cerrar" href="donde-estamos.html"><span class="cerrar">¿Dónde Estamos?</span></a>
-						</li>
-						<li id="registrate" data-button="special-nav" class="special-nav cerrar item-nav">
-							<a id="reg" class="cerrar" href="https://app.yeipii.com/registro"><span class="cerrar">Regístrate</span></a>
-						</li>
-						<li id="iniciar-sesion" data-button="special-nav" class="special-nav cerrar item-nav">
-							<a id="ini" class="cerrar" href="https://app.yeipii.com/">Iniciar Sesión</a>
-						</li>
-						<div class="cerrar" id="marker"></div>
-					</ul>
-				</nav>
-			</div>
-			<div class="content-button-menu-responsive">
-				<button id="button-menu" class="menu-open hamburger hamburger--spring" type="button">
-					<span class="menu-open hamburger-box">
-						<span class="menu-open hamburger-inner"></span>
-					</span>
-				</button>
-			</div>
-		</div>
-	</header>
-	<!--FIN HEADER Y NAV-->
-	<section style="flex-direction: column; min-height: 100vh; justify-content: center; align-items: center; display: flex;">
-		<div class="sections-YEiPii p-b-cero" style="justify-content: center; background: transparent; width: 100%;">
-			<div class="container-slider op animate-slider">
-				<div class="slider center-slider">
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/1.png" alt="" srcset="">
-						</section>
-					</div>
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/2.png" alt="" srcset="">
-						</section>
-					</div>
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/3.png" alt="" srcset="">
-						</section>
-					</div>
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/4.png" alt="" srcset="">
-						</section>
-					</div>
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/5.png" alt="" srcset="">
-						</section>
-					</div>
-					<div class="clip">
-						<section class="section-slider">
-							<img src="images/slider/fotos/6.png" alt="" srcset="">
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a href="#BtnUniversidades" id="rest" data-ancla="BtnRestaurantes"></a>
-		<a href="#BtnUniversidades" id="esta" data-ancla="BtnEstacionamientos"></a>
-		<a href="#BtnRestaurantes" id="otro" data-ancla="BtnDiscotecas"></a>
-
-
-		<div class="sections-YEiPii p-top-cero" style="display: block; position: relative;margin-bottom: 50px;">
-			<div class="contenedor-buttons-category-maxwidth">
-				<div class="content-buttons-category op animate btn-slider">
-					<button id="BtnUniversidades" class="button-YEiPii-secondary">
-						<img src="images/categorias/colegios.png" alt="">
-						<span class="center">Colegios <br> Universidades </span>
-					</button>
-					<button id="BtnRestaurantes" class="button-YEiPii-secondary collapsible" type="button" data-toggle="modal"
-					 data-target="#contentRestaurantes" onclick="resUbicacion()">
-						<img src="images/categorias/restaurantes.png" alt="">
-						<span class="center">Restaurantes</span>
-					</button>
-					<button id="BtnEstacionamientos" class="button-YEiPii-secondary">
-						<img src="images/categorias/estacionamientos.png" alt="">
-						<span class="center">Estacionamientos</span>
-					</button>
-					<button id="BtnDiscotecas" class="button-YEiPii-secondary">
-						<img src="images/categorias/discotecas.png" alt="">
-						<span class="center">Otros</span>
-					</button>
-					<button id="BtnLicorerias" class="button-YEiPii-secondary" style="display: none">
-						<img src="images/categorias/licorerias.png" alt="">
-						<span class="center">Licorerias</span>
-					</button>
-					<button id="BtnClubes" class="button-YEiPii-secondary" style="display: none">
-						<img src="images/categorias/club-privado.png" alt="">
-						<span class="center">Clubes privados</span>
-					</button>
-				</div>
-
-
-				<!--COLEGIOS Y UNIVERSIDADES-->
-				<div class="categoryBox" id="BtnUniversidades-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin (Nosso)<span>UCAB</span></h4>
-						<span>@nosso</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin Central<span>USM</span></h4>
-						<span>@cafecentral</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin Poma<span>USM</span></h4>
-						<span>@poma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Centro de Copia Plaza Central<span>USM</span></h4>
-						<span>@elder</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Centro de copiado<span>UMA</span></h4>
-						<span>@reprouma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Chefas<span>UMA</span></h4>
-						<span>@Chefas</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="chipacookie">
-						<h4>Chip a cookie<span>UNIMET</span></h4>
-						<span>@chipacookie</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="City Picnic">
-						<h4>City Picnic<span>UNIMET</span></h4>
-						<span>@citypicnic</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Copiadora Feris">
-						<h4>Copiadora Feris<span>USM</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Corner">
-						<h4>Corner<span>USM</span></h4>
-						<span>@corner</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Date Aquí">
-						<h4>Date Aquí<span>UMA</span></h4>
-						<span>@dateaqui1</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Date Aquí">
-						<h4>Date Aquí<span>UMA</span></h4>
-						<span>@dateaqui2</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Detal">
-						<h4>Detal USM<span>USM</span></h4>
-						<span>@dentalusm</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="El Malek del Shawarma">
-						<h4>El Malek del Shawarma<span>UCAB</span></h4>
-						<span>@elmalek2011</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="USM">
-						<h4>Estacionamientos USM<span>USM</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Eycos">
-						<h4>Eycos<span>UNIMET</span></h4>
-						<span>@eycos</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Juice Bar">
-						<h4>Juice Bar<span>UNIMET</span></h4>
-						<span>@juicebar</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Barra">
-						<h4>La Barra<span>UNIMET</span></h4>
-						<span>@labarra</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Bodeguita de la Feria">
-						<h4>La Bodeguita de la Feria<span>UCAB</span></h4>
-						<span>@labodeguita</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Karreta">
-						<h4>La Karreta<span>UNIMET</span></h4>
-						<span>@lak-rreta</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Limesama">
-						<h4>Limesama<span>UNIMET</span></h4>
-						<span>@limesama</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Metromix">
-						<h4>Metromix<span>UNIMET</span></h4>
-						<span>@metromix</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Mi Punto Grill">
-						<h4>Mi Punto Grill<span>UNIMET</span></h4>
-						<span>@mipuntogrill</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Oasis">
-						<h4>Oasis<span>UMA</span></h4>
-						<span>@oasis</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Papeleria Feria<span>Papeleria Feria</span></h4>
-						<span>@rosamelia</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/lugar/Parada-Inteligente.jpg" alt="Parada Inteligente">
-						<h4>Parada Inteligente<span>UNIMET</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Plumrose">
-						<h4>Plumrose<span>UMA</span></h4>
-						<span>@plumroseuma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
-						<h4>Presto<span>UCAB</span></h4>
-						<span>@prestoucab</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Sabor Light">
-						<h4>Sabor Light<span>USM</span></h4>
-						<span>@saborlight</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
-						<h4>Subway<span>UCAB</span></h4>
-						<span>@subwayucab</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
-						<h4>Subway<span>UNIMET</span></h4>
-						<span>@subunimet</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="UNIMET">
-						<h4>Taxis<span>UNIMET</span></h4>
-						<span>@taxiunimet</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Unicocadas">
-						<h4>Unicocadas<span>UCAB</span></h4>
-						<span>@unicocadas</span>
-					</div>
-				</div>
-				<!--RESTAURANTES-->
-				<div class="categoryBox" id="BtnRestaurantes-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Las Mercedes</span></h4>
-						<span>@francalm</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Los Naranjos</span></h4>
-						<span>@francaln</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Los Palos Grandes</span></h4>
-						<span>@francalpg</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
-						<h4>La Milanesa<span>El Hatillo</span></h4>
-						<span>@lamilanesahatillo</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
-						<h4>La Milanesa<span>C.C Tolón</span></h4>
-						<span>@lamilanesatolon</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/misenplas.jpg" alt="Misenplas">
-						<h4>Misenplas</h4>
-						<span>@misenplas</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
-						<h4>Presto<span>Altamira</span></h4>
-						<span>@prestoalta</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-				</div>
-				<!--ESTACIONAMIENTOS-->
-				<div class="categoryBox" id="BtnEstacionamientos-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-				</div>
-				<!--OTROS-->
-				<div class="categoryBox" id="BtnDiscotecas-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-				</div>
-
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-				<div class="categoryBox" id="BtnUniversidades-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-				</div>
-				<div class="categoryBox" id="BtnUniversidades-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-				</div>
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-				<!--NO FUNCIONAN POR AHORA-->
-			</div>
-		</div>
-	</section>
-	<section class="bggray section-complete-viewport" style="overflow: hidden;">
-		<div class="sections-YEiPii">
-			<div>
-				<h2 class="title-big color-YEiPii op animate">Donde estén <br> tus panas</h2>
-				<p class="parrafo_YEiPii_gray op animate slow">Lo mejor de YEiPii es que puedes transferirle a tus panas, sea
-					cuando sea, estés donde estés.</p>
-			</div>
-			<div class="Panas-YEiPii">
-				<div class="flex">
-					<img class="Pana-YEiPii" src="images/panas/pana1.png" alt="Pana YEiPii">
-					<img class="Pana-YEiPii" src="images/panas/pana.png" alt="Pana YEiPii">
-				</div>
-				<div class="flex">
-					<img class="Pana-YEiPii" src="images/panas/pana2.png" alt="Pana YEiPii">
-					<img class="Pana-YEiPii" src="images/panas/pana3.png" alt="Pana YEiPii">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-complete-viewport">
-		<div class=" sections-YEiPii inverse" style="justify-content: space-betwen; align-items: center">
-			<div class="stiker-container">
-				<div class="stiker">
-					<h3 class="titleStiker color-YEiPii-w">PAGA CON <span style="display: none;">YEiPii</span></h3>
-					<img src="images/logo/YEiPii-inverse.fw.png" alt="YEiPii" srcset="">
-					<form action="">
-						<input type="text" placeholder="completa aquí" required>
-						<button type="submit">
-							<span id="acordeon-app" class="fa fa-chevron-right icon"></span>
-						</button>
-					</form>
-				</div>
-			</div>
-			<div>
-				<h2 class="title_banner-donde-estamos color-YEiPii op animate-right centerText">¿Dónde quieres<br> que estemos?</h2>
-				<p class="parrafo_YEiPii-calcomania op animate-right slow">¡Completa la calcomanía y dinos dónde nos quisieras ver!</p>
-			</div>
-		</div>
-	</section>
-	<section class="donde-estamos-banner">
-		<div class="sections-YEiPii transparent color-YEiPii-w">
-			<div class="title-content-dondeestamos">
-				<h1 class="title_banner-donde-estamos m-cero">Busca <br> Nuestro Logo</h1>
-			</div>
-			<div>
-				<p class="parrafo_banner-donde-estamos m-cero">Cada vez que veas nuestro logo en algún establecimiento podrás pagar
-					con nostros en segundos.</p>
-			</div>
-		</div>
-	</section>
-	<footer id="footer">
-		<div class="footer-container">
-			<div class="footer-content-info">
-				<figure class="footer-logo m-cero">
-					<img src="images/logo/YEiPii Logo Recuadro Azul1.png">
-				</figure>
-				<div class="footer-info">
-					<div class="f-info">
-						<h4 class="m-cero title-info-footer">Descarga la APP</h4>
-						<div class="content-buttons-footer">
-							<a href="#">
-								<img class="download-footer-btn-img" src="images/download/PLAY STORE BASE.png" alt="Descargar YEiPii">
-							</a>
-							<a href="#">
-								<img class="download-footer-btn-img" src="images/download/APP STORE BASE.png" alt="Descargar YEiPii">
-							</a>
-						</div>
-					</div>
-					<div class="f-info">
-						<h4 class="m-cero title-info-footer">Ayuda</h4>
-						<div class="content-buttons-footer">
-							<a href="#">
-								<img class="download-footer-btn-img" src="images/download/information.png" alt="Descargar YEiPii">
-							</a>
-						</div>
-					</div>
-					<div class="f-info">
-						<h4 class="m-cero title-info-footer center">Redes</h4>
-						<div class="content-buttons-footer">
-							<a href="https://www.instagram.com/yeipiiapp/" target="_blank">
-								<img class="redes-footer-btn-img" src="images/redes/INSTAGRAM.png" alt="Instagram YEiPii">
-							</a>
-							<a href="https://www.facebook.com/YEiPii-App-901842369970161/" target="_blank">
-								<img class="redes-footer-btn-img" src="images/redes/FACEBOOK.png" alt="Facebook YEiPii">
-							</a>
-							<a href="https://twitter.com/YEiPiiapp" target="_blank">
-								<img class="redes-footer-btn-img" src="images/redes/TWITTER.png" alt="Twitter YEiPii">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="contenedor-acordeon" id="acordeon-content">
-				<div class="acordeon">
-					<div onclick="footerAppDown()" class="acordeon__head">
-						<span id="acordeon-app" class="fa fa-chevron-right icon"></span>
-						<p class="acordeon__head--title">Descarga la app</p>
-					</div>
-					<div class="acordeon__body">
-						<div class="acordeon__body__menu">
-							<div class="content-buttons-footer">
-								<a href="#">
-									<img class="download-footer-btn-img" src="images/download/PLAY STORE BASE.png" alt="Descargar YEiPii">
-								</a>
-								<a href="#">
-									<img class="download-footer-btn-img" src="images/download/APP STORE BASE.png" alt="Descargar YEiPii">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="acordeon">
-					<div onclick="footerAyudaDown()" class="acordeon__head">
-						<span id="acordeon-ayuda" class="fa fa-chevron-right icon"></span>
-						<p class="acordeon__head--title">Ayuda</p>
-					</div>
-					<div class="acordeon__body">
-						<div class="acordeon__body__menu">
-							<div class="content-buttons-footer">
-								<a href="#">
-									<img class="download-footer-btn-img" src="images/download/information.png" alt="Descargar YEiPii">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="acordeon">
-					<div onclick="footerRedesDown()" class="acordeon__head">
-						<span id="acordeon-redes" class="fa fa-chevron-right icon"></span>
-						<p class="acordeon__head--title">Redes</p>
-					</div>
-					<div class="acordeon__body">
-						<div class="acordeon__body__menu">
-							<div class="content-buttons-footer">
-								<a href="https://www.instagram.com/yeipiiapp/" target="_blank">
-									<img class="redes-footer-btn-img" src="images/redes/INSTAGRAM.png" alt="Instagram YEiPii">
-								</a>
-								<a href="https://www.facebook.com/YEiPii-App-901842369970161/" target="_blank">
-									<img class="redes-footer-btn-img" src="images/redes/FACEBOOK.png" alt="Facebook YEiPii">
-								</a>
-								<a href="https://twitter.com/YEiPiiapp" target="_blank">
-									<img class="redes-footer-btn-img" src="images/redes/TWITTER.png" alt="Twitter YEiPii">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copy">
-				<a href="#">Términos y Condiciones</a>
-			</div>
-			<div class="YEiPii-CA">
-				<span>&copy; INVERSIONES YEiPii, C.A. RIF J-408119927</span>
-			</div>
-		</div>
-	</footer>
+    <header class="header fixed-top" id="header">
+        <div class="content-header">
+            <div class="mask"></div>
+            <div class="content-logo">
+                <a href="index.html">
+                    <img id="logo" class="logo-header" src="images/logo/YEiPii.png" alt="YEiPii">
+                </a>
+            </div>
+            <div class="cerrar content-nav" id="contentNav">
+                <nav class="cerrar nav" id="Nav">
+                    <ul class="cerrar clearfix">
+                        <li id="li" class="cerrar current nope"></li>
+                        <li class="cerrar item-nav normal">
+                            <a class="cerrar" href="como-funciona.html"><span class="cerrar">¿Cómo Funciona?</span></a>
+                        </li>
+                        <li class="cerrar item-nav normal">
+                            <a class="cerrar" href="donde-estamos.html"><span class="cerrar">¿Dónde Estamos?</span></a>
+                        </li>
+                        <li id="registrate" data-button="special-nav" class="special-nav cerrar item-nav">
+                            <a id="reg" class="cerrar" href="https://app.yeipii.com/registro"><span class="cerrar">Regístrate</span></a>
+                        </li>
+                        <li id="iniciar-sesion" data-button="special-nav" class="special-nav cerrar item-nav">
+                            <a id="ini" class="cerrar" href="https://app.yeipii.com/">Iniciar Sesión</a>
+                        </li>
+                        <div class="cerrar" id="marker"></div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-button-menu-responsive">
+                <button id="button-menu" class="menu-open hamburger hamburger--spring" type="button">
+                    <span class="menu-open hamburger-box">
+                        <span class="menu-open hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--FIN HEADER Y NAV-->
+    <section class="section-complete-viewport section-first" style="background: none; padding-top: 0;flex-direction: column;">
+        <div class="has-animation animation-ltr" data-delay="50">
+            <h1 class="bigger title-big">Se revelará</h1>
+        </div>
+        <div class="has-animation animation-rtl" data-delay="750">
+            <h1 class="bigger title-big">próximamente</h1>
+        </div>
+    </section>
 	<!-- FIN FOOTER -->
 	<!--FONTS-->
 	<script src="Js/fonts.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 	<!-- NAVVVVVVVVVVV-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-	<script src="Js/othernavborderdwon.js"></script>
-
+	<script src="Js/navborderdwon.js"></script>
 	<!-- ANIMACION DE SCROLL EMBED -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
 	<!-- ESTO ES FLECHA FOOTER -->
 	<script src="https://use.fontawesome.com/d1ed67737b.js"></script>
-	<script src="Js/footermenu.js"></script>
-
 	<!-- Codigo de el nav y reveal js -->
 	<script src="Js/actions.js"></script>
+    <script>
+    
+    $(document).ready(function() {
+  $('.has-animation').each(function(index) {
+    $(this).delay($(this).data('delay')).queue(function(){
+      $(this).addClass('animate-in');
+    });
+  });
+});
 
-	<!-- Codigo de el SLIDERRR js -->
-
-	<script src='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js'></script>
-
-	<script src="Js/slider.js"></script>
-	<script src="Js/category.js"></script>
-
-	<script>
-		$(document).ready(function () {
-			$('a[href^="#"]').click(function () {
-				var destino = $(this.hash);
-				if (destino.length == 0) {
-					destino = $('a[name="' + this.hash.substr(1) + '"]');
-				}
-				if (destino.length == 0) {
-					destino = $('html');
-				}
-				$('html, body').animate({
-					scrollTop: destino.offset().top
-				}, 500);
-				return false;
-			});
-		});
-	</script>
-
+    
+    </script>
 </body>
 
 </html>
