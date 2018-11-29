@@ -163,18 +163,12 @@
     transition: .5s all;
 }
 
-.center-slider .slick-center .section-slider {
-    opacity: 1;
-    transition: .5s all;
-    position: relative;
-}
-
 /*.center-slider .slick-center .section-slider img {
     box-shadow: none;
 }*/
 
 .center-slider .section-slider {
-    opacity: 0.8;
+    opacity: 0;
     bottom: 0;
     transition: .5s all;
 }

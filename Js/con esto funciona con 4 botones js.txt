@@ -472,7 +472,7 @@ Estacionamientos.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen');
         let cuantasFilas = Math.ceil(Circulos.length / 4);
-        let heightBox = (200 * 2) + 12.5 + 'px';
+        let heightBox = (200 * 3) + 12.5 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
             categoryBoxe.style.height = 0;

@@ -4,11 +4,11 @@
 
 // Header & Nav
 .header {
-	position: absolute;
+	position: fixed;
 	height: $hnav;
 	left: 0;
     right: 0;
-	top: 1px;
+	top: 0px;
 	@extend %flex;
     justify-content: center;
 	@include padding-responsive;
@@ -81,20 +81,6 @@
 /*#button-menu.active{
 	filter: opacity(1) brightness(1);
 }*/
-
-.mask{
-	display: none;
-	position: absolute;	
-	background: $YEiPii-color-white;
-	left: 0;
-	right: 0; 
-	height: $hnav;
-	box-shadow: 0px -8px 0px 8px white;
-
-	@include respond-to($max-width-830){
-		display: block;
-	}
-}
 
 .nav{
 	@extend %flex;
@@ -185,14 +171,6 @@
 	padding: 16px 0
 }
 
-.header-down{
-	position: fixed;
-	top: 0;
-	background: $YEiPii-color-white;
-	animation-duration: .7s;
-	z-index: 1000;
-	margin-top: 1px;
-}
 
 #iniciar-sesion:hover a, #registrate:hover a{
 	color: darken($YEiPii-color-orange, 8);

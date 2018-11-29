@@ -1,9 +1,4 @@
 /*NAV ANIMACION*/
-window.onscroll = function () {
-	AddOrRemove();
-	removeActiveMenuResponsive();
-};
-
 var Header = document.getElementById("header");
 Logo = document.getElementById("logo");
 /*var BurguerButton = document.getElementById("burguerButton");*/
@@ -11,27 +6,20 @@ var Nav = document.getElementById("Nav");
 
 var HeaderPosition = Header.offsetTop;
 
-function AddOrRemove() {
-	if (window.pageYOffset >= HeaderPosition) {
-		Header.classList.add("header-down");
-		Logo.src = "images/logo/YEiPii.png";
-		/*
-						BurguerButton.classList.add("burguer-blue");*/
-		Nav.classList.add("nav-down");
-	} else {
-		Header.classList.remove("header-down");
-		Logo.src = "images/logo/YEiPii.png";
-		/*
-						BurguerButton.classList.remove("burguer-blue");*/
-		Nav.classList.remove("nav-down");
-	}
-}
-
 /*SCROLL REVEAL*/
 // Changing the defaults
 window.sr = ScrollReveal({
 	reset: false
 });
+
+
+sr.reveal('.animate-btn', {
+	duration: 750,
+	distance: '30px',
+	origin: 'bottom',
+	delay: 1000
+});
+
 
 if (window.matchMedia("(max-width: 840px)").matches) {
 	// Customizing a reveal set
@@ -133,12 +121,6 @@ document.addEventListener(clickEvent, function (e) {
 		//console.log(contentNav);
 	}
 }, false);
-
-function removeActiveMenuResponsive() {
-	document.getElementById('button-menu').classList.remove('is-active');
-	document.getElementById('contentNav').classList.remove('active');
-}
-
 
 
 

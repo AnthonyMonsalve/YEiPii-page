@@ -22,8 +22,7 @@
         transition: .4s all;
         //transition: opacity .3s ease-in-out;
         position: relative;
-        top: -60px;
-        z-index: -9999;
+        top: 0px;
         opacity: 0;
         background: white;
         @include respond-to(1053px){
@@ -35,6 +34,13 @@
         @include respond-to(744px){
             max-width: 450px;
         }
+}
+
+.categoryBox-interno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .categoryOpen {
@@ -171,4 +177,11 @@
     @include respond-to(577px){
         min-width: 100px;
     }
+}
+
+
+//SLIDER
+.swiper-slide .categoryBox {
+    height: auto;
+    opacity: 1;
 }

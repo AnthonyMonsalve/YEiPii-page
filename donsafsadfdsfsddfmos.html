@@ -10,13 +10,23 @@
 	<link rel="stylesheet" href="Styles/CSS/hamburgers.css">
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css'>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+	<script>
+		const fotosslider = document.getElementsByClassName('section-slider')
+		document.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(() => {
+				for (let index = 0; index < fotosslider.length; index++) {
+				fotosslider[index].style.opacity = 1;
+			}
+			}, 1600);
+		});
+	</script>
 	<title>YEiPii - ¿Dónde Estamos?</title>
 </head>
 
 <body>
 	<header class="header fixed-top" id="header">
 		<div class="content-header">
-			<div class="mask"></div>
+
 			<div class="content-logo">
 				<a href="index.html">
 					<img id="logo" class="logo-header" src="images/logo/YEiPii.png" alt="YEiPii">
@@ -53,37 +63,52 @@
 	</header>
 	<!--FIN HEADER Y NAV-->
 	<section style="flex-direction: column; min-height: 100vh; justify-content: center; align-items: center; display: flex;">
-		<div class="sections-YEiPii p-b-cero" style="justify-content: center; background: transparent; width: 100%;">
+		<div id="slider" class="sections-YEiPii p-b-cero" style="justify-content: center; width: 100%;">
 			<div class="container-slider op animate-slider">
 				<div class="slider center-slider">
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/1.png" alt="" srcset="">
+							<img src="images/slider/fotos/1.png" alt="Presto - Pasta Bar">
 						</section>
 					</div>
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/2.png" alt="" srcset="">
+							<img src="images/slider/fotos/2.png" alt="Burger Shack">
 						</section>
 					</div>
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/3.png" alt="" srcset="">
+							<img src="images/slider/fotos/3.png" alt="Los Costillas">
 						</section>
 					</div>
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/4.png" alt="" srcset="">
+							<img src="images/slider/fotos/4.png" alt="El Cine City">
 						</section>
 					</div>
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/5.png" alt="" srcset="">
+							<img src="images/slider/fotos/5.png" alt="Frijol">
 						</section>
 					</div>
 					<div class="clip">
 						<section class="section-slider">
-							<img src="images/slider/fotos/6.png" alt="" srcset="">
+							<img src="images/slider/fotos/6.png" alt="La Esquina Caracas">
+						</section>
+					</div>
+					<div class="clip">
+						<section class="section-slider">
+							<img src="images/slider/fotos/7.png" alt="Franca">
+						</section>
+					</div>
+					<div class="clip">
+						<section class="section-slider">
+							<img src="images/slider/fotos/8.png" alt="Poke & Açai 212">
+						</section>
+					</div>
+					<div class="clip">
+						<section class="section-slider">
+							<img src="images/slider/fotos/9.png" alt="La Milanesa Caracas">
 						</section>
 					</div>
 				</div>
@@ -91,12 +116,12 @@
 		</div>
 		<a href="#BtnUniversidades" id="rest" data-ancla="BtnRestaurantes"></a>
 		<a href="#BtnUniversidades" id="esta" data-ancla="BtnEstacionamientos"></a>
-		<a href="#BtnRestaurantes" id="otro" data-ancla="BtnDiscotecas"></a>
+		<a href="#BtnUniversidades" id="otro" data-ancla="BtnDiscotecas"></a>
 
 
 		<div class="sections-YEiPii p-top-cero" style="display: block; position: relative;margin-bottom: 50px;">
 			<div class="contenedor-buttons-category-maxwidth">
-				<div class="content-buttons-category op animate btn-slider">
+				<div class="content-buttons-category op animate-btn btn-slider">
 					<button id="BtnUniversidades" class="button-YEiPii-secondary">
 						<img src="images/categorias/colegios.png" alt="">
 						<span class="center">Colegios <br> Universidades </span>
@@ -127,329 +152,455 @@
 
 				<!--COLEGIOS Y UNIVERSIDADES-->
 				<div class="categoryBox" id="BtnUniversidades-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin (Nosso)<span>UCAB</span></h4>
-						<span>@nosso</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin Central<span>USM</span></h4>
-						<span>@cafecentral</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Cafetin Poma<span>USM</span></h4>
-						<span>@poma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Centro de Copia Plaza Central<span>USM</span></h4>
-						<span>@elder</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Centro de copiado<span>UMA</span></h4>
-						<span>@reprouma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Chefas<span>UMA</span></h4>
-						<span>@Chefas</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="chipacookie">
-						<h4>Chip a cookie<span>UNIMET</span></h4>
-						<span>@chipacookie</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="City Picnic">
-						<h4>City Picnic<span>UNIMET</span></h4>
-						<span>@citypicnic</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Copiadora Feris">
-						<h4>Copiadora Feris<span>USM</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Corner">
-						<h4>Corner<span>USM</span></h4>
-						<span>@corner</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Date Aquí">
-						<h4>Date Aquí<span>UMA</span></h4>
-						<span>@dateaqui1</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Date Aquí">
-						<h4>Date Aquí<span>UMA</span></h4>
-						<span>@dateaqui2</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Detal">
-						<h4>Detal USM<span>USM</span></h4>
-						<span>@dentalusm</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="El Malek del Shawarma">
-						<h4>El Malek del Shawarma<span>UCAB</span></h4>
-						<span>@elmalek2011</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="USM">
-						<h4>Estacionamientos USM<span>USM</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Eycos">
-						<h4>Eycos<span>UNIMET</span></h4>
-						<span>@eycos</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Juice Bar">
-						<h4>Juice Bar<span>UNIMET</span></h4>
-						<span>@juicebar</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Barra">
-						<h4>La Barra<span>UNIMET</span></h4>
-						<span>@labarra</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Bodeguita de la Feria">
-						<h4>La Bodeguita de la Feria<span>UCAB</span></h4>
-						<span>@labodeguita</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="La Karreta">
-						<h4>La Karreta<span>UNIMET</span></h4>
-						<span>@lak-rreta</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Limesama">
-						<h4>Limesama<span>UNIMET</span></h4>
-						<span>@limesama</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Metromix">
-						<h4>Metromix<span>UNIMET</span></h4>
-						<span>@metromix</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Mi Punto Grill">
-						<h4>Mi Punto Grill<span>UNIMET</span></h4>
-						<span>@mipuntogrill</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Oasis">
-						<h4>Oasis<span>UMA</span></h4>
-						<span>@oasis</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>Papeleria Feria<span>Papeleria Feria</span></h4>
-						<span>@rosamelia</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/lugar/Parada-Inteligente.jpg" alt="Parada Inteligente">
-						<h4>Parada Inteligente<span>UNIMET</span></h4>
-						<span>@</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Plumrose">
-						<h4>Plumrose<span>UMA</span></h4>
-						<span>@plumroseuma</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
-						<h4>Presto<span>UCAB</span></h4>
-						<span>@prestoucab</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Sabor Light">
-						<h4>Sabor Light<span>USM</span></h4>
-						<span>@saborlight</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
-						<h4>Subway<span>UCAB</span></h4>
-						<span>@subwayucab</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
-						<h4>Subway<span>UNIMET</span></h4>
-						<span>@subunimet</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="UNIMET">
-						<h4>Taxis<span>UNIMET</span></h4>
-						<span>@taxiunimet</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="Unicocadas">
-						<h4>Unicocadas<span>UCAB</span></h4>
-						<span>@unicocadas</span>
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Nosso UCAB">
+										<h4>Cafetin (Nosso)<span>UCAB</span></h4>
+										<span>@nosso</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="USM - Cafetin Central">
+										<h4>Cafetin Central<span>USM</span></h4>
+										<span>@cafecentral</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="USM">
+										<h4>Cafetin Poma<span>USM</span></h4>
+										<span>@poma</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Colegio San Ignacio">
+										<h4>Cantina Basket<span>Colegio San Ignacio</span></h4>
+										<span>@basketsi</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Colegio San Ignacio">
+										<h4>Cantina Primaria<span>Colegio San Ignacio</span></h4>
+										<span>@comedorricardo</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Colegio Francia">
+										<h4>Cantina Principal<span>Colegio Francia</span></h4>
+										<span>@cantinafrancia</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="USM">
+										<h4>Cantina al lado de Librería<span>Colegio San Ignacio</span></h4>
+										<span>@cantinacsi</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="UMA">
+										<h4>Centro de copiado<span>UMA</span></h4>
+										<span>@reprouma</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="UMA">
+										<h4>Chefas<span>UMA</span></h4>
+										<span>@Chefas</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="chipacookie">
+										<h4>Chip a cookie<span>UNIMET</span></h4>
+										<span>@chipacookie</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="City Picnic">
+										<h4>City Picnic<span>UNIMET</span></h4>
+										<span>@citypicnic</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="City Picnic">
+										<h4>Copiadora Feris<span>USM</span></h4>
+										<span>@upsolint</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Corner">
+										<h4>Corner<span>USM</span></h4>
+										<span>@corner</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Date Aquí">
+										<h4>Date Aquí<span>UMA</span></h4>
+										<span>@dateaqui2</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Detal">
+										<h4>Detal USM<span>USM</span></h4>
+										<span>@dentalusm</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="El Malek del Shawarma">
+										<h4>El Malek del Shawarma<span>UCAB</span></h4>
+										<span>@elmalek2011</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Eycos">
+										<h4>Eycos<span>UNIMET</span></h4>
+										<span>@eycos</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Juice Bar">
+										<h4>Juice Bar<span>UNIMET</span></h4>
+										<span>@juicebar</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Barra">
+										<h4>La Barra<span>UNIMET</span></h4>
+										<span>@labarra</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Bodeguita de la Feria">
+										<h4>La Bodeguita de la Feria<span>UCAB</span></h4>
+										<span>@labodeguita</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Karreta">
+										<h4>La Karreta<span>UNIMET</span></h4>
+										<span>@lak-rreta</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Colegio San Ignacio">
+										<h4>Librería<span>Colegio San Ignacio</span></h4>
+										<span>@libreria20puntos</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Limesama">
+										<h4>Limesama<span>UNIMET</span></h4>
+										<span>@limesama</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Metromix">
+										<h4>Metromix<span>UNIMET</span></h4>
+										<span>@metromix</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Mi Punto Grill">
+										<h4>Mi Punto Grill<span>UNIMET</span></h4>
+										<span>@mipuntogrill</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Oasis">
+										<h4>Oasis<span>UMA</span></h4>
+										<span>@oasis</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>Papeleria Feria<span>Papeleria Feria</span></h4>
+										<span>@rosamelia</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/lugar/Parada-Inteligente.jpg" alt="Parada Inteligente">
+										<h4>Parada Inteligente<span>UNIMET</span></h4>
+										<span>@kiosko</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Plumrose">
+										<h4>Plumrose<span>UMA</span></h4>
+										<span>@plumroseuma</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Plumrose">
+										<h4>Pizza<span>USM</span></h4>
+										<span>@pizzawayusm</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Sabor Light">
+										<h4>Sabor Light<span>USM</span></h4>
+										<span>@saborlight</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
+										<h4>Subway<span>UCAB</span></h4>
+										<span>@subwayucab</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/subway.jpg" alt="Subway">
+										<h4>Subway<span>UNIMET</span></h4>
+										<span>@subunimet</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="UNIMET">
+										<h4>Taxis<span>UNIMET</span></h4>
+										<span>@taxiunimet</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 				<!--RESTAURANTES-->
 				<div class="categoryBox" id="BtnRestaurantes-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Las Mercedes</span></h4>
-						<span>@francalm</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Los Naranjos</span></h4>
-						<span>@francaln</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
-						<h4>Franca<span>Los Palos Grandes</span></h4>
-						<span>@francalpg</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
-						<h4>La Milanesa<span>El Hatillo</span></h4>
-						<span>@lamilanesahatillo</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
-						<h4>La Milanesa<span>C.C Tolón</span></h4>
-						<span>@lamilanesatolon</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/misenplas.jpg" alt="Misenplas">
-						<h4>Misenplas</h4>
-						<span>@misenplas</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
-						<h4>Presto<span>Altamira</span></h4>
-						<span>@prestoalta</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Acai 212">
+										<h4>Acai 212<span></span></h4>
+										<span>@acai212</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Burger Shack">
+										<h4>Burger Shack<span>Aeropuerto. I</span></h4>
+										<span>@shackinter</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Burger Shack">
+										<h4>Burger Shack<span>Aeropuerto. N</span></h4>
+										<span>@shacknacional</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Burger Shack">
+										<h4>Burger Shack<span>Altamira</span></h4>
+										<span>@shackalta</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Burger Shack">
+										<h4>Burger Shack<span>Mercedes</span></h4>
+										<span>@shackmerce</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Burger Shack">
+										<h4>Burger Shack<span>Trinidad</span></h4>
+										<span>@shacktrini</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Cacao">
+										<h4>Cacao al cubo<span></span></h4>
+										<span>@cacaoalcubo</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Costilla">
+										<h4>Costilla<span></span></h4>
+										<span>@costilla</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="El Cine">
+										<h4>El Cine<span></span></h4>
+										<span>@elcine</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>Altamira</span></h4>
+										<span>@freshaltamira</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>La Florida</span></h4>
+										<span>@freshflorida</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>El Hatillo</span></h4>
+										<span>@freshhatillo</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>Macaracuay</span></h4>
+										<span>@freshmaca</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>Altamira</span></h4>
+										<span>@freshmeat</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Fresh Fish">
+										<h4>Fresh Fish<span>Sebucan</span></h4>
+										<span>@freshsebucan</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Frijol">
+										<h4>Frijol<span></span></h4>
+										<span>@frijol</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Il Grillo">
+										<h4>Il Grillo<span>Los Palos Grandes</span></h4>
+										<span>@grillocupulas</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Esquina">
+										<h4>La Esquina<span></span></h4>
+										<span>@laesquina</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Milanesa">
+										<h4>La Milanesa<span>C.C Tolón</span></h4>
+										<span>@lamilanesatolon</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="La Milanesa">
+										<h4>La Milanesa<span>El Hatillo</span></h4>
+										<span>@lamilanesahatillo</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Misenplas">
+										<h4>Misenplas<span></span></h4>
+										<span>@misenplas</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Poke 212">
+										<h4>Poke 212<span></span></h4>
+										<span>@poke212</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
+										<h4>Presto<span>Altamira</span></h4>
+										<span>@prestoalta</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Veranda">
+										<h4>Veranda<span></span></h4>
+										<span>@veranda</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="Yogen Fruz">
+										<h4>Yogen Fruz<span>Prados del Este</span></h4>
+										<span>@yogenprados</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 				<!--ESTACIONAMIENTOS-->
 				<div class="categoryBox" id="BtnEstacionamientos-contenido">
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+						<h4>CC Paseo El Hatillo VIP</h4>
+						<span>@hatillovip</span>
 					</div>
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+						<h4>CC Paseo Las Mercedes</h4>
+						<span>@valparking</span>
 					</div>
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+						<h4>CC Tolón</h4>
+						<span>@parkingtolon</span>
 					</div>
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+						<h4>CC Xpress Macaracuay</h4>
+						<span>@sacma</span>
 					</div>
 					<div class="lugarCategory">
 						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+						<h4>CSI</h4>
+						<span>@pakingcsi</span>
 					</div>
 				</div>
 				<!--OTROS-->
 				<div class="categoryBox" id="BtnDiscotecas-contenido">
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
-					</div>
-					<div class="lugarCategory">
-						<img src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>YEiPii LOCAL</h4>
-						<span>@yeipii</span>
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="categoryBox-interno">
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
+										<h4>Franca<span>Las Mercedes</span></h4>
+										<span>@francalm</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
+										<h4>Franca<span>Los Naranjos</span></h4>
+										<span>@francaln</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/franca.jpg" alt="Franca">
+										<h4>Franca<span>Los Palos Grandes</span></h4>
+										<span>@francalpg</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
+										<h4>La Milanesa<span>El Hatillo</span></h4>
+										<span>@lamilanesahatillo</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/milanesa.JPG" alt="La Milanesa">
+										<h4>La Milanesa<span>C.C Tolón</span></h4>
+										<span>@lamilanesatolon</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/misenplas.jpg" alt="Misenplas">
+										<h4>Misenplas</h4>
+										<span>@misenplas</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/restaurantes/presto.jpg" alt="Presto">
+										<h4>Presto<span>Altamira</span></h4>
+										<span>@prestoalta</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>YEiPii LOCAL</h4>
+										<span>@yeipii</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>YEiPii LOCAL</h4>
+										<span>@yeipii</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>YEiPii LOCAL</h4>
+										<span>@yeipii</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>YEiPii LOCAL</h4>
+										<span>@yeipii</span>
+									</div>
+									<div class="lugarCategory">
+										<img src="images/establecimientos/generico.jpg" alt="circle">
+										<h4>YEiPii LOCAL</h4>
+										<span>@yeipii</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+							<div class="swiper-slide">Slide 4</div>
+							<div class="swiper-slide">Slide 5</div>
+							<div class="swiper-slide">Slide 6</div>
+							<div class="swiper-slide">Slide 7</div>
+							<div class="swiper-slide">Slide 8</div>
+							<div class="swiper-slide">Slide 9</div>
+							<div class="swiper-slide">Slide 10</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 
@@ -756,7 +907,18 @@
 			});
 		});
 	</script>
+	<!-- Swiper JS -->
+	<script src="Js/swiper.min.js"></script>
 
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
 </body>
 
 </html>
