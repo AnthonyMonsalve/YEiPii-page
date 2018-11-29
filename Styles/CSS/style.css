@@ -7542,6 +7542,26 @@ a:hover {
   display: none;
 }
 
+.no-laptop {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .no-laptop {
+    display: block;
+  }
+}
+
+.no-phone {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .no-phone {
+    display: none;
+  }
+}
+
 .stiker {
   width: 390px;
   height: 390px;

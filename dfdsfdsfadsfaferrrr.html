@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>YEiPii - Dónde estamos</title>
+    <!-- Search Engine -->
+    <meta name="description" content="Lo revelaremosá próximamente😏...">
+    <meta name="image" content="https://www.yeipii.com/images/backgrounds/bg-como-funciona.jpg">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="YEiPii - Dónde estamos">
+    <meta itemprop="description" content="Lo revelaremosá próximamente😏...">
+    <meta name="keywords" content="Lugares YEiPii, yeipii, pago fácil, pago seguro, app, IOS, Android, pagar nunca ha sido tan facil, dónde estamos, paga con yeipii">
+    <meta itemprop="image" content="https://www.yeipii.com/images/backgrounds/bg-como-funciona.jpg">
+    <!-- Mobile App for iOS & Android -->
+    <meta name="apple-itunes-app" content="app-id=1433125725">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="YEiPii - Dónde estamos">
+    <meta name="og:description" content="Lo revelaremosá próximamente😏...">
+    <meta name="og:image" content="https://www.yeipii.com/images/backgrounds/bg.jpg">
+    <meta name="og:url" content="https://www.yeipii.com/DondeEstamos">
+    <meta name="og:site_name" content="YEiPii - Dónde estamos">
+    <meta name="og:locale" content="es_VE">
+    <meta name="og:type" content="website">
+    <!-- Open Graph - Mobile App (iOS & Android) -->
+    <meta name="al:ios:app_store_id" content="1433125725">
+    <meta name="al:ios:app_name" content="YEiPii">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/CSS/style.css">
+    <link rel="stylesheet" href="Styles/CSS/hamburgers.css">
+    <link rel="shortcut icon" href="images/ico/YEiPii.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header fixed-top" id="header">
+        <div class="content-header">
+            
+            <div class="content-logo">
+                <a href="index.html">
+                    <img id="logo" class="logo-header" src="images/logo/YEiPii.png" alt="YEiPii">
+                </a>
+            </div>
+            <div class="cerrar content-nav" id="contentNav">
+                <nav class="cerrar nav" id="Nav">
+                    <ul class="cerrar clearfix">
+                        <li id="li" class="cerrar current nope"></li>
+                        <li class="cerrar item-nav normal">
+                            <a class="cerrar" href="como-funciona.html"><span class="cerrar">¿Cómo Funciona?</span></a>
+                        </li>
+                        <li class="cerrar item-nav normal">
+                            <a class="cerrar" href="donde-estamos.html"><span class="cerrar">¿Dónde Estamos?</span></a>
+                        </li>
+                        <li id="registrate" data-button="special-nav" class="special-nav cerrar item-nav">
+                            <a id="reg" class="cerrar" href="https://app.yeipii.com/registro"><span class="cerrar">Regístrate</span></a>
+                        </li>
+                        <li id="iniciar-sesion" data-button="special-nav" class="special-nav cerrar item-nav">
+                            <a id="ini" class="cerrar" href="https://app.yeipii.com/">Iniciar Sesión</a>
+                        </li>
+                        <div class="cerrar" id="marker"></div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-button-menu-responsive">
+                <button id="button-menu" class="menu-open hamburger hamburger--spring" type="button">
+                    <span class="menu-open hamburger-box">
+                        <span class="menu-open hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--FIN HEADER Y NAV-->
+    <section class="section-complete-viewport section-first" style="background: none; padding-top: 0;flex-direction: column;">
+        <div class="has-animation animation-ltr" data-delay="50">
+            <h1 class="bigger title-big">Se revelará</h1>
+        </div>
+        <div class="has-animation animation-rtl" data-delay="750">
+            <h1 class="bigger title-big">próximamente</h1>
+        </div>
+    </section>
+    <!-- FIN FOOTER -->
+    <!--FONTS-->
+    <script src="Js/fonts.js"></script>
+    <!-- NAVVVVVVVVVVV-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src="Js/navborderdwon.js"></script>
+    <!-- ANIMACION DE SCROLL EMBED -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- ESTO ES FLECHA FOOTER -->
+    <script src="https://use.fontawesome.com/d1ed67737b.js"></script>
+    <!-- Codigo de el nav y reveal js -->
+    <script src="Js/actions.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.has-animation').each(function (index) {
+                $(this).delay($(this).data('delay')).queue(function () {
+                    $(this).addClass('animate-in');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
