@@ -24,7 +24,7 @@
         position: relative;
         top: 0px;
         opacity: 0;
-        background: white;
+        background: transparent;
         @include respond-to(1053px){
             width: 80%;
         }
@@ -67,7 +67,7 @@
 .categoryOpen-3filas{
     position: absolute;
     padding-top: 20px;
-    top: 105px;
+    top: 130px;
     left: 0;
     right: 0;
 }
@@ -75,7 +75,7 @@
 .categoryOpen-3filas-2da{
     position: absolute;
     padding-top: 20px;
-    top: 212px;
+    top: 240px;
     left: 0;
     right: 0;
 }

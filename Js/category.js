@@ -122,8 +122,8 @@ Universidades.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (200 * 5) + 60 + 'px';
+        let marginBox = (200 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -330,8 +330,8 @@ Restaurantes.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (200 * 5) + 60 + 'px';
+        let marginBox = (200 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -539,8 +539,8 @@ Estacionamientos.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -748,8 +748,8 @@ Discotecas.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (200 * 5) + 60 + 'px';
+        let marginBox = (200 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -949,8 +949,8 @@ Licorerias.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (200 * 5) + 60 + 'px';
+        let marginBox = (200 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -1150,8 +1150,8 @@ Clubes.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * cuantasFilas) + 60 + 'px';
-        let marginBox = (200 * cuantasFilas) + 60 + 30 + 'px';
+        let heightBox = (200 * 5) + 60 + 'px';
+        let marginBox = (200 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
