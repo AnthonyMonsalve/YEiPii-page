@@ -7500,7 +7500,7 @@ a:hover {
 
 @media screen and (max-width: 1053px) {
   .lugarCategory img {
-    width: 90%;
+    width: 75%;
   }
 }
 
@@ -7536,6 +7536,10 @@ a:hover {
 .swiper-slide .categoryBox {
   height: auto;
   opacity: 1;
+}
+
+.categoryBox input {
+  display: none;
 }
 
 .stiker {

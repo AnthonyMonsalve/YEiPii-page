@@ -149,7 +149,7 @@
         border-radius: 50%;
         box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.19);
         @include respond-to(1053px){
-            width: 90%;
+            width: 75%;
         }
     }
 
@@ -184,4 +184,8 @@
 .swiper-slide .categoryBox {
     height: auto;
     opacity: 1;
+}
+
+.categoryBox input {
+    display: none;
 }
