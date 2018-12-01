@@ -9311,6 +9311,12 @@ body {
   transition: 0.3s all ease-out;
 }
 
+@media screen and (max-width: 840px) {
+  #marker {
+    display: none !important;
+  }
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

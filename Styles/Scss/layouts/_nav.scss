@@ -188,7 +188,11 @@
     -moz-transition: $duration all ease-out;
     -ms-transition: $duration all ease-out;
     -o-transition: $duration all ease-out;
-    transition: $duration all ease-out;
+	transition: $duration all ease-out;
+	
+	@include respond-to($max-width-830){
+		display: none !important;
+	}
 }
 
 .clearfix:before,
