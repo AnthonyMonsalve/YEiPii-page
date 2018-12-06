@@ -681,7 +681,7 @@ Discotecas.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen');
         let cuantasFilas = Math.ceil(Circulos.length / 4);
-        let heightBox = (200 * 3) + 12.5 + 'px';
+        let heightBox = (210 * 3) + 12.5 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
             categoryBoxe.style.height = 0;
@@ -748,8 +748,8 @@ Discotecas.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (200 * 5) + 60 + 'px';
-        let marginBox = (200 * 5) + 60 + 30 + 'px';
+        let heightBox = (210 * 5) + 60 + 'px';
+        let marginBox = (210 * 5) + 60 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -819,8 +819,8 @@ Discotecas.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen-individual-4');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (180 * cuantasFilas) + 30 + 'px';
-        let marginBox = (180 * cuantasFilas) + 30 + 30 + 'px';
+        let heightBox = (190 * cuantasFilas) + 30 + 'px';
+        let marginBox = (190 * cuantasFilas) + 30 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
