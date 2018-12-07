@@ -426,7 +426,7 @@
 				$("#desktop-colegios").load("categorias/colegios-responsive.html");
 				$("#desktop-restaurantes").load("categorias/restaurantes-responsive.html");
 				$("#desktop-otros").load("categorias/otros-responsive.html");
-			}else{
+			} else {
 				$("#desktop-colegios").load("categorias/colegios.html");
 				$("#desktop-colegios").load("categorias/restaurantes.html");
 				$("#desktop-otros").load("categorias/otros.html");
@@ -437,14 +437,16 @@
 	<script src="Js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		setTimeout(function () {
-			var swiper = new Swiper('.swiper-container', {
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			});
-		}, 1000);
+		document.addEventListener("DOMContentLoaded", function (event) {
+			setTimeout(function () {
+				var swiper = new Swiper('.swiper-container', {
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			}, 2000);
+		});
 	</script>
 </body>
 
