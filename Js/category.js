@@ -122,8 +122,8 @@ Universidades.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (150 * 3) + 70 + 'px';
-        let marginBox = (150 * 3) + 70 + 30 + 'px';
+        let heightBox = (160 * 3) + 70 + 'px';
+        let marginBox = (160 * 3) + 70 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -330,8 +330,8 @@ Restaurantes.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (150 * 3) + 70 + 'px';
-        let marginBox = (150 * 3) + 70 + 30 + 'px';
+        let heightBox = (160 * 3) + 70 + 'px';
+        let marginBox = (160 * 3) + 70 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -539,8 +539,8 @@ Estacionamientos.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (150 * 3) + 70 + 'px';
-        let marginBox = (150 * 3) + 70 + 30 + 'px';
+        let heightBox = (160 * 3) + 70 + 'px';
+        let marginBox = (160 * 3) + 70 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -748,8 +748,8 @@ Discotecas.onclick = function () {
             var cuantasFilas = Math.ceil(Circulos.length / 3);
         }
 
-        let heightBox = (150 * 3) + 70 + 'px';
-        let marginBox = (150 * 3) + 70 + 30 + 'px';
+        let heightBox = (160 * 3) + 70 + 'px';
+        let marginBox = (160 * 3) + 70 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
