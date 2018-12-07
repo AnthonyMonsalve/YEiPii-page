@@ -235,9 +235,13 @@
 .nope{width: 100%; position: absolute;}
 
 #mask{
+	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
-	height: 50px;
+	height: 45px;
 	background: white;
+	@include respond-to($max-width-830){
+		display: block;
+	}
 }

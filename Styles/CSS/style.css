@@ -9354,11 +9354,18 @@ body {
 }
 
 #mask {
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 45px;
   background: white;
+}
+
+@media screen and (max-width: 840px) {
+  #mask {
+    display: block;
+  }
 }
 
 /*---------------------------*\
