@@ -437,16 +437,14 @@
 	<script src="Js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
-		document.addEventListener("DOMContentLoaded", function (event) {
-			setTimeout(function () {
-				var swiper = new Swiper('.swiper-container', {
+		setTimeout(() => {
+			var swiper = new Swiper('.swiper-container', {
 					navigation: {
 						nextEl: '.swiper-button-next',
 						prevEl: '.swiper-button-prev',
 					},
 				});
-			}, 500);
-		});
+		}, 3000);
 	</script>
 </body>
 
