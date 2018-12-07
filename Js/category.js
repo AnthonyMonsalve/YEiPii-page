@@ -193,8 +193,8 @@ Universidades.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen-individual');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (200 * cuantasFilas) + 30 + 'px';
-        let marginBox = (200 * cuantasFilas) + 30 + 30 + 'px';
+        let heightBox = (190 * cuantasFilas) + 30 + 'px';
+        let marginBox = (190 * cuantasFilas) + 30 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -401,8 +401,8 @@ Restaurantes.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen-individual-2');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (200 * cuantasFilas) + 30 + 'px';
-        let marginBox = (200 * cuantasFilas) + 30 + 30 + 'px';
+        let heightBox = (190 * cuantasFilas) + 30 + 'px';
+        let marginBox = (190 * cuantasFilas) + 30 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -610,8 +610,8 @@ Estacionamientos.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen-individual-3');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (200 * cuantasFilas) + 30 + 'px';
-        let marginBox = (200 * cuantasFilas) + 30 + 30 + 'px';
+        let heightBox = (190 * cuantasFilas) + 30 + 'px';
+        let marginBox = (190 * cuantasFilas) + 30 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
@@ -819,8 +819,8 @@ Discotecas.onclick = function () {
 
         categoryBoxe.classList.toggle('categoryOpen-individual-4');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (200 * cuantasFilas) + 30 + 'px';
-        let marginBox = (200 * cuantasFilas) + 30 + 30 + 'px';
+        let heightBox = (190 * cuantasFilas) + 30 + 'px';
+        let marginBox = (190 * cuantasFilas) + 30 + 30 + 'px';
 
         if (categoryBoxe.style.height == heightBox) {
 
