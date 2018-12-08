@@ -17,10 +17,13 @@
   }
 }
 
-p {
+.parraf{
   text-align: center;
-  margin: 10px 0 40px;
+  margin: 10px 0;
   font-size: 1.1em;
+  @include respond-to($max-width-Tablet){
+    font-size: 1em;
+  }
   &.success {
     color: white;
   }
@@ -31,6 +34,9 @@ p {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
+  @include respond-to($max-width-Tablet){
+    font-size: 1.1em;
+  }
 }
 
 @-webkit-keyframes dash {

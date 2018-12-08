@@ -8613,13 +8613,19 @@ button.swiper-pagination-bullet {
   animation: dash-check .9s .35s ease-in-out forwards;
 }
 
-p {
+.parraf {
   text-align: center;
-  margin: 10px 0 40px;
+  margin: 10px 0;
   font-size: 1.1em;
 }
 
-p.success {
+@media screen and (max-width: 768px) {
+  .parraf {
+    font-size: 1em;
+  }
+}
+
+.parraf.success {
   color: white;
 }
 
@@ -8628,6 +8634,12 @@ p.success {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .tanks {
+    font-size: 1.1em;
+  }
 }
 
 @-webkit-keyframes dash {

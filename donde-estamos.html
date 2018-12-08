@@ -463,7 +463,17 @@
 							}, 3500);
 						},
 						error: function (response) {
-							alert('error al guardar los datos')
+							$('#formulario').hide()
+							$('#oculto-success').hide()
+							$('#oculto-success1').hide()
+							$('#localinput').val('')
+							$("#resp").html('<p class="success"><span class="tanks">¡Ups! HA OCURRIDO UN ERROR</span>POR FAVOR INTENTA DE NUEVO</p>')
+							setTimeout(function (){
+								$('#formulario').show()
+								$('#oculto-success').show()
+								$('#oculto-success1').show()
+								$("#resp").html('');
+							}, 3500);
 						}
 						//return false;
 					})
