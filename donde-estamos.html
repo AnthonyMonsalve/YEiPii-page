@@ -245,14 +245,15 @@
 		<div class=" sections-YEiPii inverse" style="justify-content: space-betwen; align-items: center">
 			<div class="stiker-container">
 				<div class="stiker">
-					<h3 class="titleStiker color-YEiPii-w">PAGA CON <span style="display: none;">YEiPii</span></h3>
-					<img src="images/logo/YEiPii-inverse.fw.png" alt="YEiPii" srcset="">
-					<form action="">
-						<input type="text" placeholder="completa aquí" required>
-						<button type="submit">
+					<h3 id="oculto-success" class="titleStiker color-YEiPii-w">PAGA CON <span style="display: none;">YEiPii</span></h3>
+					<img id="oculto-success1" src="images/logo/YEiPii-inverse.fw.png" alt="YEiPii" srcset="">
+					<form id="formulario" name="">
+						<input id="localinput" type="text" name="local" placeholder="completa aquí" required>
+						<button type="submit" id="send">
 							<span id="acordeon-app" class="fa fa-chevron-right icon"></span>
 						</button>
 					</form>
+					<div id="resp"></div>
 				</div>
 			</div>
 			<div>
@@ -435,6 +436,39 @@
 	</script>
 	<!-- Swiper JS -->
 	<script src="Js/swiper.min.js"></script>
+
+	<!-- Script para el form -->
+	<script>
+		$("#formulario").on("submit", function (e) {
+					//Code: Action (like ajax...)
+					e.preventDefault();
+
+					$.ajax({
+						url: 'https://restful.yeipii.com/serverbusiness/business/requests/quiero',
+						type: 'POST',
+						data: $('#formulario').serialize(), //Aquí tienes que enviar la información que necesita formula.html si no tiene nada puedes dejarlo así {}
+						cache: false,
+						async: false,
+						success: function (response) {
+							$('#formulario').hide()
+							$('#oculto-success').hide()
+							$('#oculto-success1').hide()
+							$('#localinput').val('')
+							$("#resp").load("Styles/Scss/success/success.html")
+							setTimeout(function (){
+								$('#formulario').show()
+								$('#oculto-success').show()
+								$('#oculto-success1').show()
+								$("#resp").html('');
+							}, 3500);
+						},
+						error: function (response) {
+							alert('error al guardar los datos')
+						}
+						//return false;
+					})
+					})
+	</script>
 </body>
 
 </html>
