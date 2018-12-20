@@ -36,6 +36,16 @@
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css'>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 	<title>YEiPii - ¿Dónde Estamos?</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255552-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131255552-1');
+</script>
+
 </head>
 
 <body>
@@ -236,7 +246,8 @@
 			<div class="stiker-container">
 				<div class="stiker">
 					<h3 id="oculto-success" class="titleStiker color-YEiPii-w">PAGA CON <span style="display: none;">YEiPii</span></h3>
-					<img class="lazy" id="oculto-success1" src="images/blank.fw.png" data-src="images/logo/YEiPii-inverse.fw.png" alt="YEiPii" srcset="">
+					<img class="lazy" id="oculto-success1" src="images/blank.fw.png" data-src="images/logo/YEiPii-inverse.fw.png" alt="YEiPii"
+					 srcset="">
 					<form id="formulario" name="">
 						<input id="localinput" type="text" name="local" placeholder="completa aquí" required>
 						<button type="submit" id="send">
@@ -274,10 +285,12 @@
 						<h4 class="m-cero title-info-footer">Descarga la APP</h4>
 						<div class="content-buttons-footer">
 							<a href="https://play.google.com/store/apps/details?id=com.app.yeipii" target="_blank">
-								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/PLAY STORE BASE.png" alt="Descargar YEiPii">
+								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/PLAY STORE BASE.png"
+								 alt="Descargar YEiPii">
 							</a>
 							<a href="https://itunes.apple.com/us/app/yeipii/id1433125725?mt=8" target="_blank">
-								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/APP STORE BASE.png" alt="Descargar YEiPii">
+								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/APP STORE BASE.png"
+								 alt="Descargar YEiPii">
 							</a>
 						</div>
 					</div>
@@ -285,7 +298,8 @@
 						<h4 class="m-cero title-info-footer">Ayuda</h4>
 						<div class="content-buttons-footer">
 							<a href="http://ayuda.yeipii.com" target="_blank">
-								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/information.png" alt="Descargar YEiPii">
+								<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/information.png"
+								 alt="Descargar YEiPii">
 							</a>
 						</div>
 					</div>
@@ -315,10 +329,12 @@
 						<div class="acordeon__body__menu">
 							<div class="content-buttons-footer">
 								<a href="https://play.google.com/store/apps/details?id=com.app.yeipii" target="_blank">
-									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/PLAY STORE BASE.png" alt="Descargar YEiPii">
+									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/PLAY STORE BASE.png"
+									 alt="Descargar YEiPii">
 								</a>
 								<a href="https://itunes.apple.com/us/app/yeipii/id1433125725?mt=8" target="_blank">
-									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/APP STORE BASE.png" alt="Descargar YEiPii">
+									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/APP STORE BASE.png"
+									 alt="Descargar YEiPii">
 								</a>
 							</div>
 						</div>
@@ -333,7 +349,8 @@
 						<div class="acordeon__body__menu">
 							<div class="content-buttons-footer">
 								<a href="http://ayuda.yeipii.com" target="_blank">
-									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/information.png" alt="Descargar YEiPii">
+									<img class="download-footer-btn-img lazy" src="images/blank.fw.png" data-src="images/download/information.png"
+									 alt="Descargar YEiPii">
 								</a>
 							</div>
 						</div>
@@ -372,11 +389,11 @@
 	<script src="Js/lazy.js"></script>
 	<script>
 		const fotosslider = document.getElementsByClassName('section-slider')
-		document.addEventListener("DOMContentLoaded", function(event) {
+		document.addEventListener("DOMContentLoaded", function (event) {
 			setTimeout(() => {
 				for (let index = 0; index < fotosslider.length; index++) {
-				fotosslider[index].style.opacity = 1;
-			}
+					fotosslider[index].style.opacity = 1;
+				}
 			}, 1600);
 		});
 	</script>
@@ -441,44 +458,45 @@
 	<!-- Script para el form -->
 	<script>
 		$("#formulario").on("submit", function (e) {
-					//Code: Action (like ajax...)
-					e.preventDefault();
+			//Code: Action (like ajax...)
+			e.preventDefault();
 
-					$.ajax({
-						url: 'https://restful.yeipii.com/serverbusiness/business/requests/quiero',
-						type: 'POST',
-						data: $('#formulario').serialize(), //Aquí tienes que enviar la información que necesita formula.html si no tiene nada puedes dejarlo así {}
-						cache: false,
-						async: false,
-						success: function (response) {
-							$('#formulario').hide()
-							$('#oculto-success').hide()
-							$('#oculto-success1').hide()
-							$('#localinput').val('')
-							$("#resp").load("Styles/Scss/success/success.html")
-							setTimeout(function (){
-								$('#formulario').show()
-								$('#oculto-success').show()
-								$('#oculto-success1').show()
-								$("#resp").html('');
-							}, 3500);
-						},
-						error: function (response) {
-							$('#formulario').hide()
-							$('#oculto-success').hide()
-							$('#oculto-success1').hide()
-							$('#localinput').val('')
-							$("#resp").html('<p class="success"><span class="tanks">¡Ups! HA OCURRIDO UN ERROR</span>POR FAVOR INTENTA DE NUEVO</p>')
-							setTimeout(function (){
-								$('#formulario').show()
-								$('#oculto-success').show()
-								$('#oculto-success1').show()
-								$("#resp").html('');
-							}, 3500);
-						}
-						//return false;
-					})
-					})
+			$.ajax({
+				url: 'https://restful.yeipii.com/serverbusiness/business/requests/quiero',
+				type: 'POST',
+				data: $('#formulario').serialize(), //Aquí tienes que enviar la información que necesita formula.html si no tiene nada puedes dejarlo así {}
+				cache: false,
+				async: false,
+				success: function (response) {
+					$('#formulario').hide()
+					$('#oculto-success').hide()
+					$('#oculto-success1').hide()
+					$('#localinput').val('')
+					$("#resp").load("Styles/Scss/success/success.html")
+					setTimeout(function () {
+						$('#formulario').show()
+						$('#oculto-success').show()
+						$('#oculto-success1').show()
+						$("#resp").html('');
+					}, 3500);
+				},
+				error: function (response) {
+					$('#formulario').hide()
+					$('#oculto-success').hide()
+					$('#oculto-success1').hide()
+					$('#localinput').val('')
+					$("#resp").html(
+						'<p class="success"><span class="tanks">¡Ups! HA OCURRIDO UN ERROR</span>POR FAVOR INTENTA DE NUEVO</p>')
+					setTimeout(function () {
+						$('#formulario').show()
+						$('#oculto-success').show()
+						$('#oculto-success1').show()
+						$("#resp").html('');
+					}, 3500);
+				}
+				//return false;
+			})
+		})
 	</script>
 </body>
 
