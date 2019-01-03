@@ -37,6 +37,7 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 	<title>YEiPii - ¿Dónde Estamos?</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script src="Js/Javascript.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255552-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -141,7 +142,7 @@
 
 		<div class="sections-YEiPii p-top-cero" style="display: block; position: relative;margin-bottom: 50px;">
 			<div class="contenedor-buttons-category-maxwidth">
-				<div class="content-buttons-category btn-slider">
+				<div class="content-buttons-category btn-slider" id="contCategory">
 					<button id="BtnUniversidades" class="button-YEiPii-secondary">
 						<img src="images/categorias/colegios.png" alt="">
 						<span class="center">Colegios <br> Universidades </span>
@@ -167,50 +168,6 @@
 						<img src="images/categorias/club-privado.png" alt="">
 						<span class="center">Clubes privados</span>
 					</button>
-				</div>
-
-
-				<!--COLEGIOS Y UNIVERSIDADES-->
-				<div class="categoryBox" id="BtnUniversidades-contenido">
-					<div id="desktop-colegios" style="max-width: 100%;"></div>
-				</div>
-				<!--RESTAURANTES-->
-				<div class="categoryBox" id="BtnRestaurantes-contenido">
-					<!-- Swiper -->
-					<div id="desktop-restaurantes" style="max-width: 100%"></div>
-				</div>
-				<!--ESTACIONAMIENTOS-->
-				<div class="categoryBox" id="BtnEstacionamientos-contenido">
-					<div class="lugarCategory">
-						<img class="lazy" src="images/blank.fw.png" data-src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>CC Paseo El Hatillo VIP</h4>
-						<span>@hatillovip</span>
-					</div>
-					<div class="lugarCategory">
-						<img class="lazy" src="images/blank.fw.png" data-src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>CC Paseo Las Mercedes</h4>
-						<span>@valparking</span>
-					</div>
-					<div class="lugarCategory">
-						<img class="lazy" src="images/blank.fw.png" data-src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>CC Tolón</h4>
-						<span>@parkingtolon</span>
-					</div>
-					<div class="lugarCategory">
-						<img class="lazy" src="images/blank.fw.png" data-src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>CC Xpress Macaracuay</h4>
-						<span>@sacma</span>
-					</div>
-					<div class="lugarCategory">
-						<img class="lazy" src="images/blank.fw.png" data-src="images/establecimientos/generico.jpg" alt="circle">
-						<h4>CSI</h4>
-						<span>@pakingcsi</span>
-					</div>
-				</div>
-				<!--OTROS-->
-				<div class="categoryBox" id="BtnDiscotecas-contenido">
-					<!-- Swiper -->
-					<div id="desktop-otros" style="max-width: 100%"></div>
 				</div>
 
 				<!--NO FUNCIONAN POR AHORA-->
@@ -386,6 +343,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<script src="Js/lazy.js"></script>
 	<script>
 		const fotosslider = document.getElementsByClassName('section-slider')
@@ -438,23 +396,19 @@
 				return false;
 			});
 		});
-	</script> 
-	<script type='text/javascript'>
-		$(document).ready(function () {
-			if (window.matchMedia("(max-width: 774px)").matches) {
-				$("#desktop-colegios").load("categorias/colegios-responsive.html");
-				$("#desktop-restaurantes").load("categorias/restaurantes-responsive.html");
-				$("#desktop-otros").load("categorias/otros-responsive.html");
-			} else {
-				$("#desktop-colegios").load("categorias/colegios.html");
-				$("#desktop-restaurantes").load("categorias/restaurantes.html");
-				$("#desktop-otros").load("categorias/otros.html");
-			}
+	</script>
+
+<!-- Swiper JS -->
+	<script src="Js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 		});
 	</script>
-	<!-- Swiper JS -->
-	<script src="Js/swiper.min.js"></script>
-
+	
 	<!-- Script para el form -->
 	<script>
 		$("#formulario").on("submit", function (e) {

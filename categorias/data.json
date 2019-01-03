@@ -1,0 +1,693 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "description": "Colegios y Universidades",
+            "title": "universidades",
+            "lugares": [{
+                    "id": 1,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cafetín CIAP",
+                    "ubicacion": "CIAP",
+                    "usuario": "@cafetinciap"
+                },
+                {
+                    "id": 2,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina CCR",
+                    "ubicacion": "Colegio Cristo Rey Altamira",
+                    "usuario": "@cantinaccr"
+                },
+                {
+                    "id": 3,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina",
+                    "ubicacion": "Colegio Cristo Rey Altamira",
+                    "usuario": "@cantinaabu"
+                },
+                {
+                    "id": 4,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Centro de Estudiantes",
+                    "ubicacion": "Colegio Cristo Rey Altamira",
+                    "usuario": "@cecra"
+                },
+                {
+                    "id": 5,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Proveeduría",
+                    "ubicacion": "Colegio Cristo Rey Altamira",
+                    "usuario": "@acpl"
+                },
+                {
+                    "id": 6,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina Principal",
+                    "ubicacion": "Colegio Francia",
+                    "usuario": "@cantinafrancia"
+                },
+                {
+                    "id": 7,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina Basket",
+                    "ubicacion": "Colegio San Ignacio",
+                    "usuario": "@basketsi"
+                },
+                {
+                    "id": 8,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina Primaria",
+                    "ubicacion": "Colegio San Ignacio",
+                    "usuario": "@comedorricardo"
+                },
+                {
+                    "id": 9,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cantina CSI",
+                    "ubicacion": "Colegio San Ignacio",
+                    "usuario": "@cantinacsi"
+                },
+                {
+                    "id": 10,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Librería",
+                    "ubicacion": "Colegio San Ignacio",
+                    "usuario": "@libreria20puntos"
+                },
+                {
+                    "id": 11,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cafetin Nosso",
+                    "ubicacion": "UCAB",
+                    "usuario": "@nosso"
+                },
+                {
+                    "id": 12,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "El Malek del Shawarma",
+                    "ubicacion": "UCAB",
+                    "usuario": "@elmalek2011"
+                },
+                {
+                    "id": 13,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "La Bodeguita de la Feria",
+                    "ubicacion": "UCAB",
+                    "usuario": "@labodeguita"
+                },
+                {
+                    "id": 14,
+                    "imagen": "images/establecimientos/restaurantes/presto.jpg",
+                    "lugar": "Presto",
+                    "ubicacion": "UCAB",
+                    "usuario": "@prestoucab"
+                },
+                {
+                    "id": 15,
+                    "imagen": "images/establecimientos/restaurantes/subway.jpg",
+                    "lugar": "SUBWAY UCAB",
+                    "ubicacion": "UCAB",
+                    "usuario": "@subwayucab"
+                },
+                {
+                    "id": 16,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Centro de copiado",
+                    "ubicacion": "UMA",
+                    "usuario": "@reprouma"
+                },
+                {
+                    "id": 17,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Chefas",
+                    "ubicacion": "UMA",
+                    "usuario": "@Chefas"
+                },
+                {
+                    "id": 18,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Date Aquí",
+                    "ubicacion": "UMA",
+                    "usuario": "@dateaqui2"
+                },
+                {
+                    "id": 19,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Oasis",
+                    "ubicacion": "UMA",
+                    "usuario": "@oasis"
+                },
+                {
+                    "id": 20,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Plumrose",
+                    "ubicacion": "UMA",
+                    "usuario": "@plumroseuma"
+                },
+                {
+                    "id": 22,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Chip a cookie",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@chipacookie"
+                },
+                {
+                    "id": 23,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "City Picnic",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@citypicnic"
+                },
+                {
+                    "id": 25,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Eycos",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@eycos"
+                },
+                {
+                    "id": 26,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Juice Bar",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@juicebar"
+                },
+                {
+                    "id": 27,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "La Barra",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@labarra"
+                },
+                {
+                    "id": 28,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "La Karreta",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@lak-rreta"
+                },
+                {
+                    "id": 29,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Limesama",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@limesama"
+                },
+                {
+                    "id": 30,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Metromix",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@metromix"
+                },
+                {
+                    "id": 31,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Mi Punto Grill",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@mipuntogrill"
+                },
+                {
+                    "id": 32,
+                    "imagen": "images/establecimientos/lugar/Parada-Inteligente.jpg",
+                    "lugar": "Parada Inteligente",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@kiosko"
+                },
+                {
+                    "id": 33,
+                    "imagen": "images/establecimientos/restaurantes/subway.jpg",
+                    "lugar": "Subway",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@subunimet"
+                },
+                {
+                    "id": 34,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Taxis",
+                    "ubicacion": "UNIMET",
+                    "usuario": "@taxiunimet"
+                },
+                {
+                    "id": 35,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cafetin Central",
+                    "ubicacion": "USM",
+                    "usuario": "@cafecentral"
+                },
+                {
+                    "id": 36,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Cafetin Poma",
+                    "ubicacion": "USM",
+                    "usuario": "@poma"
+                },
+                {
+                    "id": 37,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Copiadora Feris",
+                    "ubicacion": "USM",
+                    "usuario": "@upsolint"
+                },
+                {
+                    "id": 38,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Corner",
+                    "ubicacion": "USM",
+                    "usuario": "@corner"
+                },
+                {
+                    "id": 39,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Detal USM",
+                    "ubicacion": "USM",
+                    "usuario": "@dentalusm"
+                },
+                {
+                    "id": 40,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Papeleria Feria",
+                    "ubicacion": "USM",
+                    "usuario": "@rosamelia"
+                },
+                {
+                    "id": 24,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Pizza",
+                    "ubicacion": "USM",
+                    "usuario": "@pizzawayusm"
+                },
+                {
+                    "id": 21,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Sabor Light",
+                    "ubicacion": "USM",
+                    "usuario": "@saborlight"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "description": "Restaurantes",
+            "title": "restaurantes",
+            "lugares": [{
+                    "id": 1,
+                    "imagen": "images/establecimientos/restaurantes/acai.jpg",
+                    "lugar": "Acai 212",
+                    "ubicacion": "",
+                    "usuario": "@acai212"
+                },
+                {
+                    "id": 2,
+                    "imagen": "images/establecimientos/restaurantes/burgershack.jpg",
+                    "lugar": "Burger Shack",
+                    "ubicacion": "Aeropuerto. I",
+                    "usuario": "@shackinter"
+                },
+                {
+                    "id": 3,
+                    "imagen": "images/establecimientos/restaurantes/burgershack.jpg",
+                    "lugar": "Burger Shack",
+                    "ubicacion": "Aeropuerto. N",
+                    "usuario": "@shacknacional"
+                },
+                {
+                    "id": 4,
+                    "imagen": "images/establecimientos/restaurantes/burgershack.jpg",
+                    "lugar": "Burger Shack",
+                    "ubicacion": "Altamira",
+                    "usuario": "@shackalta"
+                },
+                {
+                    "id": 5,
+                    "imagen": "images/establecimientos/restaurantes/burgershack.jpg",
+                    "lugar": "Burger Shack",
+                    "ubicacion": "Mercedes",
+                    "usuario": "@shackmerce"
+                },
+                {
+                    "id": 6,
+                    "imagen": "images/establecimientos/restaurantes/burgershack.jpg",
+                    "lugar": "Burger Shack",
+                    "ubicacion": "Trinidad",
+                    "usuario": "@shacktrini"
+                },
+                {
+                    "id": 7,
+                    "imagen": "images/establecimientos/restaurantes/cacaoalcubo.jpg",
+                    "lugar": "Cacao al cub",
+                    "ubicacion": "",
+                    "usuario": "@cacaoalcubo"
+                },
+                {
+                    "id": 8,
+                    "imagen": "images/establecimientos/restaurantes/costilla.jpg",
+                    "lugar": "Costilla",
+                    "ubicacion": "",
+                    "usuario": "@costilla"
+                },
+                {
+                    "id": 9,
+                    "imagen": "images/establecimientos/restaurantes/elcine.jpg",
+                    "lugar": "El Cine",
+                    "ubicacion": "",
+                    "usuario": "@elcine"
+                },
+                {
+                    "id": 10,
+                    "imagen": "images/establecimientos/restaurantes/elcinecity.jpg",
+                    "lugar": "El Cine City",
+                    "ubicacion": "",
+                    "usuario": "@elcinecity"
+                },
+                {
+                    "id": 11,
+                    "imagen": "images/establecimientos/restaurantes/franca.jpg",
+                    "lugar": "Franca",
+                    "ubicacion": "Las Mercedes",
+                    "usuario": "@francalm"
+                },
+                {
+                    "id": 12,
+                    "imagen": "images/establecimientos/restaurantes/franca.jpg",
+                    "lugar": "Franca",
+                    "ubicacion": "Los Naranjos",
+                    "usuario": "@francaln"
+                },
+                {
+                    "id": 13,
+                    "imagen": "images/establecimientos/restaurantes/franca.jpg",
+                    "lugar": "Franca",
+                    "ubicacion": "Los Palos Grandes",
+                    "usuario": "@francalpg"
+                },
+                {
+                    "id": 14,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "Altamira",
+                    "usuario": "@freshaltamira"
+                },
+                {
+                    "id": 15,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "La Florida",
+                    "usuario": "@freshflorida"
+                },
+                {
+                    "id": 16,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "El Hatillo",
+                    "usuario": "@freshhatillo"
+                },
+                {
+                    "id": 17,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "Macaracuay",
+                    "usuario": "@freshmaca"
+                },
+                {
+                    "id": 18,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "Altamira",
+                    "usuario": "@freshmeat"
+                },
+                {
+                    "id": 19,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Fresh Fish",
+                    "ubicacion": "Sebucan",
+                    "usuario": "@freshsebucan"
+                },
+                {
+                    "id": 20,
+                    "imagen": "images/establecimientos/restaurantes/frijol.png",
+                    "lugar": "Frijol",
+                    "ubicacion": "",
+                    "usuario": "@frijol"
+                },
+                {
+                    "id": 21,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "gourmet 54",
+                    "ubicacion": "",
+                    "usuario": "@gourmet54"
+                },
+                {
+                    "id": 22,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Il Grillo",
+                    "ubicacion": "Los Palos Grandes",
+                    "usuario": "@grillocupulas"
+                },
+                {
+                    "id": 23,
+                    "imagen": "images/establecimientos/restaurantes/laesquina.jpg",
+                    "lugar": "La Esquina",
+                    "ubicacion": "",
+                    "usuario": "@laesquina"
+                },
+                {
+                    "id": 24,
+                    "imagen": "images/establecimientos/restaurantes/milanesa.JPG",
+                    "lugar": "La Milanesa",
+                    "ubicacion": "C.C Tolón",
+                    "usuario": "@lamilanesatolon"
+                },
+                {
+                    "id": 25,
+                    "imagen": "images/establecimientos/restaurantes/milanesa.JPG",
+                    "lugar": "La Milanesa",
+                    "ubicacion": "El Hatillo",
+                    "usuario": "@lamilanesahatillo"
+                },
+                {
+                    "id": 26,
+                    "imagen": "images/establecimientos/restaurantes/misenplas.jpg",
+                    "lugar": "Misenplas",
+                    "ubicacion": "",
+                    "usuario": "@misenplas"
+                },
+                {
+                    "id": 27,
+                    "imagen": "images/establecimientos/restaurantes/papas.png",
+                    "lugar": "Papas Caracas",
+                    "ubicacion": "",
+                    "usuario": "@papascaracas"
+                },
+                {
+                    "id": 28,
+                    "imagen": "images/establecimientos/restaurantes/poke.png",
+                    "lugar": "Poke 212",
+                    "ubicacion": "",
+                    "usuario": "@poke212"
+                },
+                {
+                    "id": 29,
+                    "imagen": "images/establecimientos/restaurantes/presto.jpg",
+                    "lugar": "Presto",
+                    "ubicacion": "Altamira",
+                    "usuario": "@prestoalta"
+                },
+                {
+                    "id": 30,
+                    "imagen": "images/establecimientos/restaurantes/pizpa.jpeg",
+                    "lugar": "Pizpa",
+                    "ubicacion": "",
+                    "usuario": "@pizpa"
+                },
+                {
+                    "id": 31,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Veranda",
+                    "ubicacion": "",
+                    "usuario": "@veranda"
+                },
+                {
+                    "id": 32,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Yogen Fruz",
+                    "ubicacion": "Prados del Este",
+                    "usuario": "@yogenprados"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "description": "Estacionamientos",
+            "title": "estacionamientos",
+            "lugares": [{
+                    "id": 1,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "CC PASEO EL HATILLO VIP",
+                    "ubicacion": "",
+                    "usuario": "@hatillovip"
+                },
+                {
+                    "id": 2,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "CC PASEO LAS MERCEDES",
+                    "ubicacion": "",
+                    "usuario": "@valparking"
+                },
+                {
+                    "id": 3,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "CC TOLÓN",
+                    "ubicacion": "",
+                    "usuario": "@parkingtolon"
+                },
+                {
+                    "id": 4,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "CC XPRESS MACARACUAY",
+                    "ubicacion": "",
+                    "usuario": "@sacma"
+                },
+                {
+                    "id": 5,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "CSI",
+                    "ubicacion": "",
+                    "usuario": "@pakingcsi"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "description": "Clubes Privados",
+            "title": "Otros",
+            "lugares": [{
+                    "id": 1,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Altamira Tenis Club",
+                    "ubicacion": "Restaurant",
+                    "usuario": "@atcrest"
+                },
+                {
+                    "id": 2,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Altamira Tenis Club",
+                    "ubicacion": "Parrilla",
+                    "usuario": "@atcparrilla"
+                },
+                {
+                    "id": 3,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Altamira Tenis Club",
+                    "ubicacion": "Fuente",
+                    "usuario": "@atcfuente"
+                },
+                {
+                    "id": 4,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Camurí",
+                    "ubicacion": "Pabellon - Restaurante",
+                    "usuario": "@pabellon"
+                },
+                {
+                    "id": 5,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Camurí",
+                    "ubicacion": "Chozas de la playa",
+                    "usuario": "@lajuntabeach"
+                },
+                {
+                    "id": 6,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Barbería",
+                    "usuario": "@tibisay"
+                },
+                {
+                    "id": 7,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "golf",
+                    "usuario": "@hoyo19"
+                },
+                {
+                    "id": 8,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "golf",
+                    "usuario": "@Coop19"
+                },
+                {
+                    "id": 9,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Piscina",
+                    "usuario": "@piscina"
+                },
+                {
+                    "id": 10,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Tenis",
+                    "usuario": "@tenisccc"
+                },
+                {
+                    "id": 11,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Lagunita Golf Club",
+                    "ubicacion": "",
+                    "usuario": "@foodplus"
+                },
+                {
+                    "id": 12,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Tienda de la Marina",
+                    "usuario": "@marine"
+                },
+                {
+                    "id": 13,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Quiosco",
+                    "usuario": "@marine"
+                },
+                {
+                    "id": 14,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Choza de sushi",
+                    "usuario": "@coche"
+                },
+                {
+                    "id": 15,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Sawu",
+                    "ubicacion": "",
+                    "usuario": "@sawu"
+                },
+                {
+                    "id": 16,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Suka",
+                    "ubicacion": "",
+                    "usuario": "@suka"
+                },
+                {
+                    "id": 17,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Valle Arriba Athletic Center",
+                    "ubicacion": "",
+                    "usuario": "@skysushi"
+                },
+                {
+                    "id": 18,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Valle Arriba Athletic Center",
+                    "ubicacion": "Yogen Fruz",
+                    "usuario": "@yogenvaac"
+                }
+            ]
+        }
+    ]
+}
