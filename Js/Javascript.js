@@ -1,6 +1,6 @@
 const xhtpp = new XMLHttpRequest();
 
-xhtpp.open('GET', 'categorias/data.json', true)
+xhtpp.open('GET', 'https://restful.yeipii.com/serverbusiness/business/clients/partners', true)
 
 xhtpp.send();
 
