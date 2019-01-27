@@ -70,25 +70,25 @@ xhtpp.onreadystatechange = function () {
                         swipeContent.innerHTML += `<div class="lugarCategory">
                                                     <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
                                                     <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>${paginaDeSlider[lg].usuario}</span>
+                                                    <span>@${paginaDeSlider[lg].usuario}</span>
                                                     </div>`
                     } else if (i == 1) {
                         swipeContent.innerHTML += `<div class="lugarCategory">
                                                     <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
                                                     <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>${paginaDeSlider[lg].usuario}</span>
+                                                    <span>@${paginaDeSlider[lg].usuario}</span>
                                                     </div>`
                     } else if (i == 2) {
                         swipeContent.innerHTML += `<div class="lugarCategory">
                                                     <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
                                                     <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>${paginaDeSlider[lg].usuario}</span>
+                                                    <span>@${paginaDeSlider[lg].usuario}</span>
                                                     </div>`
                     } else if (i == 3) {
                         swipeContent.innerHTML += `<div class="lugarCategory">
                                                     <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
                                                     <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>${paginaDeSlider[lg].usuario}</span>
+                                                    <span>@${paginaDeSlider[lg].usuario}</span>
                                                     </div>`
                     }
                 }
