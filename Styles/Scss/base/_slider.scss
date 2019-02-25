@@ -184,7 +184,7 @@ a:hover {
     width: 100%;
     height: auto;
     transition: .5s all;
-    box-shadow: 0px 0px 45px -18px rgba(0, 0, 0, .8);
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.4);
 }
 
 
@@ -274,4 +274,10 @@ a:hover {
     @include respond-to(1145px){
         margin: 0 20px; 
     }
+}
+
+
+.slick-slide img:hover{
+    box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.8);
+    cursor: pointer;
 }

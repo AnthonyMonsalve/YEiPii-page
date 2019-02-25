@@ -3,11 +3,14 @@ $('.center-slider').slick({
   infinite: true,
   centerPadding: '0px',
   slidesToShow: 5,
-  speed: 500,
+  speed: 800,
   arrows: true,
   autoplay: true,
   autoplaySpeed: 4500,
-  variableWidth: false,
+  variableWidth: true,
+  draggable: true,
+  focusOnSelect: true,
+  swipeToSlide: true,
   responsive: [{
     breakpoint: 1024,
     settings: {
