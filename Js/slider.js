@@ -6,7 +6,7 @@ $('.center-slider').slick({
   speed: 400,
   arrows: true,
   autoplay: true,
-  autoplaySpeed: 4500,
+  autoplaySpeed: 7000,
   variableWidth: true,
   draggable: true,
   focusOnSelect: true,
