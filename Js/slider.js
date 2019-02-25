@@ -3,7 +3,7 @@ $('.center-slider').slick({
   infinite: true,
   centerPadding: '0px',
   slidesToShow: 5,
-  speed: 800,
+  speed: 400,
   arrows: true,
   autoplay: true,
   autoplaySpeed: 4500,
