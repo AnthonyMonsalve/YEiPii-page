@@ -7,7 +7,7 @@ $('.center-slider').slick({
   speed: 400,
   arrows: true,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 11000,
   variableWidth: true,
   draggable: true,
   focusOnSelect: true,
@@ -82,7 +82,7 @@ $('.center-slider').slick({
 
 function myFunction(x) {
   if (x.matches) { // If media query matches
-    document.getElementById("cinex").src="images/slider/fotos/9-small.jpg"
+    document.getElementById("cinex").src="images/slider/fotos/9-small.png"
   } else {
     document.getElementById("cinex").src="images/slider/fotos/9.png"
   }
