@@ -20,9 +20,9 @@
 %button-secondary {
 	border-radius: 12px;
 	padding: 5px;
-	min-width: 160px;
+    min-width: 145px;
 	min-height: 100px;
-	margin: 5px 10px;
+    margin: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -46,7 +46,9 @@
 	}
 
 	@include respond-to(1053px) {
-		margin: 10px 1%;
+		margin: 10px 15px;
+		width: 30%;
+		max-width: 200px;
 	}
 
 	@include respond-to(743px){
