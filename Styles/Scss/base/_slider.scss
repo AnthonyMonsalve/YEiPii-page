@@ -130,8 +130,8 @@
 
 .clip>.section-slider {
     height: auto;
-    margin: 10px 8px;
-    padding: 10px 5px;
+    margin: 10px 7px;
+    padding: 5px 0px;
     position: relative;
     text-align: center;
     transition: .5s all;
@@ -193,21 +193,6 @@ a:hover {
     display: flex;
     justify-content: center;
 }
-
-
-.slick-track:after {
-    content: '';
-    display: block;
-    background: url('../../images/phones/phone-black.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 202px;
-    position: absolute;
-    top: -36px;
-    bottom: -36px;
-    margin: auto;
-}
-
 
 
 //ANIMACION SLIDER
