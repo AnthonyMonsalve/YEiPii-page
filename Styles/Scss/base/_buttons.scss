@@ -46,14 +46,14 @@
 	}
 
 	@include respond-to(1053px) {
-		margin: 10px 15px;
-		width: 30%;
-		max-width: 200px;
+		margin: 10px 10px;
+		//width: 30%;
+		max-width: 220px;
 	}
 
 	@include respond-to(743px){
 		width: 30%;
-		margin: 4% 2%;
+		margin: 3% 2%;
 		margin-bottom: 0;
 	}
 
