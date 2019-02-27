@@ -266,15 +266,24 @@ a:hover {
 }
 
 #slider{
-    display: block;
+    opacity: 0;
+    position: absolute;
+    z-index: -999;
     @include respond-to(768px){
-        display: none;
+        opacity: 1;
+        position: relative;
+        z-index: 999;
     }
 }
-#slider-small{
-    display: none;
+
+#slider-big{
+    opacity: 1;
+    position: relative;
+    z-index: 999;
     @include respond-to(768px){
-        display: block;
+        opacity: 0;
+        position: absolute;
+        z-index: -999;
     }
 }
 
