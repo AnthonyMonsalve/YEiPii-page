@@ -4,7 +4,7 @@ $('.center-slider').slick({
   centerPadding: '0px',
   speed: 400,
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 11000,
   variableWidth: true,
   draggable: true,
