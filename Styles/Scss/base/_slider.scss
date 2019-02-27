@@ -265,3 +265,16 @@ a:hover {
     cursor: pointer;
 }
 
+#slider{
+    display: block;
+    @include respond-to(768px){
+        display: none;
+    }
+}
+#slider-small{
+    display: none;
+    @include respond-to(768px){
+        display: block;
+    }
+}
+
