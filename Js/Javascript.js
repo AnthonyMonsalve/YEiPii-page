@@ -12,6 +12,70 @@ xhtpp.onreadystatechange = function () {
         const divididos = []
         var masUno = 1;
 
+        function swipesI(){
+            var swiperU = document.querySelector('.sCU');
+            var slider = new Swiper(swiperU, {
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+              var swiperR = document.querySelector('.sCR');
+              var slider = new Swiper(swiperR, {
+                  loop: true,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                  },
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });
+                var swiperE = document.querySelector('.sCE');
+                var slider = new Swiper(swiperE, {
+                    loop: true,
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true
+                    },
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                  });
+                  var swiperD = document.querySelector('.sCD');
+                  var slider = new Swiper(swiperD, {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                      },
+                      navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      },
+                    });
+                    var swiperL = document.querySelector('.sCL');
+                    var slider = new Swiper(swiperL, {
+                        loop: true,
+                        pagination: {
+                          el: '.swiper-pagination',
+                          clickable: true
+                        },
+                        navigation: {
+                          nextEl: '.swiper-button-next',
+                          prevEl: '.swiper-button-prev',
+                        },
+                      });
+
+                //console.log('swipe created')
+        }
+
         if (window.matchMedia("(max-width: 700px)").matches) {
             var patron = 6;
         } else {
@@ -23,15 +87,15 @@ xhtpp.onreadystatechange = function () {
         for (let i = 0; i < cantidadCategorias; i++) {
 
             if (i == 0) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnUniversidades-contenido"><div id="desktop-colegios" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat1"></div> <div class="swiper-pagination"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnUniversidades-contenido"><div id="desktop-colegios" style="max-width: 100%"><div class="swiper-container sCU"><div class="swiper-wrapper" id="padreCat1"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div>`
             } else if (i == 1) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnRestaurantes-contenido"><div id="desktop-restaurantes" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat2"></div> <div class="swiper-pagination"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnRestaurantes-contenido"><div id="desktop-restaurantes" style="max-width: 100%"><div class="swiper-container sCR"><div class="swiper-wrapper" id="padreCat2"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div><script></script>`
             } else if (i == 2) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-estacionamientos" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat3"></div> <div class="swiper-pagination"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-estacionamientos" style="max-width: 100%"><div class="swiper-container sCE"><div class="swiper-wrapper" id="padreCat3"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div><script></script>`
             } else if (i == 3) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat4"></div> <div class="swiper-pagination"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container sCD"><div class="swiper-wrapper" id="padreCat4"></div> <script></script>`
             } else if (i == 4) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnLicorerias-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-pagination"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnLicorerias-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container sCL"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div><script></script>`
             }
 
             var cantidadLocalesPorCategorias = (datos.categorias[i].lugares).length
@@ -108,6 +172,7 @@ xhtpp.onreadystatechange = function () {
             masUno -= 1
         }
         console.log(divididos + 'YA')
+        swipesI()
     }
 }
 

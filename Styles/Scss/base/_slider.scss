@@ -280,23 +280,9 @@ a:hover {
     opacity: 1;
     position: relative;
     z-index: 999;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-delay: 2s;
     @include respond-to(768px){
         opacity: 0;
         position: absolute;
         z-index: -999;
     }
 }
-
-  
-  @keyframes aparecer {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
