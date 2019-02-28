@@ -51,10 +51,6 @@ xhtpp.onreadystatechange = function () {
                   });
                   var swiperD = document.querySelector('.sCD');
                   var slider = new Swiper(swiperD, {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                      },
                       navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
