@@ -37,6 +37,7 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 	<title>YEiPii - ¿Dónde Estamos?</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script src="Js/category.js"></script>
 	<script src="Js/Javascript.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255552-1"></script>
 	<script>
@@ -209,25 +210,25 @@
 		<div class="sections-YEiPii p-top-cero" style="display: block; position: relative;margin-bottom: 50px;">
 			<div class="contenedor-buttons-category-maxwidth">
 				<div class="content-buttons-category btn-slider" id="contCategory">
-					<button id="BtnUniversidades" class="button-YEiPii-secondary">
+					<button id="BtnLicorerias" class="button-YEiPii-secondary" onclick="cine()">
+						<img src="images/categorias/Artboard 4.png" alt="">
+						<span class="center">Cine</span>
+					</button>
+					<button id="BtnUniversidades" class="button-YEiPii-secondary" onclick="uni()">
 						<img src="images/categorias/colegios.png" alt="">
 						<span class="center">Colegios <br> Universidades </span>
 					</button>
-					<button id="BtnRestaurantes" class="button-YEiPii-secondary" data-target="#contentRestaurantes">
+					<button id="BtnRestaurantes" class="button-YEiPii-secondary" data-target="#contentRestaurantes" onclick="res()">
 						<img src="images/categorias/restaurantes.png" alt="">
 						<span class="center">Restaurantes</span>
 					</button>
-					<button id="BtnEstacionamientos" class="button-YEiPii-secondary">
+					<button id="BtnEstacionamientos" class="button-YEiPii-secondary" onclick="est()">
 						<img src="images/categorias/estacionamientos.png" alt="">
 						<span class="center">Estacionamientos</span>
 					</button>
-					<button id="BtnDiscotecas" class="button-YEiPii-secondary">
+					<button id="BtnDiscotecas" class="button-YEiPii-secondary" onclick="dis()">
 						<img src="images/categorias/discotecas.png" alt="">
 						<span class="center">Otros</span>
-					</button>
-					<button id="BtnLicorerias" class="button-YEiPii-secondary" style="display: none">
-						<img src="images/categorias/licorerias.png" alt="">
-						<span class="center">Licorerias</span>
 					</button>
 					<button id="BtnClubes" class="button-YEiPii-secondary" style="display: none">
 						<img src="images/categorias/club-privado.png" alt="">
@@ -473,7 +474,7 @@
 			},
 		});
 	</script>
-	
+
 	<!-- Script para el form -->
 	<script>
 		$("#formulario").on("submit", function (e) {

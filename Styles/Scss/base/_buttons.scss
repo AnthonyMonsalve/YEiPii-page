@@ -51,7 +51,11 @@
 		max-width: 220px;
 	}
 
-	@include respond-to(743px){
+	@include respond-to(872px){
+		min-width: 200px;
+	}
+
+	@include respond-to(768px){
 		width: 30%;
 		margin: 3% 2%;
 		margin-bottom: 0;

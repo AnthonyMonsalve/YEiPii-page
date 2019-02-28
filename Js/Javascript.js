@@ -1,6 +1,6 @@
 const xhtpp = new XMLHttpRequest();
 
-xhtpp.open('GET', 'https://restful.yeipii.com/serverbusiness/business/clients/partners', true)
+xhtpp.open('GET', '../categorias/data.json', true)
 
 xhtpp.send();
 
@@ -30,6 +30,8 @@ xhtpp.onreadystatechange = function () {
                 logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-estacionamientos" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat3"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div>`
             } else if (i == 3) {
                 logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat4"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div>`
+            } else if (i == 4) {
+                logos.innerHTML += `<div class="categoryBox" id="BtnLicorerias-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next"></div> <div class="swiper-button-prev"></div>`
             }
 
             var cantidadLocalesPorCategorias = (datos.categorias[i].lugares).length
@@ -44,6 +46,7 @@ xhtpp.onreadystatechange = function () {
                 var RestaurantesJ = document.querySelector('#padreCat2')
                 var EstacionamientosJ = document.querySelector('#padreCat3')
                 var OtrosJ = document.querySelector('#padreCat4')
+                var LicoreriasJ = document.querySelector('#padreCat5')
                 a += patron
                 b += patron
 
@@ -55,6 +58,8 @@ xhtpp.onreadystatechange = function () {
                     EstacionamientosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 } else if (i == 3) {
                     OtrosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                } else if (i == 4) {
+                    LicoreriasJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 }
 
                 masUno += 1
@@ -85,6 +90,12 @@ xhtpp.onreadystatechange = function () {
                                                     <span>@${paginaDeSlider[lg].usuario}</span>
                                                     </div>`
                     } else if (i == 3) {
+                        swipeContent.innerHTML += `<div class="lugarCategory">
+                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
+                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
+                                                    <span>@${paginaDeSlider[lg].usuario}</span>
+                                                    </div>`
+                    } else if (i == 4) {
                         swipeContent.innerHTML += `<div class="lugarCategory">
                                                     <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
                                                     <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>

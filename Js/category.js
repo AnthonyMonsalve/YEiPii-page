@@ -1,11 +1,12 @@
-const Universidades = document.getElementById('BtnUniversidades');
-const Restaurantes = document.getElementById('BtnRestaurantes');
-const Estacionamientos = document.getElementById('BtnEstacionamientos');
-const Discotecas = document.getElementById('BtnDiscotecas');
-const Licorerias = document.getElementById('BtnLicorerias');
-const Clubes = document.getElementById('BtnClubes');
-const categoryBox = document.getElementsByClassName('categoryBox');
-Universidades.onclick = function() {
+function uni() {
+    const Universidades = document.getElementById('BtnUniversidades');
+    const Restaurantes = document.getElementById('BtnRestaurantes');
+    const Estacionamientos = document.getElementById('BtnEstacionamientos');
+    const Discotecas = document.getElementById('BtnDiscotecas');
+    const Licorerias = document.getElementById('BtnLicorerias');
+    const Clubes = document.getElementById('BtnClubes');
+    const categoryBox = document.getElementsByClassName('categoryBox');
+    //console.log('me estan pisando, me pisan.. HELP!')
     if (!0) {
         document.getElementById('rest').click()
     } else {
@@ -14,7 +15,7 @@ Universidades.onclick = function() {
     let categoryBoxe = categoryBox[0];
     categoryBoxe.setAttribute("id", "YEiPii-u-scroll");
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
-    if (window.matchMedia("(min-width: 744px)").matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
         if (Universidades.style.opacity == .6) {
             for (let index = 0; index < 6; index++) {
                 categoryBox[index].style.height = 0;
@@ -97,11 +98,11 @@ Universidades.onclick = function() {
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (160 * 3) + 80 + 'px';
-        let marginBox = (160 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 80 + 'px';
+        let marginBox = (170 * 3) + 70 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Universidades.style.marginBottom = 0;
-            Restaurantes.style.marginBottom = 0;
+            Licorerias.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
             categoryBoxe.style.opacity = 0;
             Restaurantes.style.opacity = 1;
@@ -116,7 +117,7 @@ Universidades.onclick = function() {
             Clubes.classList.remove('button-gray-disabled')
         } else {
             Universidades.style.marginBottom = marginBox;
-            Restaurantes.style.marginBottom = marginBox;
+            Licorerias.style.marginBottom = marginBox;
             categoryBoxe.style.height = heightBox;
             Restaurantes.style.opacity = .6;
             Restaurantes.classList.add('button-gray-disabled');
@@ -158,7 +159,7 @@ Universidades.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-individual');
+        categoryBoxe.classList.toggle('categoryOpen-individual-2');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
         let heightBox = (170 * 3) + 40 + 'px';
         let marginBox = (170 * 3) + 30 + 40 + 'px';
@@ -195,8 +196,16 @@ Universidades.onclick = function() {
             }, 200)
         }
     }
-};
-Restaurantes.onclick = function() {
+}
+
+function res(){
+    const Universidades = document.getElementById('BtnUniversidades');
+    const Restaurantes = document.getElementById('BtnRestaurantes');
+    const Estacionamientos = document.getElementById('BtnEstacionamientos');
+    const Discotecas = document.getElementById('BtnDiscotecas');
+    const Licorerias = document.getElementById('BtnLicorerias');
+    const Clubes = document.getElementById('BtnClubes');
+    const categoryBox = document.getElementsByClassName('categoryBox');
     if (!0) {
         document.getElementById('rest').click()
     } else {
@@ -204,7 +213,7 @@ Restaurantes.onclick = function() {
     }
     let categoryBoxe = categoryBox[1];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
-    if (window.matchMedia("(min-width: 744px)").matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
         if (Restaurantes.style.opacity == .6) {
             for (let index = 0; index < 6; index++) {
                 categoryBox[index].style.height = 0;
@@ -273,17 +282,17 @@ Restaurantes.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-3filas');
+        categoryBoxe.classList.toggle('categoryOpen-3filas-2da');
         var cuantasFilas = Math.ceil(Circulos.length / 3);
         if (window.matchMedia("(max-width: 474px)").matches) {
             var cuantasFilas = Math.ceil(Circulos.length / 2)
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (160 * 3) + 80 + 'px';
-        let marginBox = (160 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 80 + 'px';
+        let marginBox = (170 * 3) + 70 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
-            Universidades.style.marginBottom = 0;
+            Estacionamientos.style.marginBottom = 0;
             Restaurantes.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
             categoryBoxe.style.opacity = 0;
@@ -298,7 +307,7 @@ Restaurantes.onclick = function() {
             Clubes.style.opacity = 1;
             Clubes.classList.remove('button-gray-disabled')
         } else {
-            Universidades.style.marginBottom = marginBox;
+            Estacionamientos.style.marginBottom = marginBox;
             Restaurantes.style.marginBottom = marginBox;
             categoryBoxe.style.height = heightBox;
             Universidades.style.opacity = .6;
@@ -341,7 +350,7 @@ Restaurantes.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-individual-2');
+        categoryBoxe.classList.toggle('categoryOpen-individual-3');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
         let heightBox = (170 * 3) + 40 + 'px';
         let marginBox = (170 * 3) + 30 + 40 + 'px';
@@ -378,8 +387,16 @@ Restaurantes.onclick = function() {
             }, 200)
         }
     }
-};
-Estacionamientos.onclick = function() {
+}
+
+function est(){
+    const Universidades = document.getElementById('BtnUniversidades');
+    const Restaurantes = document.getElementById('BtnRestaurantes');
+    const Estacionamientos = document.getElementById('BtnEstacionamientos');
+    const Discotecas = document.getElementById('BtnDiscotecas');
+    const Licorerias = document.getElementById('BtnLicorerias');
+    const Clubes = document.getElementById('BtnClubes');
+    const categoryBox = document.getElementsByClassName('categoryBox');
     if (!0) {
         document.getElementById('esta').click()
     } else {
@@ -387,7 +404,7 @@ Estacionamientos.onclick = function() {
     }
     let categoryBoxe = categoryBox[2];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
-    if (window.matchMedia("(min-width: 744px)").matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
         if (Estacionamientos.style.opacity == .6) {
             for (let index = 0; index < 6; index++) {
                 categoryBox[index].style.height = 0;
@@ -463,11 +480,11 @@ Estacionamientos.onclick = function() {
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (160 * 3) + 80 + 'px';
-        let marginBox = (160 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 2) + 80 + 'px';
+        let marginBox = (170 * 2) + 70 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
-            Discotecas.style.marginBottom = 0;
+            Restaurantes.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
             categoryBoxe.style.opacity = 0;
             Universidades.style.opacity = 1;
@@ -482,7 +499,7 @@ Estacionamientos.onclick = function() {
             Clubes.classList.remove('button-gray-disabled')
         } else {
             Estacionamientos.style.marginBottom = marginBox;
-            Discotecas.style.marginBottom = marginBox;
+            Restaurantes.style.marginBottom = marginBox;
             categoryBoxe.style.height = heightBox;
             Universidades.style.opacity = .6;
             Universidades.classList.add('button-gray-disabled');
@@ -524,7 +541,7 @@ Estacionamientos.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-individual-3');
+        categoryBoxe.classList.toggle('categoryOpen-individual-4');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
         let heightBox = (170 * 3) + 40 + 'px';
         let marginBox = (170 * 3) + 30 + 40 + 'px';
@@ -561,8 +578,16 @@ Estacionamientos.onclick = function() {
             }, 200)
         }
     }
-};
-Discotecas.onclick = function() {
+}
+
+function dis(){
+    const Universidades = document.getElementById('BtnUniversidades');
+    const Restaurantes = document.getElementById('BtnRestaurantes');
+    const Estacionamientos = document.getElementById('BtnEstacionamientos');
+    const Discotecas = document.getElementById('BtnDiscotecas');
+    const Licorerias = document.getElementById('BtnLicorerias');
+    const Clubes = document.getElementById('BtnClubes');
+    const categoryBox = document.getElementsByClassName('categoryBox');
     if (!0) {
         document.getElementById('otro').click()
     } else {
@@ -570,7 +595,7 @@ Discotecas.onclick = function() {
     }
     let categoryBoxe = categoryBox[3];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
-    if (window.matchMedia("(min-width: 744px)").matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
         if (Discotecas.style.opacity == .6) {
             for (let index = 0; index < 6; index++) {
                 categoryBox[index].style.height = 0;
@@ -639,15 +664,15 @@ Discotecas.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-3filas-2da');
+        categoryBoxe.classList.toggle('categoryOpen-3filas-3ra');
         var cuantasFilas = Math.ceil(Circulos.length / 3);
         if (window.matchMedia("(max-width: 474px)").matches) {
             var cuantasFilas = Math.ceil(Circulos.length / 2)
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (160 * 3) + 80 + 'px';
-        let marginBox = (160 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 80 + 'px';
+        let marginBox = (170 * 3) + 70 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             Discotecas.style.marginBottom = 0;
@@ -664,7 +689,7 @@ Discotecas.onclick = function() {
             Clubes.style.opacity = 1;
             Clubes.classList.remove('button-gray-disabled')
         } else {
-            Estacionamientos.style.marginBottom = marginBox;
+            //Estacionamientos.style.marginBottom = marginBox;
             Discotecas.style.marginBottom = marginBox;
             categoryBoxe.style.height = heightBox;
             Universidades.style.opacity = .6;
@@ -707,7 +732,7 @@ Discotecas.onclick = function() {
             Licorerias.classList.remove('button-gray-disabled');
             Clubes.classList.remove('button-gray-disabled')
         }
-        categoryBoxe.classList.toggle('categoryOpen-individual-4');
+        categoryBoxe.classList.toggle('categoryOpen-individual-5');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
         let heightBox = (170 * 3) + 40 + 'px';
         let marginBox = (170 * 3) + 30 + 40 + 'px';
@@ -739,6 +764,196 @@ Discotecas.onclick = function() {
             Clubes.style.opacity = .6;
             Clubes.classList.add('button-gray-disabled');
             Discotecas.style.opacity = 1;
+            setTimeout(function() {
+                categoryBoxe.style.opacity = 1
+            }, 200)
+        }
+    }
+}
+function cine(){
+    const Universidades = document.getElementById('BtnUniversidades');
+    const Restaurantes = document.getElementById('BtnRestaurantes');
+    const Estacionamientos = document.getElementById('BtnEstacionamientos');
+    const Licorerias = document.getElementById('BtnLicorerias');
+    const Discotecas = document.getElementById('BtnDiscotecas');
+    const Clubes = document.getElementById('BtnClubes');
+    const categoryBox = document.getElementsByClassName('categoryBox');
+    if (!0) {
+        document.getElementById('otro').click()
+    } else {
+        console.log('no pasa nada')
+    }
+    let categoryBoxe = categoryBox[4];
+    let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        if (Licorerias.style.opacity == .6) {
+            for (let index = 0; index < 6; index++) {
+                categoryBox[index].style.height = 0;
+                categoryBox[index].style.opacity = 0;
+                categoryBox[index].classList.remove('categoryOpen')
+            }
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Universidades.classList.remove('button-gray-disabled');
+            Licorerias.classList.remove('button-gray-disabled');
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.classList.remove('button-gray-disabled')
+        }
+        categoryBoxe.classList.toggle('categoryOpen');
+        let cuantasFilas = Math.ceil(Circulos.length / 4);
+        let heightBox = (210 * 3) + 12.5 + 'px';
+        if (categoryBoxe.style.height == heightBox) {
+            categoryBoxe.style.height = 0;
+            categoryBoxe.style.opacity = 0;
+            Restaurantes.style.opacity = 1;
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.style.opacity = 1;
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Universidades.style.opacity = 1;
+            Universidades.classList.remove('button-gray-disabled');
+            Discotecas.style.opacity = 1;
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.style.opacity = 1;
+            Clubes.classList.remove('button-gray-disabled')
+        } else {
+            categoryBoxe.style.height = heightBox;
+            Restaurantes.style.opacity = .6;
+            Restaurantes.classList.add('button-gray-disabled');
+            Estacionamientos.style.opacity = .6;
+            Estacionamientos.classList.add('button-gray-disabled');
+            Universidades.style.opacity = .6;
+            Universidades.classList.add('button-gray-disabled');
+            Discotecas.style.opacity = .6;
+            Discotecas.classList.add('button-gray-disabled');
+            Clubes.style.opacity = .6;
+            Clubes.classList.add('button-gray-disabled');
+            Licorerias.style.opacity = 1;
+            setTimeout(function() {
+                categoryBoxe.style.opacity = 1
+            }, 200)
+        }
+    } else if (window.matchMedia("(min-width: 359px)").matches) {
+        if (Licorerias.style.opacity == .6) {
+            for (let index = 0; index < 6; index++) {
+                categoryBox[index].style.height = 0;
+                categoryBox[index].style.opacity = 0;
+                Discotecas.style.marginBottom = 0;
+                Universidades.style.marginBottom = 0;
+                Licorerias.style.marginBottom = 0;
+                Estacionamientos.style.marginBottom = 0;
+                Restaurantes.style.marginBottom = 0;
+                Clubes.style.marginBottom = 0;
+                categoryBox[index].classList.remove('categoryOpen-3filas');
+                categoryBox[index].classList.remove('categoryOpen-3filas-2da');
+                categoryBox[index].classList.remove('categoryOpen-3filas-3ra')
+            }
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Universidades.classList.remove('button-gray-disabled');
+            Licorerias.classList.remove('button-gray-disabled');
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.classList.remove('button-gray-disabled')
+        }
+        categoryBoxe.classList.toggle('categoryOpen-3filas');
+        var cuantasFilas = Math.ceil(Circulos.length / 3);
+        if (window.matchMedia("(max-width: 474px)").matches) {
+            var cuantasFilas = Math.ceil(Circulos.length / 2)
+        } else {
+            var cuantasFilas = Math.ceil(Circulos.length / 3)
+        }
+        let heightBox = (170 * 3) + 80 + 'px';
+        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        if (categoryBoxe.style.height == heightBox) {
+            Universidades.style.marginBottom = 0;
+            Licorerias.style.marginBottom = 0;
+            categoryBoxe.style.height = 0;
+            categoryBoxe.style.opacity = 0;
+            Universidades.style.opacity = 1;
+            Universidades.classList.remove('button-gray-disabled');
+            Restaurantes.style.opacity = 1;
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.style.opacity = 1;
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Discotecas.style.opacity = 1;
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.style.opacity = 1;
+            Clubes.classList.remove('button-gray-disabled')
+        } else {
+            Universidades.style.marginBottom = marginBox;
+            Licorerias.style.marginBottom = marginBox;
+            categoryBoxe.style.height = heightBox;
+            Universidades.style.opacity = .6;
+            Universidades.classList.add('button-gray-disabled');
+            Restaurantes.style.opacity = .6;
+            Restaurantes.classList.add('button-gray-disabled');
+            Estacionamientos.style.opacity = .6;
+            Estacionamientos.classList.add('button-gray-disabled');
+            Discotecas.style.opacity = .6;
+            Discotecas.classList.add('button-gray-disabled');
+            Clubes.style.opacity = .6;
+            Clubes.classList.add('button-gray-disabled');
+            Licorerias.style.opacity = 1;
+            setTimeout(function() {
+                categoryBoxe.style.opacity = 1
+            }, 200)
+        }
+    } else {
+        if (Licorerias.style.opacity == .6) {
+            for (let index = 0; index < 6; index++) {
+                categoryBox[index].style.height = 0;
+                categoryBox[index].style.opacity = 0;
+                Discotecas.style.marginBottom = 0;
+                Universidades.style.marginBottom = 0;
+                Licorerias.style.marginBottom = 0;
+                Estacionamientos.style.marginBottom = 0;
+                Restaurantes.style.marginBottom = 0;
+                Clubes.style.marginBottom = 0;
+                categoryBox[index].classList.remove('categoryOpen-individual');
+                categoryBox[index].classList.remove('categoryOpen-individual-2');
+                categoryBox[index].classList.remove('categoryOpen-individual-3');
+                categoryBox[index].classList.remove('categoryOpen-individual-4');
+                categoryBox[index].classList.remove('categoryOpen-individual-5');
+                categoryBox[index].classList.remove('categoryOpen-individual-6')
+            }
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Universidades.classList.remove('button-gray-disabled');
+            Licorerias.classList.remove('button-gray-disabled');
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.classList.remove('button-gray-disabled')
+        }
+        categoryBoxe.classList.toggle('categoryOpen-individual');
+        var cuantasFilas = Math.ceil(Circulos.length / 2);
+        let heightBox = (170 * 3) + 40 + 'px';
+        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        if (categoryBoxe.style.height == heightBox) {
+            Licorerias.style.marginBottom = 0;
+            categoryBoxe.style.height = 0;
+            categoryBoxe.style.opacity = 0;
+            Universidades.style.opacity = 1;
+            Universidades.classList.remove('button-gray-disabled');
+            Restaurantes.style.opacity = 1;
+            Restaurantes.classList.remove('button-gray-disabled');
+            Estacionamientos.style.opacity = 1;
+            Estacionamientos.classList.remove('button-gray-disabled');
+            Discotecas.style.opacity = 1;
+            Discotecas.classList.remove('button-gray-disabled');
+            Clubes.style.opacity = 1;
+            Clubes.classList.remove('button-gray-disabled')
+        } else {
+            Licorerias.style.marginBottom = marginBox;
+            categoryBoxe.style.height = heightBox;
+            Universidades.style.opacity = .6;
+            Universidades.classList.add('button-gray-disabled');
+            Restaurantes.style.opacity = .6;
+            Restaurantes.classList.add('button-gray-disabled');
+            Estacionamientos.style.opacity = .6;
+            Estacionamientos.classList.add('button-gray-disabled');
+            Discotecas.style.opacity = .6;
+            Discotecas.classList.add('button-gray-disabled');
+            Clubes.style.opacity = .6;
+            Clubes.classList.add('button-gray-disabled');
+            Licorerias.style.opacity = 1;
             setTimeout(function() {
                 categoryBoxe.style.opacity = 1
             }, 200)
