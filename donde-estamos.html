@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 	<!-- COMMON TAGS -->
 	<meta charset="utf-8">
 	<title>YEiPii - Dónde Estamos</title>
@@ -465,6 +464,35 @@
 		});
 	</script>
 
+
+	<script>
+
+		
+		function myFunction(){
+			if ($("#BtnLicorerias-contenido").hasClass('categoryOpen') || 
+			$("#BtnLicorerias-contenido").hasClass('categoryOpen-3filas') || 
+			$("#BtnLicorerias-contenido").hasClass('categoryOpen-individual')){
+				cine()
+			} else if ($("#YEiPii-u-scroll").hasClass('categoryOpen') || 
+			$("#YEiPii-u-scroll").hasClass('categoryOpen-3filas') || 
+			$("#YEiPii-u-scroll").hasClass('categoryOpen-individual-2')){
+				uni()
+			} else if ($("#BtnRestaurantes-contenido").hasClass('categoryOpen') || 
+			$("#BtnRestaurantes-contenido").hasClass('categoryOpen-3filas-2da') || 
+			$("#BtnRestaurantes-contenido").hasClass('categoryOpen-individual-3')){
+				res()
+			} else if ($("#BtnEstacionamientos-contenido").hasClass('categoryOpen') || 
+			$("#BtnEstacionamientos-contenido").hasClass('categoryOpen-3filas-2da') || 
+			$("#BtnEstacionamientos-contenido").hasClass('categoryOpen-individual-4')){
+				est()
+		} else if ($("#BtnDiscotecas-contenido").hasClass('categoryOpen') || 
+		$("#BtnDiscotecas-contenido").hasClass('categoryOpen-3filas-3ra') || 
+		$("#BtnDiscotecas-contenido").hasClass('categoryOpen-individual-5')){
+			dis()
+		}
+	}
+		window.onresize = myFunction;
+	</script>
 
 
 	<!-- Script para el form -->

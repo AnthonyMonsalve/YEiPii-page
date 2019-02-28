@@ -92,15 +92,15 @@ xhtpp.onreadystatechange = function () {
         for (let i = 0; i < cantidadCategorias; i++) {
 
             if (i == 0) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnUniversidades-contenido"><div id="desktop-colegios" style="max-width: 100%"><div class="swiper-container sCU"><div class="swiper-wrapper" id="padreCat1"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnLicorerias-contenido"><div id="desktop-colegios" style="max-width: 100%"><div class="swiper-container sCU"><div class="swiper-wrapper" id="padreCat1"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div>`
             } else if (i == 1) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnRestaurantes-contenido"><div id="desktop-restaurantes" style="max-width: 100%"><div class="swiper-container sCR"><div class="swiper-wrapper" id="padreCat2"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnUniversidades-contenido"><div id="desktop-restaurantes" style="max-width: 100%"><div class="swiper-container sCR"><div class="swiper-wrapper" id="padreCat2"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
             } else if (i == 2) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-estacionamientos" style="max-width: 100%"><div class="swiper-container sCE"><div class="swiper-wrapper" id="padreCat3"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnRestaurantes-contenido"><div id="desktop-estacionamientos" style="max-width: 100%"><div class="swiper-container sCE"><div class="swiper-wrapper" id="padreCat3"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
             } else if (i == 3) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container sCD"><div class="swiper-wrapper" id="padreCat4"></div> <script></script>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container sCD"><div class="swiper-wrapper" id="padreCat4"></div> <script></script>`
             } else if (i == 4) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnLicorerias-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container sCL"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
+                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container sCL"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next" style="pointer-events: auto !important;"></div> <div class="swiper-button-prev" style="pointer-events: auto !important;"></div><script></script>`
             }
 
             var cantidadLocalesPorCategorias = (datos.categorias[i].lugares).length
