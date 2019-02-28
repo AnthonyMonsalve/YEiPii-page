@@ -1,6 +1,6 @@
 const xhtpp = new XMLHttpRequest();
 
-xhtpp.open('GET', '../categorias/data.json', true)
+xhtpp.open('GET', '/YEiPii-page/categorias/data.json', true)
 
 xhtpp.send();
 
