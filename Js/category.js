@@ -12,7 +12,7 @@ function uni() {
     } else {
         console.log('no pasa nada')
     }
-    let categoryBoxe = categoryBox[0];
+    let categoryBoxe = categoryBox[1];
     categoryBoxe.setAttribute("id", "YEiPii-u-scroll");
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
     if (window.matchMedia("(min-width: 768px)").matches) {
@@ -211,7 +211,7 @@ function res(){
     } else {
         console.log('no pasa nada')
     }
-    let categoryBoxe = categoryBox[1];
+    let categoryBoxe = categoryBox[2];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
     if (window.matchMedia("(min-width: 768px)").matches) {
         if (Restaurantes.style.opacity == .6) {
@@ -402,7 +402,7 @@ function est(){
     } else {
         console.log('no pasa nada')
     }
-    let categoryBoxe = categoryBox[2];
+    let categoryBoxe = categoryBox[3];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
     if (window.matchMedia("(min-width: 768px)").matches) {
         if (Estacionamientos.style.opacity == .6) {
@@ -593,7 +593,7 @@ function dis(){
     } else {
         console.log('no pasa nada')
     }
-    let categoryBoxe = categoryBox[3];
+    let categoryBoxe = categoryBox[4];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
     if (window.matchMedia("(min-width: 768px)").matches) {
         if (Discotecas.style.opacity == .6) {
@@ -783,7 +783,7 @@ function cine(){
     } else {
         console.log('no pasa nada')
     }
-    let categoryBoxe = categoryBox[4];
+    let categoryBoxe = categoryBox[0];
     let Circulos = categoryBoxe.getElementsByClassName('lugarCategory');
     if (window.matchMedia("(min-width: 768px)").matches) {
         if (Licorerias.style.opacity == .6) {
