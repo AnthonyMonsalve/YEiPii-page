@@ -98,8 +98,8 @@ function uni() {
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 3) + 80 + 'px';
-        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 50 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Universidades.style.marginBottom = 0;
             Licorerias.style.marginBottom = 0;
@@ -161,8 +161,8 @@ function uni() {
         }
         categoryBoxe.classList.toggle('categoryOpen-individual-2');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (170 * 3) + 40 + 'px';
-        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        let heightBox = (170 * 3) + 25 + 'px';
+        let marginBox = (170 * 3) + 15 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Universidades.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
@@ -289,8 +289,8 @@ function res(){
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 3) + 80 + 'px';
-        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 50 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             Restaurantes.style.marginBottom = 0;
@@ -352,8 +352,8 @@ function res(){
         }
         categoryBoxe.classList.toggle('categoryOpen-individual-3');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (170 * 3) + 40 + 'px';
-        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        let heightBox = (170 * 3) + 25 + 'px';
+        let marginBox = (170 * 3) + 15 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Restaurantes.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
@@ -480,8 +480,8 @@ function est(){
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 3) + 80 + 'px';
-        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 50 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             Restaurantes.style.marginBottom = 0;
@@ -543,8 +543,8 @@ function est(){
         }
         categoryBoxe.classList.toggle('categoryOpen-individual-4');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (170 * 3) + 40 + 'px';
-        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        let heightBox = (170 * 3) + 25 + 'px';
+        let marginBox = (170 * 3) + 15 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
@@ -671,8 +671,8 @@ function dis(){
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 3) + 80 + 'px';
-        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 50 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             Discotecas.style.marginBottom = 0;
@@ -734,8 +734,8 @@ function dis(){
         }
         categoryBoxe.classList.toggle('categoryOpen-individual-5');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (170 * 3) + 40 + 'px';
-        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        let heightBox = (170 * 3) + 25 + 'px';
+        let marginBox = (170 * 3) + 15 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Discotecas.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
@@ -861,8 +861,8 @@ function cine(){
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 3) + 80 + 'px';
-        let marginBox = (170 * 3) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 60 + 'px';
+        let marginBox = (170 * 3) + 50 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Universidades.style.marginBottom = 0;
             Licorerias.style.marginBottom = 0;
@@ -924,8 +924,8 @@ function cine(){
         }
         categoryBoxe.classList.toggle('categoryOpen-individual');
         var cuantasFilas = Math.ceil(Circulos.length / 2);
-        let heightBox = (170 * 3) + 40 + 'px';
-        let marginBox = (170 * 3) + 30 + 40 + 'px';
+        let heightBox = (170 * 3) + 25 + 'px';
+        let marginBox = (170 * 3) + 15 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Licorerias.style.marginBottom = 0;
             categoryBoxe.style.height = 0;
