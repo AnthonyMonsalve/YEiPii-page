@@ -480,8 +480,8 @@ function est(){
         } else {
             var cuantasFilas = Math.ceil(Circulos.length / 3)
         }
-        let heightBox = (170 * 2) + 80 + 'px';
-        let marginBox = (170 * 2) + 70 + 40 + 'px';
+        let heightBox = (170 * 3) + 80 + 'px';
+        let marginBox = (170 * 3) + 70 + 40 + 'px';
         if (categoryBoxe.style.height == heightBox) {
             Estacionamientos.style.marginBottom = 0;
             Restaurantes.style.marginBottom = 0;
