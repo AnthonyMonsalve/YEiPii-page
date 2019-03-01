@@ -467,7 +467,6 @@
 
 	<script>
 
-		
 		function myFunction(){
 			if ($("#BtnLicorerias-contenido").hasClass('categoryOpen') || 
 			$("#BtnLicorerias-contenido").hasClass('categoryOpen-3filas') || 
@@ -491,8 +490,18 @@
 			dis()
 		}
 	}
-		window.onresize = myFunction;
+
+	var lastWidth = $(window).width();
+	
+	$(window).resize(function(){
+	if($(window).width()!=lastWidth){
+		myFunction();
+		lastWidth = $(window).width();
+	}
+	})
+
 	</script>
+
 
 
 	<!-- Script para el form -->
