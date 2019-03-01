@@ -589,7 +589,7 @@ function dis(){
     const Clubes = document.getElementById('BtnClubes');
     const categoryBox = document.getElementsByClassName('categoryBox');
     if (!0) {
-        document.getElementById('otro').click()
+        document.getElementById('cine').click()
     } else {
         console.log('no pasa nada')
     }
