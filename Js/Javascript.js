@@ -77,6 +77,18 @@ xhtpp.onreadystatechange = function () {
                           prevEl: '.swiper-button-prev',
                         },
                       });
+                      var swiperF = document.querySelector('.sCF');
+                      var slider = new Swiper(swiperF, {
+                          loop: true,
+                          pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true
+                          },
+                          navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                          },
+                        });
 
                 //console.log('swipe created')
         }
@@ -100,7 +112,9 @@ xhtpp.onreadystatechange = function () {
             } else if (i == 3) {
                 logos.innerHTML += `<div class="categoryBox" id="BtnEstacionamientos-contenido"><div id="desktop-otros" style="max-width: 100%"><div class="swiper-container sCD"><div class="swiper-wrapper" id="padreCat4"></div> <script></script>`
             } else if (i == 4) {
-                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container sCL"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next" style="pointer-events: auto !important; cursor: pointer"></div> <div class="swiper-button-prev" style="pointer-events: auto !important; cursor: pointer"></div><script></script>`
+              logos.innerHTML += `<div class="categoryBox" id="BtnFarmacia-contenido"><div id="desktop-farmacia" style="max-width: 100%"><div class="swiper-container sCF"><div class="swiper-wrapper" id="padreCat5"></div> <div class="swiper-button-next" style="pointer-events: auto !important; cursor: pointer"></div> <div class="swiper-button-prev" style="pointer-events: auto !important; cursor: pointer"></div><script></script>`
+            } else if (i == 5) {
+                logos.innerHTML += `<div class="categoryBox" id="BtnDiscotecas-contenido"><div id="desktop-licorerias" style="max-width: 100%"><div class="swiper-container sCL"><div class="swiper-wrapper" id="padreCat6"></div> <div class="swiper-button-next" style="pointer-events: auto !important; cursor: pointer"></div> <div class="swiper-button-prev" style="pointer-events: auto !important; cursor: pointer"></div><script></script>`
             }
 
             var cantidadLocalesPorCategorias = (datos.categorias[i].lugares).length
@@ -111,67 +125,42 @@ xhtpp.onreadystatechange = function () {
             for (var e = 0; e < (Math.ceil(cantidadLocalesPorCategorias / patron)); e++) {
                 var paginaDeSlider = (datos.categorias[i].lugares).slice(a, b)
                 var paginaDeSliderTamano = paginaDeSlider.length
-                var UniversidadesJ = document.querySelector('#padreCat1')
-                var RestaurantesJ = document.querySelector('#padreCat2')
-                var EstacionamientosJ = document.querySelector('#padreCat3')
-                var OtrosJ = document.querySelector('#padreCat4')
-                var LicoreriasJ = document.querySelector('#padreCat5')
+                var LicoreriasJ = document.querySelector('#padreCat1')
+                var UniversidadesJ = document.querySelector('#padreCat2')
+                var RestaurantesJ = document.querySelector('#padreCat3')
+                var EstacionamientosJ = document.querySelector('#padreCat4')
+                var FarmaciaJ = document.querySelector('#padreCat5')
+                var OtrosJ = document.querySelector('#padreCat6')
                 a += patron
                 b += patron
 
                 if (i == 0) {
-                    UniversidadesJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                  LicoreriasJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 } else if (i == 1) {
-                    RestaurantesJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                  UniversidadesJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 } else if (i == 2) {
-                    EstacionamientosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                  RestaurantesJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 } else if (i == 3) {
-                    OtrosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                  EstacionamientosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 } else if (i == 4) {
-                    LicoreriasJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                  FarmaciaJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
+                } else if (i == 5) {
+                  OtrosJ.innerHTML += `<div class="swiper-slide"><div class="categoryBox-interno" id="slide${i+masUno}"></div></div>`
                 }
 
                 masUno += 1
 
                 for (let lg = 0; lg < paginaDeSliderTamano; lg++) {
-                    var swiperSlide = document.getElementsByClassName("swiper-slide").length;
+                  var swiperSlide = document.getElementsByClassName("swiper-slide").length;
 
-                    var swipeContent = document.querySelector(`#slide${swiperSlide}`)
+                  var swipeContent = document.querySelector(`#slide${swiperSlide}`)
 
-
-                    // console.log(paginaDeSlider[lg])
-                    if (i == 0) {
-                        swipeContent.innerHTML += `<div class="lugarCategory">
-                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
-                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>@${paginaDeSlider[lg].usuario}</span>
-                                                    </div>`
-                    } else if (i == 1) {
-                        swipeContent.innerHTML += `<div class="lugarCategory">
-                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
-                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>@${paginaDeSlider[lg].usuario}</span>
-                                                    </div>`
-                    } else if (i == 2) {
-                        swipeContent.innerHTML += `<div class="lugarCategory">
-                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
-                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>@${paginaDeSlider[lg].usuario}</span>
-                                                    </div>`
-                    } else if (i == 3) {
-                        swipeContent.innerHTML += `<div class="lugarCategory">
-                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
-                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>@${paginaDeSlider[lg].usuario}</span>
-                                                    </div>`
-                    } else if (i == 4) {
-                        swipeContent.innerHTML += `<div class="lugarCategory">
-                                                    <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
-                                                    <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
-                                                    <span>@${paginaDeSlider[lg].usuario}</span>
-                                                    </div>`
-                    }
-                }
+                  swipeContent.innerHTML += `<div class="lugarCategory">
+                                              <img src="${paginaDeSlider[lg].imagen}" alt="${paginaDeSlider[lg].lugar}" />
+                                              <h4>${paginaDeSlider[lg].lugar}<span>${paginaDeSlider[lg].ubicacion}</span></h4>
+                                              <span>@${paginaDeSlider[lg].usuario}</span>
+                                              </div>`
+              }
 
             }
             masUno -= 1

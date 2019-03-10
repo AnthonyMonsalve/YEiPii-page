@@ -7,7 +7,7 @@
             "lugares": [{
                     "id": 1,
                     "imagen": "images/establecimientos/generico.jpg",
-                    "lugar": "Cafetín CIAP",
+                    "lugar": "UNO",
                     "ubicacion": "CIAP",
                     "usuario": "@cafetinciap"
                 },
@@ -564,7 +564,7 @@
             "lugares": [{
                     "id": 1,
                     "imagen": "images/establecimientos/generico.jpg",
-                    "lugar": "Altamira Tenis Club",
+                    "lugar": "CUATRO",
                     "ubicacion": "Restaurant",
                     "usuario": "@atcrest"
                 },
@@ -697,6 +697,138 @@
                     "id": 1,
                     "imagen": "images/establecimientos/lugar/cinex.jpg",
                     "lugar": "CINEEEEEEEEE",
+                    "ubicacion": "Restaurant",
+                    "usuario": "@atcrest"
+                },
+                {
+                    "id": 2,
+                    "imagen": "images/establecimientos/lugar/cinex2.jpg",
+                    "lugar": "CINEEEEEEEEE",
+                    "ubicacion": "Parrilla",
+                    "usuario": "@atcparrilla"
+                },
+                {
+                    "id": 3,
+                    "imagen": "images/establecimientos/lugar/cinex3.jpg",
+                    "lugar": "CINEEEEEEEEE",
+                    "ubicacion": "Fuente",
+                    "usuario": "@atcfuente"
+                },
+                {
+                    "id": 4,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "TUUUU DESCONEXXXXXXXXX",
+                    "ubicacion": "Pabellon - Restaurante",
+                    "usuario": "@pabellon"
+                },
+                {
+                    "id": 5,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "TUUUU DESCONEXXXXXXXXX",
+                    "ubicacion": "Chozas de la playa",
+                    "usuario": "@lajuntabeach"
+                },
+                {
+                    "id": 6,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Barbería",
+                    "usuario": "@tibisay"
+                },
+                {
+                    "id": 7,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "golf",
+                    "usuario": "@hoyo19"
+                },
+                {
+                    "id": 8,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "golf",
+                    "usuario": "@Coop19"
+                },
+                {
+                    "id": 9,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Piscina",
+                    "usuario": "@piscina"
+                },
+                {
+                    "id": 10,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Caracas Country Club",
+                    "ubicacion": "Tenis",
+                    "usuario": "@tenisccc"
+                },
+                {
+                    "id": 11,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Lagunita Golf Club",
+                    "ubicacion": "",
+                    "usuario": "@foodplus"
+                },
+                {
+                    "id": 12,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Tienda de la Marina",
+                    "usuario": "@marine"
+                },
+                {
+                    "id": 13,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Quiosco",
+                    "usuario": "@marine"
+                },
+                {
+                    "id": 14,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Puerto Azul",
+                    "ubicacion": "Choza de sushi",
+                    "usuario": "@coche"
+                },
+                {
+                    "id": 15,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Sawu",
+                    "ubicacion": "",
+                    "usuario": "@sawu"
+                },
+                {
+                    "id": 16,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Suka",
+                    "ubicacion": "",
+                    "usuario": "@suka"
+                },
+                {
+                    "id": 17,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Valle Arriba Athletic Center",
+                    "ubicacion": "",
+                    "usuario": "@skysushi"
+                },
+                {
+                    "id": 18,
+                    "imagen": "images/establecimientos/generico.jpg",
+                    "lugar": "Valle Arriba Athletic Center",
+                    "ubicacion": "Yogen Fruz",
+                    "usuario": "@yogenvaac"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "description": "CINE",
+            "title": "Otros",
+            "lugares": [{
+                    "id": 1,
+                    "imagen": "images/establecimientos/lugar/cinex.jpg",
+                    "lugar": "FARMACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "ubicacion": "Restaurant",
                     "usuario": "@atcrest"
                 },

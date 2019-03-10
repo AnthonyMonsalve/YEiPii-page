@@ -155,13 +155,13 @@
 						</section>
 					</div>
 					<div class="clip">
-						<section class="section-slider">
-							<img height="372" src="images/slider/fotos/8.png" alt="Presto - Pasta Bar">
+					<section class="section-slider">
+						<img height="372" src="images/slider/fotos/10.png" alt="Farmarket">
 						</section>
 					</div>
 					<div class="clip">
-					<section class="section-slider">
-						<img height="372" src="images/slider/fotos/10.png" alt="Farmarket">
+						<section class="section-slider">
+							<img height="372" src="images/slider/fotos/8.png" alt="Presto - Pasta Bar">
 						</section>
 					</div>
 					<div class="clip">
@@ -206,6 +206,7 @@
 		<a href="#BtnLicorerias" id="esta" data-ancla="BtnEstacionamientos"></a>
 		<a href="#BtnLicorerias" id="otro" data-ancla="BtnDiscotecas"></a>
 		<a href="#BtnLicorerias" id="cine" data-ancla="BtnLicorerias"></a>
+		<a href="#BtnLicorerias" id="farma" data-ancla="BtnFarmacia"></a>
 
 
 
@@ -228,13 +229,13 @@
 						<img src="images/categorias/estacionamientos.png" alt="">
 						<span class="center">Estacionamientos</span>
 					</button>
+					<button id="BtnFarmacia" class="button-YEiPii-secondary"  onclick="farm()">
+						<img src="images/categorias/club-privado.png" alt="">
+						<span class="center">Farmacia</span>
+					</button>
 					<button id="BtnDiscotecas" class="button-YEiPii-secondary" onclick="dis()">
 						<img src="images/categorias/discotecas.png" alt="">
 						<span class="center">Otros</span>
-					</button>
-					<button id="BtnClubes" class="button-YEiPii-secondary" style="display: none">
-						<img src="images/categorias/club-privado.png" alt="">
-						<span class="center">Clubes privados</span>
 					</button>
 				</div>
 
@@ -486,12 +487,16 @@
 			$("#BtnEstacionamientos-contenido").hasClass('categoryOpen-3filas-2da') || 
 			$("#BtnEstacionamientos-contenido").hasClass('categoryOpen-individual-4')){
 				est()
-		} else if ($("#BtnDiscotecas-contenido").hasClass('categoryOpen') || 
-		$("#BtnDiscotecas-contenido").hasClass('categoryOpen-3filas-3ra') || 
-		$("#BtnDiscotecas-contenido").hasClass('categoryOpen-individual-5')){
-			dis()
+			} else if ($("#BtnDiscotecas-contenido").hasClass('categoryOpen') || 
+			$("#BtnDiscotecas-contenido").hasClass('categoryOpen-3filas-3ra') || 
+			$("#BtnDiscotecas-contenido").hasClass('categoryOpen-individual-6')){
+				dis()
+			} else if ($("#BtnFarmacia-contenido").hasClass('categoryOpen') || 
+			$("#BtnFarmacia-contenido").hasClass('categoryOpen-3filas-3ra') || 
+			$("#BtnFarmacia-contenido").hasClass('categoryOpen-individual-5')){
+				farm()
+			}
 		}
-	}
 
 	var lastWidth = $(window).width();
 	
