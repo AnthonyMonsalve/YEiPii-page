@@ -34,21 +34,21 @@ body {
 	@extend %flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url('../../images/backgrounds/bg.jpg');
+	background-image: url('../../images/backgrounds/bg-como-funciona.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
 	padding-top: 25px;
 	height: 100vh !important;
+	background-position-x: 84%;
+}
+
+.bg2 {
+	background-image: url('../../images/backgrounds/bg.jpg');
 	background-position-x: 70%;
 	@include respond-to($max-width-Tablet){
 		background-position-x: 89%;
 	}
-}
-
-.bg2 {
-	background-image: url('../../images/backgrounds/bg-como-funciona.jpg');
-	background-position-x: 84%;
 }
 
 .content-first-other-page {
