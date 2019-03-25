@@ -92,7 +92,7 @@
 
 .acordeon:nth-of-type(1) .content-buttons-footer,
 .acordeon:nth-of-type(2) .content-buttons-footer,
-.acordeon:nth-of-type(3) .content-buttons-footer,{
+.acordeon:nth-of-type(3) .content-buttons-footer{
   @include respond-to(630px){
     justify-content: flex-start
   }
@@ -100,7 +100,7 @@
 
 .acordeon:nth-of-type(1) .content-buttons-footer a,
 .acordeon:nth-of-type(2) .content-buttons-footer a,
-.acordeon:nth-of-type(3) .content-buttons-footer a,{
+.acordeon:nth-of-type(3) .content-buttons-footer a{
   margin-left: 26px;
 }
 

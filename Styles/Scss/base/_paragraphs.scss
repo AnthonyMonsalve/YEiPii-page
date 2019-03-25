@@ -69,6 +69,31 @@ p{
 .parrafo_YEiPii_white{
 	@extend %parrafo_YEiPii;
 	color: $YEiPii-color-white;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-transform: uppercase;
+	max-width: 600px;
+	margin-top: 25px;
+
+	@include respond-to($max-width-830){
+		max-width: 95%;
+		margin: auto;
+		margin-bottom: 25px;
+		padding-left: 12.5px;
+		padding-right: 12.5px;
+		font-size: map-get($font-size, normal-big);
+	}
+	
+	@include respond-to($max-width-MobileL){
+		text-align: center;
+		max-width: 100%;
+		font-size: 20px;
+	}
+
+	@include respond-to($max-width-MobileS){
+		max-width: 100%;
+		font-size: 18px;
+	}
 }
 
 .parrafo_banner-donde-estamos{
