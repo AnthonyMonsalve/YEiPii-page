@@ -84,12 +84,12 @@
 		</div>
 	</header>
 	<!--FIN HEADER Y NAV-->
-	<section class="section-complete-viewport section-first bg2" style="position: relative">
+	<section class="section-complete-viewport section-first bg2" style="position: relative;">
 		<div class='content-first-other-page'>
 			<h1 class="title-como-funciona color-YEiPii-w op animate">Aprende a <br> usar <img src="images/logo/YEiPii-white.png" alt="YEiPii" title="YEiPii"></h1>
 		</div>
-		<div style="position: absolute; bottom: 30px;">
-			<a class="movimiento-flecha-donde-estamos" href="#tutorial" style="cursor: pointer"><img src="images/arrows/flecha-hacia-abajo.svg" alt="bajar" height="50"></a>
+		<div style="position: fixed; bottom: 0px;" id="flechita">
+			<a class="movimiento-flecha-donde-estamos" href="#tutorial" style="cursor: pointer"><img src="images/arrows/flecha-hacia-abajo.svg" alt="bajar" height="40"></a>
 		</div>
 	</section>
 	<!--FIN SECTION  BUTTONS APP -->
@@ -286,6 +286,20 @@
 				return false;
 			});
 		});
+	</script>
+
+	<script>
+	//ES PARA OCULTAR LA FLECHA :)
+	const flecha = document.getElementById('flechita');
+	window.onscroll = function (){
+		if ($(window).scrollTop() > 100){
+			flechita.style.opacity = 0;
+			flechita.style.display = 'none';
+		} else{
+			flechita.style.opacity = 1;
+			flechita.style.display = 'block';
+		}
+	}
 	</script>
 </body>
 

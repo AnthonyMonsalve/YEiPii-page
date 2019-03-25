@@ -162,16 +162,17 @@
 	position: relative;
 	animation-name: slideDown;
 	animation: slideDown 3s infinite;
+	transition: all;
 }
 
 @keyframes slideDown{
 	0%{
-		bottom: 0;
+		bottom: 5px;
 	}
 	50%{
-		bottom: 10px;
+		bottom: 12px;
 	}
 	100%{
-		bottom: 0;
+		bottom: 5px;
 	}
 }
