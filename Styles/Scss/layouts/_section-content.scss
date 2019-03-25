@@ -40,12 +40,15 @@ body {
 	background-position: right;
 	padding-top: 25px;
 	height: 100vh !important;
-	background-position-x: 82%;
+	background-position-x: 70%;
+	@include respond-to($max-width-Tablet){
+		background-position-x: 89%;
+	}
 }
 
 .bg2 {
 	background-image: url('../../images/backgrounds/bg-como-funciona.jpg');
-	background-position-x: 80%;
+	background-position-x: 84%;
 }
 
 .content-first-other-page {
