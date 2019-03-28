@@ -46,6 +46,7 @@ body {
 .bg2 {
 	background-image: url('../../images/backgrounds/bg.jpg');
 	background-position-x: 70%;
+	background-position-y: 0;
 	@include respond-to($max-width-Tablet){
 		background-position-x: 89%;
 	}
