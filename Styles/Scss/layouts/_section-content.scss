@@ -30,7 +30,7 @@ body {
 
 
 // Sections 
-.sectionfirst {
+.section-first {
 	@extend %flex;
 	align-items: center;
 	justify-content: center;
@@ -40,7 +40,7 @@ body {
 	padding-top: 25px;
 	height: 100vh !important;
 	background-position-x: 84%;
-	background-position-y: 40px;
+	background-position-y: 25px;
 }
 
 .bg2 {
