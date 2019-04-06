@@ -4,7 +4,7 @@
     <title>store_an_white</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="172" height="59" fill="white">
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="172" height="59" fill="rgb(5,13,158)">
             <use xlink:href="#path-1"></use>
         </mask>
         <polygon id="path-3" points="0 0.7889 0 15.792525 14.3935982 15.792525 14.3935982 0.7889 4.70140765e-20 0.7889"></polygon>

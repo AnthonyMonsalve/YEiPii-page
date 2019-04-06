@@ -86,13 +86,17 @@
 	align-items: center;
 	margin: 9px 13px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 0px 1px $YEiPii-color-white;
-	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 0px 1px $YEiPii-color;
+	background: WHITE;
 
 	//transition: $button-transition;
 	& a {
 		width: 170px;
 		height: 58px;
+		@include respond-to($max-width-MobileL){
+			width: 160px;
+			height: 54px;
+		}
 	}
 }
 
@@ -145,7 +149,7 @@
 	}
 }
 
-#APPLE:hover .hoverDownload, #ANDROID:hover .hoverDownload {
+#APPLE .hoverDownload, #ANDROID .hoverDownload {
 	fill: $YEiPii-color;
 }
 

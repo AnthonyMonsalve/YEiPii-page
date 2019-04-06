@@ -41,6 +41,10 @@ body {
 	height: 100vh !important;
 	background-position-x: 84%;
 	background-position-y: 25px;
+	@include respond-to($max-width-MobileL){
+		background-image: url('../../images/backgrounds/bg-como-funciona-phone.jpg');
+		background-position: center;
+	}
 }
 
 .bg2 {
